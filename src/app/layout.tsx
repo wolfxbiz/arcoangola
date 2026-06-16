@@ -1,26 +1,7 @@
-import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-});
-
-export const metadata: Metadata = {
-  title: "Arco Angola – Industrial Training & Certification",
-  description:
-    "International-standard industrial training and certification in Angola. Welding, NDT, API, ISO and more.",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html className={jakarta.variable}>
-      <body>{children}</body>
-    </html>
-  );
+// [locale]/layout.tsx owns <html> and <body> — this root layout just passes through
+// children so Next.js can find a layout file and import global CSS.
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return children as React.ReactElement;
 }

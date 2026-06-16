@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
 
 type Props = {
   children: React.ReactNode;
@@ -36,7 +44,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="h-full scroll-smooth">
+    <html lang={locale} className={`${jakarta.variable} h-full scroll-smooth`}>
       <body className="min-h-full flex flex-col bg-white text-navy antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
