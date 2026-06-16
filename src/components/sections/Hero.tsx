@@ -13,21 +13,16 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-16 lg:pt-20">
 
-      {/* Background image — replace src with real photo when available */}
-      <div className="absolute inset-0">
-        <Image
-          src="/assets/hero-bg.webp"
-          alt=""
-          fill
-          priority
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
-        {/* Fallback colour shown while image loads or if missing */}
-        <div className="absolute inset-0 bg-navy" aria-hidden="true" />
-      </div>
-
-      {/* Dark overlay for text legibility */}
-      <div className="absolute inset-0 bg-navy/70" aria-hidden="true" />
+      {/* Background: navy fallback first, image on top, then dark overlay */}
+      <div className="absolute inset-0 bg-navy" aria-hidden="true" />
+      <Image
+        src="/assets/hero-bg.webp"
+        alt=""
+        fill
+        priority
+        style={{ objectFit: "cover", objectPosition: "center" }}
+      />
+      <div className="absolute inset-0 bg-navy/65" aria-hidden="true" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-32">
