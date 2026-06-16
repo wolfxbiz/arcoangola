@@ -22,7 +22,7 @@ export default function Hero() {
         priority
         style={{ objectFit: "cover", objectPosition: "center" }}
       />
-      <div className="absolute inset-0 bg-navy/65" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/65" aria-hidden="true" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-32">
