@@ -75,10 +75,10 @@ export default function CertificationHighlights() {
         <div className="border border-gray-200 flex flex-col lg:flex-row overflow-hidden">
           <div className="relative h-64 lg:h-auto lg:w-2/5 shrink-0 overflow-hidden">
             <Image
-              src="/assets/img-individual.webp"
+              src="/assets/img-qc-professional.png"
               alt="Certified QC professional in the field"
               fill
-              style={{ objectFit: "cover", objectPosition: "50% 25%" }}
+              style={{ objectFit: "cover", objectPosition: "50% 30%" }}
             />
           </div>
           <div className="p-6 lg:p-10 flex flex-col gap-3 justify-center flex-1 bg-navy">
