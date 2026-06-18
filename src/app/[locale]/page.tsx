@@ -2,10 +2,11 @@ import { getTranslations } from "next-intl/server";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import PremiumTracks from "@/components/sections/PremiumTracks";
+import CertificationHighlights from "@/components/sections/CertificationHighlights";
 import CatalogTabs from "@/components/sections/CatalogTabs";
+import NdtServices from "@/components/sections/NdtServices";
 import DualAudience from "@/components/sections/DualAudience";
-import IsoHighlight from "@/components/sections/IsoHighlight";
+import PremiumTracks from "@/components/sections/PremiumTracks";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -55,18 +56,24 @@ export default async function LandingPage({ params }: Props) {
         <Hero />
 
         <section id="programmes">
-          <PremiumTracks />
+          <CertificationHighlights />
         </section>
 
         <section id="courses">
           <CatalogTabs courses={courses} labels={catalogLabels} />
         </section>
 
+        <section id="ndt-services">
+          <NdtServices />
+        </section>
+
         <section id="corporate">
           <DualAudience />
         </section>
 
-        <IsoHighlight />
+        <section id="premium">
+          <PremiumTracks />
+        </section>
       </main>
 
       <Footer />

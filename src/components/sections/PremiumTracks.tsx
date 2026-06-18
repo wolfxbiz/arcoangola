@@ -5,8 +5,8 @@ export default function PremiumTracks() {
   const t = useTranslations("premium");
 
   const tracks = [
-    { key: "cogip", icon: "⚙️", img: "/assets/welder.webp", imgW: 1200, imgH: 801, imgAlt: "Professional welder in training" },
-    { key: "cmqip", icon: "🔩", img: "/assets/inspector.webp", imgW: 1200, imgH: 800, imgAlt: "Industrial inspector on site" },
+    { key: "cogip", icon: "⚙️", img: "/assets/welder.webp", imgAlt: "Professional welder — core COGIP certification skill" },
+    { key: "cmqip", icon: "🔩", img: "/assets/img-cmqip.webp", imgAlt: "Industrial plant inspection and maintenance" },
   ] as const;
 
 
@@ -27,19 +27,20 @@ export default function PremiumTracks() {
 
         {/* Cards */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {tracks.map(({ key, icon, img, imgW, imgH, imgAlt }, i) => (
+          {tracks.map(({ key, icon, img, imgAlt }, i) => (
             <div
               key={key}
               className="border border-gray-200 flex flex-col overflow-hidden"
             >
-              {/* Full photo — no crop */}
-              <Image
-                src={img}
-                alt={imgAlt}
-                width={imgW}
-                height={imgH}
-                style={{ width: "100%", height: "auto" }}
-              />
+              {/* Fixed-height image container for consistent card heights */}
+              <div className="relative h-56 sm:h-64 lg:h-72 shrink-0">
+                <Image
+                  src={img}
+                  alt={imgAlt}
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "center" }}
+                />
+              </div>
 
               <div className="p-6 lg:p-10 flex flex-col gap-5 flex-1">
                 {/* Tag */}

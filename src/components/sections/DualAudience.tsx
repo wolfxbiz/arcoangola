@@ -46,13 +46,14 @@ export default function DualAudience() {
         <div className="grid lg:grid-cols-2 gap-0 border border-gray-200">
           {/* Individual — white panel */}
           <div className="flex flex-col overflow-hidden border-b lg:border-b-0 lg:border-r border-gray-200">
-            <Image
-              src="/assets/worker.webp"
-              alt="Certified industrial professional"
-              width={900}
-              height={600}
-              style={{ width: "100%", height: "auto" }}
-            />
+            <div className="relative h-64 sm:h-80 lg:h-72 xl:h-80 overflow-hidden shrink-0">
+              <Image
+                src="/assets/worker.webp"
+                alt="Certified industrial professional"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center top" }}
+              />
+            </div>
             <div className="p-8 lg:p-12 flex flex-col gap-6 flex-1">
             <span className="self-start text-xs font-black uppercase tracking-widest text-blue">
               {t("individual.tag")}
@@ -85,13 +86,14 @@ export default function DualAudience() {
 
           {/* Corporate — navy panel */}
           <div className="flex flex-col overflow-hidden">
-            <Image
-              src="/assets/corporate.webp"
-              alt="Corporate training session"
-              width={1200}
-              height={800}
-              style={{ width: "100%", height: "auto" }}
-            />
+            <div className="relative h-64 sm:h-80 lg:h-72 xl:h-80 overflow-hidden shrink-0">
+              <Image
+                src="/assets/img-executive.webp"
+                alt="Corporate compliance professional"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center 15%" }}
+              />
+            </div>
           <div className="p-8 lg:p-12 flex flex-col gap-6 bg-navy flex-1">
             <span className="self-start text-xs font-black uppercase tracking-widest text-white/50">
               {t("corporate.tag")}

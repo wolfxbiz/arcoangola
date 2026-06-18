@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type Course = {
   id: string;
@@ -43,14 +43,22 @@ const ISO_SUBGROUPS = [
   { key: "isoSpecialized", label: "Additional ISO 9712 Courses" },
 ];
 
+// Certification body names shown in the sidebar / mobile grid
+const SECTION_BODIES: Record<string, string> = {
+  iso:     "ISO 9001 · 14001 · 45001 · 9712",
+  welding: "TWI-CSWIP / BGAS",
+  ndt:     "ASNT-SNT-TC-1A",
+  api:     "API 653 · 570 · 510",
+};
+
 function CourseRow({ course }: { course: Course }) {
   return (
-    <div className="flex items-start justify-between gap-3 px-4 py-4 hover:bg-gray-50 transition-colors">
+    <div className="flex items-start justify-between gap-3 px-5 py-4 hover:bg-gray-50 transition-colors">
       <div className="flex-1 min-w-0">
-        <p className="font-bold text-navy text-sm leading-snug">{course.title}</p>
+        <p className="font-bold text-navy text-base leading-snug">{course.title}</p>
         <p className="text-xs text-gray-400 mt-0.5 leading-relaxed">{course.subtitle}</p>
       </div>
-      <span className="text-xs font-black text-blue shrink-0 mt-0.5 uppercase tracking-wide">
+      <span className="text-xs font-black text-blue shrink-0 mt-1 uppercase tracking-wide">
         {course.level}
       </span>
     </div>
@@ -105,8 +113,8 @@ function IsoCoursePanel({ courses }: { courses: Course[] }) {
         if (sub.length === 0) return null;
         return (
           <div key={key} className="border-b border-gray-100 last:border-0">
-            <div className="px-4 sm:px-5 py-2 bg-gray-50 border-b border-gray-100">
-              <span className="text-[10px] font-black uppercase tracking-widest text-gray-400">
+            <div className="px-5 py-3 bg-gray-50 border-b border-gray-100">
+              <span className="text-xs font-black uppercase tracking-widest text-navy">
                 {label}
               </span>
             </div>
@@ -127,6 +135,13 @@ function IsoCoursePanel({ courses }: { courses: Course[] }) {
 export default function CatalogTabs({ courses, labels }: Props) {
   const [active, setActive] = useState<string>("iso");
 
+  // Listen for tab-change events fired by CertificationHighlights cards
+  useEffect(() => {
+    const handler = (e: Event) => setActive((e as CustomEvent<string>).detail);
+    window.addEventListener("setCatalogTab", handler);
+    return () => window.removeEventListener("setCatalogTab", handler);
+  }, []);
+
   const sections = [
     { key: "iso",     label: labels.filterIso },
     { key: "welding", label: labels.filterWelding },
@@ -141,11 +156,11 @@ export default function CatalogTabs({ courses, labels }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="mb-10 sm:mb-12">
-          <span className="block text-blue text-xs font-bold uppercase tracking-widest mb-3">
+        <div className="mb-10 sm:mb-14">
+          <span className="block text-blue text-xs font-bold uppercase tracking-widest mb-4">
             {labels.badge}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-navy mb-2">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-navy mb-3">
             {labels.title}
           </h2>
           <p className="text-gray-500 max-w-xl text-sm sm:text-base">{labels.subtitle}</p>
@@ -153,7 +168,6 @@ export default function CatalogTabs({ courses, labels }: Props) {
 
         {/* ── MOBILE: 2×2 grid tabs + accordion for ISO ── */}
         <div className="lg:hidden">
-          {/* 2×2 category grid */}
           <div className="grid grid-cols-2 gap-2 mb-4">
             {sections.map(({ key, label }) => {
               const count = courses.filter((c) => CATEGORY_GROUPS[c.category] === key).length;
@@ -163,23 +177,23 @@ export default function CatalogTabs({ courses, labels }: Props) {
                   key={key}
                   onClick={() => setActive(key)}
                   className={`flex flex-col items-start px-4 py-4 border transition-colors text-left ${
-                    isActive
-                      ? "bg-navy border-navy text-white"
-                      : "bg-white border-gray-200 text-navy"
+                    isActive ? "bg-navy border-navy" : "bg-white border-gray-200"
                   }`}
                 >
-                  <span className={`text-[10px] font-black uppercase tracking-widest mb-1 ${isActive ? "text-blue" : "text-gray-400"}`}>
-                    {count} courses
+                  <span className={`text-[9px] font-black uppercase tracking-widest mb-1.5 leading-tight ${isActive ? "text-blue" : "text-gray-400"}`}>
+                    {SECTION_BODIES[key]}
                   </span>
                   <span className={`font-black text-sm leading-tight ${isActive ? "text-white" : "text-navy"}`}>
                     {label}
+                  </span>
+                  <span className={`text-[10px] mt-1 font-semibold ${isActive ? "text-white/50" : "text-gray-400"}`}>
+                    {count} courses
                   </span>
                 </button>
               );
             })}
           </div>
 
-          {/* Course list */}
           <div className="border border-gray-200 bg-white">
             {active === "iso"
               ? <MobileIsoAccordion courses={courses} />
@@ -191,8 +205,8 @@ export default function CatalogTabs({ courses, labels }: Props) {
         {/* ── DESKTOP: sidebar on left, courses on right ── */}
         <div className="hidden lg:flex border border-gray-200">
 
-          {/* Sidebar */}
-          <div className="w-52 shrink-0 border-r border-gray-200 divide-y divide-gray-100">
+          {/* Sidebar — wider to fit body names */}
+          <div className="w-72 shrink-0 border-r border-gray-200 divide-y divide-gray-100">
             {sections.map(({ key, label }) => {
               const count = courses.filter((c) => CATEGORY_GROUPS[c.category] === key).length;
               const isActive = active === key;
@@ -201,15 +215,16 @@ export default function CatalogTabs({ courses, labels }: Props) {
                   key={key}
                   onClick={() => setActive(key)}
                   className={`w-full text-left px-5 py-5 transition-colors border-l-4 ${
-                    isActive
-                      ? "bg-navy border-l-blue"
-                      : "bg-white hover:bg-gray-50 border-l-transparent"
+                    isActive ? "bg-navy border-l-blue" : "bg-white hover:bg-gray-50 border-l-transparent"
                   }`}
                 >
-                  <span className={`block font-black text-sm leading-tight ${isActive ? "text-white" : "text-navy"}`}>
+                  <span className={`block text-[10px] font-black uppercase tracking-widest mb-1.5 leading-tight ${isActive ? "text-blue" : "text-gray-400"}`}>
+                    {SECTION_BODIES[key]}
+                  </span>
+                  <span className={`block font-black text-base leading-tight ${isActive ? "text-white" : "text-navy"}`}>
                     {label}
                   </span>
-                  <span className={`block text-[11px] mt-1 font-semibold ${isActive ? "text-white/50" : "text-gray-400"}`}>
+                  <span className={`block text-[11px] mt-1.5 font-semibold ${isActive ? "text-white/50" : "text-gray-400"}`}>
                     {count} courses
                   </span>
                 </button>
