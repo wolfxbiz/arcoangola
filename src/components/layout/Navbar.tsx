@@ -49,9 +49,14 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center shrink-0">
-            <span className={`font-black text-xl tracking-tight transition-colors duration-300 ${scrolled ? "text-navy" : "text-white"}`}>
-              ARCO<span className="text-blue">ANGOLA</span>
-            </span>
+            <Image
+              src={scrolled ? "/assets/logo-color.png" : "/assets/logo-dark.png"}
+              alt="Arco Angola"
+              width={180}
+              height={48}
+              style={{ height: "38px", width: "auto" }}
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

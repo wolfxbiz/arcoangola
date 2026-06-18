@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 
 const WHATSAPP_NUMBERS = [
@@ -58,9 +59,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href={`/${locale}`} className="inline-block mb-4">
-              <span className="font-black text-2xl tracking-tight text-white">
-                ARCO<span className="text-blue">ANGOLA</span>
-              </span>
+              <Image
+                src="/assets/logo-dark.png"
+                alt="Arco Angola"
+                width={180}
+                height={48}
+                style={{ height: "40px", width: "auto" }}
+              />
             </Link>
             <p className="text-sm text-white/75 leading-relaxed mb-6">
               {t("tagline")}
