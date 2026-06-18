@@ -35,7 +35,7 @@ export default function Footer() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleWhatsApp(e: React.FormEvent<HTMLFormElement>) {
+  function handleWhatsApp(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     const text = encodeURIComponent(`${name}: ${message}`);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
@@ -62,14 +62,14 @@ export default function Footer() {
                 ARCO<span className="text-blue">ANGOLA</span>
               </span>
             </Link>
-            <p className="text-sm text-white/50 leading-relaxed mb-6">
+            <p className="text-sm text-white/75 leading-relaxed mb-6">
               {t("tagline")}
             </p>
             <div className="flex flex-wrap gap-1.5">
               {CERTS.map((c) => (
                 <span
                   key={c}
-                  className="text-[10px] font-bold px-2 py-0.5 border border-white/10 text-white/30 tracking-wide"
+                  className="text-[10px] font-bold px-2 py-0.5 border border-white/15 text-white/50 tracking-wide"
                 >
                   {c}
                 </span>
@@ -79,7 +79,7 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="text-[11px] font-black uppercase tracking-widest text-white/30 mb-6">
+            <h4 className="text-[11px] font-black uppercase tracking-widest text-white/55 mb-6">
               {t("quickLinks")}
             </h4>
             <ul className="flex flex-col gap-3">
@@ -87,7 +87,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="group flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors"
+                    className="group flex items-center gap-2 text-sm text-white/75 hover:text-white transition-colors"
                   >
                     <span className="w-3 h-px bg-blue opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
                     {l.label}
@@ -99,12 +99,12 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-[11px] font-black uppercase tracking-widest text-white/30 mb-6">
+            <h4 className="text-[11px] font-black uppercase tracking-widest text-white/55 mb-6">
               {t("contact")}
             </h4>
 
             <div className="mb-6">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/25 mb-3">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-white/55 mb-3">
                 WhatsApp &amp; Direct
               </p>
               <div className="flex flex-col gap-2.5">
@@ -124,7 +124,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/25 mb-3">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-white/55 mb-3">
                 Email
               </p>
               <div className="flex flex-col gap-2.5">
@@ -134,10 +134,10 @@ export default function Footer() {
                     href={`mailto:${addr}`}
                     className="group"
                   >
-                    <span className="block text-[10px] font-bold uppercase tracking-wide text-white/25 leading-none mb-0.5">
+                    <span className="block text-[10px] font-bold uppercase tracking-wide text-white/55 leading-none mb-0.5">
                       {label}
                     </span>
-                    <span className="text-xs text-white/55 group-hover:text-white transition-colors">
+                    <span className="text-xs text-white/75 group-hover:text-white transition-colors">
                       {addr}
                     </span>
                   </a>
@@ -148,7 +148,7 @@ export default function Footer() {
 
           {/* Inquiry form */}
           <div>
-            <h4 className="text-[11px] font-black uppercase tracking-widest text-white/30 mb-6">
+            <h4 className="text-[11px] font-black uppercase tracking-widest text-white/55 mb-6">
               {t("inquiry")}
             </h4>
             <form onSubmit={handleWhatsApp} className="flex flex-col gap-2.5">
@@ -180,7 +180,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/25">
+          <p className="text-xs text-white/50">
             © {new Date().getFullYear()} Arco Angola. {t("rights")}
           </p>
           <p className="text-[11px] font-black uppercase tracking-widest text-white/20 order-first sm:order-none">
@@ -192,7 +192,7 @@ export default function Footer() {
                 key={l}
                 href={`/${l}`}
                 className={`text-xs font-black transition-colors ${
-                  l === locale ? "text-blue" : "text-white/25 hover:text-white"
+                  l === locale ? "text-blue" : "text-white/50 hover:text-white"
                 }`}
               >
                 {l.toUpperCase()}

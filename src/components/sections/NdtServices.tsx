@@ -130,7 +130,7 @@ function AccordionRow({
         {/* Abbr badge */}
         <span className={[
           "shrink-0 w-14 sm:w-16 text-center text-[10px] font-black uppercase tracking-widest py-1 px-1",
-          isAdvanced ? "bg-blue text-white" : "border border-white/20 text-white/50",
+          isAdvanced ? "bg-blue text-white" : "border border-white/30 text-white/70",
         ].join(" ")}>
           {service.abbr}
         </span>
@@ -140,13 +140,13 @@ function AccordionRow({
           <span className="block text-sm font-black text-white leading-snug">
             {service.name}
           </span>
-          <span className="block text-[10px] text-white/35 uppercase tracking-widest mt-0.5 sm:hidden">
+          <span className="block text-[10px] text-white/60 uppercase tracking-widest mt-0.5 sm:hidden">
             {service.tag}
           </span>
         </span>
 
         {/* Tag (desktop only) */}
-        <span className="hidden sm:block text-[10px] text-white/35 uppercase tracking-widest shrink-0 mr-4">
+        <span className="hidden sm:block text-[10px] text-white/60 uppercase tracking-widest shrink-0 mr-4">
           {service.tag}
         </span>
 
@@ -163,7 +163,7 @@ function AccordionRow({
       {isOpen && (
         <div className="px-5 sm:px-6 pb-5 pt-1 flex gap-4">
           <div className="w-0.5 bg-blue shrink-0 self-stretch" />
-          <p className="text-white/60 text-sm leading-relaxed">
+          <p className="text-white/80 text-sm leading-relaxed">
             {service.desc}
           </p>
         </div>
@@ -206,7 +206,7 @@ export default function NdtServices() {
               <span className="text-blue">Field Services</span>
             </h2>
 
-            <p className="text-white/55 leading-relaxed text-sm sm:text-base max-w-prose mb-8">
+            <p className="text-white/80 leading-relaxed text-sm sm:text-base max-w-prose mb-8">
               Beyond training, Arco Angola deploys certified inspectors for field inspection services across three disciplines — NDT, Welding &amp; Painting and API inspection. All work is conducted to international standards by qualified, accredited personnel.
             </p>
 
@@ -214,7 +214,7 @@ export default function NdtServices() {
               {STATS.map(({ value, label }) => (
                 <div key={label}>
                   <div className="text-2xl sm:text-3xl font-black text-white leading-none mb-1">{value}</div>
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-white/40">{label}</div>
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-white/65">{label}</div>
                 </div>
               ))}
             </div>
@@ -267,23 +267,23 @@ export default function NdtServices() {
                 "shrink-0 flex items-center gap-2.5 px-5 py-3.5 text-[11px] font-black uppercase tracking-wider border-b-2 -mb-px transition-colors duration-150 whitespace-nowrap",
                 activeTab === key
                   ? "border-blue text-white"
-                  : "border-transparent text-white/40 hover:text-white/65",
+                  : "border-transparent text-white/60 hover:text-white/85",
               ].join(" ")}
             >
               {label}
               <span className={[
                 "text-[10px] font-bold px-1.5 py-0.5 leading-none",
-                activeTab === key ? "bg-blue text-white" : "bg-white/10 text-white/40",
+                activeTab === key ? "bg-blue text-white" : "bg-white/10 text-white/65",
               ].join(" ")}>{services.length}</span>
             </button>
           ))}
-          <span className="ml-auto pl-6 self-center text-[10px] text-white/25 uppercase tracking-widest shrink-0 hidden sm:block">
+          <span className="ml-auto pl-6 self-center text-[10px] text-white/55 uppercase tracking-widest shrink-0 hidden sm:block">
             {currentTab.std}
           </span>
         </div>
 
         {/* Standard tag on mobile */}
-        <div className="sm:hidden text-[10px] text-white/30 uppercase tracking-widest mb-5">
+        <div className="sm:hidden text-[10px] text-white/60 uppercase tracking-widest mb-5">
           {currentTab.std}
         </div>
 
@@ -302,7 +302,7 @@ export default function NdtServices() {
         {/* Footer note */}
         <div className="mt-8 flex items-start gap-3">
           <div className="w-0.5 h-8 bg-blue shrink-0 mt-0.5" />
-          <p className="text-white/40 text-xs leading-relaxed">
+          <p className="text-white/65 text-xs leading-relaxed">
             All inspections are performed by accredited personnel to applicable international standards (ISO 9712, ASNT SNT-TC-1A, TWI-CSWIP, BGAS, API 510/570/653). Procedures are client-specified and documented to full traceability requirements.
           </p>
         </div>

@@ -47,13 +47,13 @@ export default function WhyChooseUs() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-5">
             Why Choose Us
           </h2>
-          <p className="text-sm sm:text-base text-white/45 leading-relaxed">
+          <p className="text-sm sm:text-base text-white/70 leading-relaxed">
             We are built from the ground up to meet the specific demands of Angola&apos;s industrial sector — with global standards, local delivery and measurable outcomes.
           </p>
         </div>
 
         {/* Reasons grid */}
-        <div className="grid sm:grid-cols-2 gap-0 border border-white/10">
+        <div className="grid sm:grid-cols-2 gap-0 border border-white/15">
           {REASONS.map(({ title, desc }, i) => {
             const isBottomRow = i >= 2;
             const isRightCol = i % 2 === 1;
@@ -62,14 +62,14 @@ export default function WhyChooseUs() {
                 key={title}
                 className={[
                   "px-8 py-8 flex gap-4",
-                  !isBottomRow ? "border-b border-white/10" : "",
-                  !isRightCol ? "sm:border-r border-white/10" : "",
+                  !isBottomRow ? "border-b border-white/15" : "",
+                  !isRightCol ? "sm:border-r border-white/15" : "",
                 ].join(" ")}
               >
                 <CheckIcon />
                 <div>
-                  <h3 className="text-sm font-black text-white mb-2 leading-snug">{title}</h3>
-                  <p className="text-xs sm:text-sm text-white/40 leading-relaxed">{desc}</p>
+                  <h3 className="text-base font-black text-white mb-2 leading-snug">{title}</h3>
+                  <p className="text-sm text-white/70 leading-relaxed">{desc}</p>
                 </div>
               </div>
             );

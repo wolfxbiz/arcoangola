@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 xl:px-20 py-14 lg:py-20">
         <div className="max-w-2xl lg:max-w-3xl">
 
-          <span className="block text-white/60 text-xs font-bold uppercase tracking-widest mb-6">
+          <span className="block text-white/80 text-xs font-bold uppercase tracking-widest mb-6">
             {t("badge")}
           </span>
 
@@ -42,7 +42,7 @@ export default function Hero() {
             {t("titleSuffix")}
           </h1>
 
-          <p className="text-base sm:text-lg text-white/60 max-w-lg mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg text-white/80 max-w-lg mb-10 leading-relaxed">
             {t("subtitle")}
           </p>
 
@@ -70,7 +70,7 @@ export default function Hero() {
                 <span className="text-4xl sm:text-5xl font-black text-white leading-none tracking-tight">
                   {s.value}
                 </span>
-                <span className="text-[10px] text-white/40 uppercase tracking-widest font-bold leading-tight max-w-[52px]">
+                <span className="text-[10px] text-white/65 uppercase tracking-widest font-bold leading-tight max-w-[52px]">
                   {s.label}
                 </span>
               </div>
