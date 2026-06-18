@@ -1,44 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const CERTS = [
-  {
-    img: "/assets/corporate.webp",
-    imgAlt: "ISO Lead Auditor training session",
-    badge: "ISO 9001 · 14001 · 45001",
-    title: "ISO Lead Auditor Training",
-    tabKey: "iso",
-    description:
-      "Accredited Lead Auditor programmes for Quality (ISO 9001), Environmental (ISO 14001) and Occupational Health & Safety (ISO 45001) management systems — equipping professionals and organisations for audit, compliance and certification.",
-  },
-  {
-    img: "/assets/engineer.webp",
-    imgAlt: "ISO 9712 certified NDT engineer",
-    badge: "ISO 9712",
-    title: "ISO 9712 NDT Certification",
-    tabKey: "iso",
-    description:
-      "ISO 9712 Level 2 and Level 3 certification across all major NDT methods — conventional techniques, advanced methods (PAUT, TOFD) and specialised courses including ACFM and Eddy Current. The international benchmark for NDT personnel certification.",
-  },
-  {
-    img: "/assets/inspector.webp",
-    imgAlt: "Industrial NDT inspector on site",
-    badge: "ASNT-SNT-TC-1A",
-    title: "NDT Level II Certification",
-    tabKey: "ndt",
-    description:
-      "ASNT-accredited non-destructive testing courses covering VT, MT, PT, UT, RT and RTFI — the globally accepted standard for NDT personnel qualification in the oil, gas and industrial sectors. Recognised by employers and clients worldwide.",
-  },
-  {
-    img: "/assets/img-ndt-services.webp",
-    imgAlt: "Professional welder on pressure vessel",
-    badge: "TWI-CSWIP / BGAS",
-    title: "Welding & Painting Inspection",
-    tabKey: "welding",
-    description:
-      "Internationally recognised welding and painting inspection certifications from TWI — covering visual welding inspection (CSWIP 3.0, 3.1, 3.2) and protective coatings inspection (BGAS Grade 1 & 2). The global benchmark for inspectors in the oil, gas and construction sectors.",
-  },
+const CARD_IMAGES = [
+  { img: "/assets/corporate.webp",         imgAlt: "ISO Lead Auditor training session",       badge: "ISO 9001 · 14001 · 45001", titleKey: "card1Title" as const, descKey: "card1Desc" as const, tabKey: "iso" },
+  { img: "/assets/engineer.webp",          imgAlt: "ISO 9712 certified NDT engineer",          badge: "ISO 9712",                  titleKey: "card2Title" as const, descKey: "card2Desc" as const, tabKey: "iso" },
+  { img: "/assets/inspector.webp",         imgAlt: "Industrial NDT inspector on site",          badge: "ASNT-SNT-TC-1A",            titleKey: "card3Title" as const, descKey: "card3Desc" as const, tabKey: "ndt" },
+  { img: "/assets/img-ndt-services.webp",  imgAlt: "Professional welder on pressure vessel",   badge: "TWI-CSWIP / BGAS",          titleKey: "card4Title" as const, descKey: "card4Desc" as const, tabKey: "welding" },
 ] as const;
 
 function handleViewCourses(tabKey: string) {
@@ -47,6 +16,8 @@ function handleViewCourses(tabKey: string) {
 }
 
 export default function CertificationHighlights() {
+  const t = useTranslations("certHighlights");
+
   return (
     <section className="py-14 sm:py-20 lg:py-28 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,20 +25,20 @@ export default function CertificationHighlights() {
         {/* Header */}
         <div className="mb-12 sm:mb-16">
           <span className="block text-blue text-xs font-bold uppercase tracking-widest mb-4">
-            Globally Accredited Programmes
+            {t("badge")}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-navy mb-4">
-            What We Train
+            {t("heading")}
           </h2>
           <p className="text-gray-500 max-w-2xl text-sm sm:text-base leading-relaxed">
-            Every programme we deliver is backed by a globally recognised certification body — the same qualifications accepted on worksites and by employers worldwide, now available right here in Angola.
+            {t("intro")}
           </p>
         </div>
 
         {/* 2×2 grid */}
         <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-8">
-          {CERTS.map(({ img, imgAlt, badge, title, tabKey, description }) => (
-            <div key={title} className="border border-gray-200 flex flex-col overflow-hidden">
+          {CARD_IMAGES.map(({ img, imgAlt, badge, titleKey, descKey, tabKey }) => (
+            <div key={titleKey} className="border border-gray-200 flex flex-col overflow-hidden">
               <div className="relative h-56 sm:h-64 shrink-0">
                 <Image
                   src={img}
@@ -81,16 +52,16 @@ export default function CertificationHighlights() {
                   {badge}
                 </span>
                 <h3 className="text-xl font-black text-navy leading-tight">
-                  {title}
+                  {t(titleKey)}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed flex-1">
-                  {description}
+                  {t(descKey)}
                 </p>
                 <button
                   onClick={() => handleViewCourses(tabKey)}
                   className="self-start mt-2 inline-flex items-center gap-1.5 text-xs font-black text-blue hover:text-navy uppercase tracking-widest transition-colors"
                 >
-                  View Courses
+                  {t("viewCourses")}
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -115,16 +86,16 @@ export default function CertificationHighlights() {
               COGIP · CMQIP — Globally Recognised
             </span>
             <h3 className="text-2xl lg:text-3xl font-black text-white leading-tight">
-              Certified QC Professional Training
+              {t("card5Title")}
             </h3>
-            <p className="text-white/60 text-sm leading-relaxed max-w-2xl">
-              Angola&apos;s only provider of comprehensive Certified Oil &amp; Gas Industry Professional (COGIP) and Certified Mechanical QA/QC Industry Professional (CMQIP) programmes — intensive, industry-focused tracks built to globally recognised standards, producing QC professionals who are work-ready from day one.
+            <p className="text-white/70 text-sm leading-relaxed max-w-2xl">
+              {t("card5Desc")}
             </p>
             <a
               href="#premium"
               className="self-start mt-3 inline-flex items-center gap-2 px-5 py-2.5 bg-blue hover:bg-white hover:text-navy text-white font-bold text-sm transition-colors"
             >
-              View Programmes
+              {t("viewProgrammes")}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

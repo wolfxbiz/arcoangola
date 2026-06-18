@@ -1,5 +1,8 @@
 {
   "nav": {
+    "programmes": "Programmes",
+    "coursesCatalogue": "Catalogue de Cours",
+    "ndtServices": "Services CND",
     "courses": "Cours",
     "corporate": "Entreprises",
     "contact": "Contact",
@@ -49,6 +52,11 @@
     "filterNdt": "Cours ASNT-CND",
     "filterApi": "Inspection API",
     "filterIso": "ISO Auditeur Principal & 9712 CND",
+    "coursesLabel": "cours",
+    "isoSubgroup1": "Formation et Certification Auditeur Principal ISO",
+    "isoSubgroup2": "ISO 9712 CND Niveau 2",
+    "isoSubgroup3": "ISO 9712 CND Niveau 3",
+    "isoSubgroup4": "Cours ISO 9712 Supplémentaires",
     "duration": "Durée",
     "level": "Niveau",
     "learnMore": "En Savoir Plus",
@@ -367,6 +375,32 @@
         "category": "isoSpecialized"
       }
     }
+  },
+  "certificates": {
+    "badge": "Accréditation Internationale",
+    "heading": "Nos Accréditations ISO",
+    "intro": "Arco Angola détient trois certifications de systèmes de management ISO internationalement reconnues — auditées et vérifiées de manière indépendante, les mêmes normes exigées par les opérateurs et clients mondiaux dans les secteurs de l'énergie et de l'industrie.",
+    "cert1Sub": "Système de Management de la Qualité",
+    "cert2Sub": "Système de Management Environnemental",
+    "cert3Sub": "Santé et Sécurité au Travail",
+    "close": "Fermer"
+  },
+  "certHighlights": {
+    "badge": "Programmes Mondialement Accrédités",
+    "heading": "Ce Que Nous Formons",
+    "intro": "Chaque programme que nous dispensons est soutenu par un organisme de certification mondialement reconnu — les mêmes qualifications acceptées sur les chantiers et par les employeurs du monde entier, maintenant disponibles ici en Angola.",
+    "card1Title": "Formation Auditeur Principal ISO",
+    "card1Desc": "Programmes accrédités d'Auditeur Principal pour les systèmes de management de la Qualité (ISO 9001), de l'Environnement (ISO 14001) et de la Santé et Sécurité au Travail (ISO 45001) — équipant les professionnels et les organisations pour l'audit, la conformité et la certification.",
+    "card2Title": "Certification ISO 9712 CND",
+    "card2Desc": "Certification ISO 9712 Niveau 2 et Niveau 3 dans toutes les principales méthodes CND — techniques conventionnelles, méthodes avancées (PAUT, TOFD) et cours spécialisés incluant l'ACFM et les Courants de Foucault. La référence internationale pour la certification du personnel CND.",
+    "card3Title": "Certification CND Niveau II",
+    "card3Desc": "Cours d'essais non destructifs accrédités ASNT couvrant VT, MT, PT, UT, RT et RTFI — la norme mondialement acceptée pour la qualification du personnel CND dans les secteurs pétrolier, gazier et industriel. Reconnu par les employeurs et les clients dans le monde entier.",
+    "card4Title": "Inspection de Soudage et de Peinture",
+    "card4Desc": "Certifications de contrôle de soudage et de peinture internationalement reconnues de TWI — couvrant l'inspection visuelle de soudage (CSWIP 3.0, 3.1, 3.2) et l'inspection des revêtements de protection (BGAS Grade 1 et 2). La référence mondiale pour les inspecteurs dans les secteurs pétrolier, gazier et de la construction.",
+    "card5Title": "Formation de Professionnel QC Certifié",
+    "card5Desc": "Le seul fournisseur en Angola de programmes complets de Professionnel Certifié de l'Industrie Pétrolière et Gazière (COGIP) et de Professionnel Certifié QA/QC Mécanique Industriel (CMQIP) — des parcours intensifs et axés sur l'industrie, construits selon des normes mondialement reconnues, produisant des professionnels QC prêts à travailler dès le premier jour.",
+    "viewCourses": "Voir les Cours",
+    "viewProgrammes": "Voir les Programmes"
   },
   "ndtServices": {
     "sectionBadge": "Services d'Inspection de Terrain",

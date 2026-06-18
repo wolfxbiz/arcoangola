@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
-const CERTS = [
-  { src: "/assets/cert-qms.webp",   label: "ISO 9001:2015", sub: "Quality Management System" },
-  { src: "/assets/cert-ems.webp",   label: "ISO 14001:2015", sub: "Environmental Management System" },
-  { src: "/assets/cert-ohsms.webp", label: "ISO 45001:2018", sub: "Occupational Health & Safety" },
-] as const;
+const CERT_IMAGES = [
+  { src: "/assets/cert-qms.webp",   label: "ISO 9001:2015", subKey: "cert1Sub" as const },
+  { src: "/assets/cert-ems.webp",   label: "ISO 14001:2015", subKey: "cert2Sub" as const },
+  { src: "/assets/cert-ohsms.webp", label: "ISO 45001:2018", subKey: "cert3Sub" as const },
+];
 
 export default function Certificates() {
+  const t = useTranslations("certificates");
   const [lightbox, setLightbox] = useState<string | null>(null);
 
   return (
@@ -19,18 +21,18 @@ export default function Certificates() {
 
           <div className="mb-12">
             <span className="block text-blue text-xs font-bold uppercase tracking-widest mb-4">
-              Internationally Accredited
+              {t("badge")}
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-navy mb-4">
-              Our ISO Accreditations
+              {t("heading")}
             </h2>
             <p className="text-gray-500 max-w-2xl text-sm sm:text-base leading-relaxed">
-              Arco Angola holds three internationally recognised ISO management system certifications — independently audited and verified, the same standards required by global operators and clients across the energy and industrial sectors.
+              {t("intro")}
             </p>
           </div>
 
           <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-10">
-            {CERTS.map(({ src, label, sub }) => (
+            {CERT_IMAGES.map(({ src, label, subKey }) => (
               <button
                 key={src}
                 onClick={() => setLightbox(src)}
@@ -55,7 +57,7 @@ export default function Certificates() {
                 </div>
                 <div className="px-4 py-3 border-t border-gray-100">
                   <p className="text-[11px] font-black text-blue uppercase tracking-widest leading-tight">{label}</p>
-                  <p className="text-[10px] text-gray-400 mt-0.5 leading-tight hidden sm:block">{sub}</p>
+                  <p className="text-[10px] text-gray-400 mt-0.5 leading-tight hidden sm:block">{t(subKey)}</p>
                 </div>
               </button>
             ))}
@@ -75,7 +77,7 @@ export default function Certificates() {
               onClick={() => setLightbox(null)}
               className="absolute -top-9 right-0 text-white/60 hover:text-white font-bold text-xs uppercase tracking-widest flex items-center gap-2"
             >
-              Close
+              {t("close")}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>

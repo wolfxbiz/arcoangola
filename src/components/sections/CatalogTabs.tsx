@@ -19,6 +19,11 @@ type Props = {
     filterNdt: string;
     filterApi: string;
     filterIso: string;
+    coursesLabel: string;
+    isoSubgroup1: string;
+    isoSubgroup2: string;
+    isoSubgroup3: string;
+    isoSubgroup4: string;
     level: string;
     learnMore: string;
     badge: string;
@@ -37,12 +42,7 @@ const CATEGORY_GROUPS: Record<string, string> = {
   isoSpecialized: "iso",
 };
 
-const ISO_SUBGROUPS = [
-  { key: "isoSystems",     label: "ISO Lead Auditor Training & Certification Courses" },
-  { key: "isoNdt2",        label: "ISO 9712 NDT Level 2" },
-  { key: "isoNdt3",        label: "ISO 9712 NDT Level 3" },
-  { key: "isoSpecialized", label: "Additional ISO 9712 Courses" },
-];
+// ISO_SUBGROUPS labels are passed via props (translated at the server level)
 
 // Certification body names shown in the sidebar / mobile grid
 const SECTION_BODIES: Record<string, string> = {
@@ -66,12 +66,12 @@ function CourseRow({ course }: { course: Course }) {
   );
 }
 
-function MobileIsoAccordion({ courses }: { courses: Course[] }) {
+function MobileIsoAccordion({ courses, subgroups }: { courses: Course[]; subgroups: { key: string; label: string }[] }) {
   const [open, setOpen] = useState<string>("isoSystems");
 
   return (
     <div>
-      {ISO_SUBGROUPS.map(({ key, label }) => {
+      {subgroups.map(({ key, label }) => {
         const sub = courses.filter((c) => c.category === key);
         if (sub.length === 0) return null;
         const isOpen = open === key;
@@ -106,10 +106,10 @@ function MobileIsoAccordion({ courses }: { courses: Course[] }) {
   );
 }
 
-function IsoCoursePanel({ courses }: { courses: Course[] }) {
+function IsoCoursePanel({ courses, subgroups }: { courses: Course[]; subgroups: { key: string; label: string }[] }) {
   return (
     <div>
-      {ISO_SUBGROUPS.map(({ key, label }) => {
+      {subgroups.map(({ key, label }) => {
         const sub = courses.filter((c) => c.category === key);
         if (sub.length === 0) return null;
         return (
@@ -142,6 +142,13 @@ export default function CatalogTabs({ courses, labels }: Props) {
     window.addEventListener("setCatalogTab", handler);
     return () => window.removeEventListener("setCatalogTab", handler);
   }, []);
+
+  const isoSubgroups = [
+    { key: "isoSystems",     label: labels.isoSubgroup1 },
+    { key: "isoNdt2",        label: labels.isoSubgroup2 },
+    { key: "isoNdt3",        label: labels.isoSubgroup3 },
+    { key: "isoSpecialized", label: labels.isoSubgroup4 },
+  ];
 
   const sections = [
     { key: "iso",     label: labels.filterIso },
@@ -201,7 +208,7 @@ export default function CatalogTabs({ courses, labels }: Props) {
                     {label}
                   </span>
                   <span className={`text-[10px] mt-1 font-semibold ${isActive ? "text-white/50" : "text-gray-400"}`}>
-                    {count} courses
+                    {count} {labels.coursesLabel}
                   </span>
                 </button>
               );
@@ -210,7 +217,7 @@ export default function CatalogTabs({ courses, labels }: Props) {
 
           <div className="border border-gray-200 bg-white">
             {active === "iso"
-              ? <MobileIsoAccordion courses={courses} />
+              ? <MobileIsoAccordion courses={courses} subgroups={isoSubgroups} />
               : <div className="divide-y divide-gray-100">{visible.map((c) => <CourseRow key={c.id} course={c} />)}</div>
             }
           </div>
@@ -239,7 +246,7 @@ export default function CatalogTabs({ courses, labels }: Props) {
                     {label}
                   </span>
                   <span className={`block text-[11px] mt-1.5 font-semibold ${isActive ? "text-white/50" : "text-gray-400"}`}>
-                    {count} courses
+                    {count} {labels.coursesLabel}
                   </span>
                 </button>
               );
@@ -249,7 +256,7 @@ export default function CatalogTabs({ courses, labels }: Props) {
           {/* Course panel */}
           <div className="flex-1 bg-white min-h-[320px]">
             {active === "iso"
-              ? <IsoCoursePanel courses={courses} />
+              ? <IsoCoursePanel courses={courses} subgroups={isoSubgroups} />
               : <div className="divide-y divide-gray-100">{visible.map((c) => <CourseRow key={c.id} course={c} />)}</div>
             }
           </div>

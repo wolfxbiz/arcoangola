@@ -57,9 +57,9 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-8">
             {[
-              { href: "#programmes",  label: "Programmes" },
-              { href: "#courses",     label: `${t("courses")} Catalogue` },
-              { href: "#ndt-services", label: "NDT Services" },
+              { href: "#programmes",  label: t("programmes") },
+              { href: "#courses",     label: t("coursesCatalogue") },
+              { href: "#ndt-services", label: t("ndtServices") },
               { href: "#corporate",   label: t("corporate") },
               { href: "#contact",     label: t("contact") },
             ].map((link) => (
@@ -132,9 +132,9 @@ export default function Navbar() {
         <div className="lg:hidden bg-white border-t border-gray-200 px-4 pb-6 pt-4">
           <div className="flex flex-col gap-1">
             {[
-              { href: "#programmes",   label: "Programmes" },
-              { href: "#courses",      label: t("courses") },
-              { href: "#ndt-services", label: "NDT Services" },
+              { href: "#programmes",   label: t("programmes") },
+              { href: "#courses",      label: t("coursesCatalogue") },
+              { href: "#ndt-services", label: t("ndtServices") },
               { href: "#corporate",    label: t("corporate") },
               { href: "#contact",      label: t("contact") },
             ].map((link) => (

@@ -1,5 +1,8 @@
 {
   "nav": {
+    "programmes": "Programas",
+    "coursesCatalogue": "Catálogo de Cursos",
+    "ndtServices": "Serviços NDT",
     "courses": "Cursos",
     "corporate": "Empresas",
     "contact": "Contacto",
@@ -49,6 +52,11 @@
     "filterNdt": "Cursos ASNT-END",
     "filterApi": "Inspeção API",
     "filterIso": "ISO Auditor Líder & 9712 END",
+    "coursesLabel": "cursos",
+    "isoSubgroup1": "Formação e Certificação de Auditor-Líder ISO",
+    "isoSubgroup2": "ISO 9712 END Nível 2",
+    "isoSubgroup3": "ISO 9712 END Nível 3",
+    "isoSubgroup4": "Cursos Adicionais ISO 9712",
     "duration": "Duração",
     "level": "Nível",
     "learnMore": "Saber Mais",
@@ -367,6 +375,32 @@
         "category": "isoSpecialized"
       }
     }
+  },
+  "certificates": {
+    "badge": "Acreditação Internacional",
+    "heading": "As Nossas Acreditações ISO",
+    "intro": "A Arco Angola possui três certificações de sistemas de gestão ISO internacionalmente reconhecidas — auditadas e verificadas de forma independente, os mesmos padrões exigidos por operadores e clientes globais nos sectores de energia e indústria.",
+    "cert1Sub": "Sistema de Gestão da Qualidade",
+    "cert2Sub": "Sistema de Gestão Ambiental",
+    "cert3Sub": "Saúde e Segurança Ocupacional",
+    "close": "Fechar"
+  },
+  "certHighlights": {
+    "badge": "Programas Globalmente Acreditados",
+    "heading": "O Que Formamos",
+    "intro": "Cada programa que entregamos é apoiado por um organismo de certificação globalmente reconhecido — as mesmas qualificações aceites em obras e por empregadores em todo o mundo, agora disponíveis aqui em Angola.",
+    "card1Title": "Formação de Auditor-Líder ISO",
+    "card1Desc": "Programas acreditados de Auditor-Líder para sistemas de gestão de Qualidade (ISO 9001), Ambiental (ISO 14001) e de Saúde e Segurança Ocupacional (ISO 45001) — capacitando profissionais e organizações para auditoria, conformidade e certificação.",
+    "card2Title": "Certificação ISO 9712 END",
+    "card2Desc": "Certificação ISO 9712 Nível 2 e Nível 3 em todos os principais métodos END — técnicas convencionais, métodos avançados (PAUT, TOFD) e cursos especializados incluindo ACFM e Correntes Parasitas. O referencial internacional para a certificação de pessoal de END.",
+    "card3Title": "Certificação END Nível II",
+    "card3Desc": "Cursos de ensaios não destrutivos acreditados pela ASNT abrangendo VT, MT, PT, UT, RT e RTFI — o padrão globalmente aceite para a qualificação de pessoal END nos sectores de petróleo, gás e indústria. Reconhecido por empregadores e clientes em todo o mundo.",
+    "card4Title": "Inspecção de Soldadura e Pintura",
+    "card4Desc": "Certificações internacionalmente reconhecidas de inspecção de soldadura e pintura da TWI — cobrindo inspecção visual de soldadura (CSWIP 3.0, 3.1, 3.2) e inspecção de revestimentos protectores (BGAS Grau 1 e 2). O referencial mundial para inspectores nos sectores de petróleo, gás e construção.",
+    "card5Title": "Formação de Profissional QC Certificado",
+    "card5Desc": "O único fornecedor em Angola de programas abrangentes de Profissional Certificado da Indústria de Petróleo e Gás (COGIP) e Profissional Certificado de QA/QC Mecânico Industrial (CMQIP) — percursos intensivos e focados na indústria, construídos segundo padrões globalmente reconhecidos, produzindo profissionais QC prontos para trabalhar desde o primeiro dia.",
+    "viewCourses": "Ver Cursos",
+    "viewProgrammes": "Ver Programas"
   },
   "ndtServices": {
     "sectionBadge": "Serviços de Inspecção de Campo",

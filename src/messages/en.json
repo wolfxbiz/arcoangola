@@ -1,5 +1,8 @@
 {
   "nav": {
+    "programmes": "Programmes",
+    "coursesCatalogue": "Course Catalogue",
+    "ndtServices": "NDT Services",
     "courses": "Courses",
     "corporate": "Corporate",
     "contact": "Contact",
@@ -49,6 +52,11 @@
     "filterNdt": "ASNT-NDT Courses",
     "filterApi": "API Inspection",
     "filterIso": "ISO Lead Auditor & 9712 NDT",
+    "coursesLabel": "courses",
+    "isoSubgroup1": "ISO Lead Auditor Training & Certification Courses",
+    "isoSubgroup2": "ISO 9712 NDT Level 2",
+    "isoSubgroup3": "ISO 9712 NDT Level 3",
+    "isoSubgroup4": "Additional ISO 9712 Courses",
     "duration": "Duration",
     "level": "Level",
     "learnMore": "Learn More",
@@ -367,6 +375,32 @@
         "category": "isoSpecialized"
       }
     }
+  },
+  "certificates": {
+    "badge": "Internationally Accredited",
+    "heading": "Our ISO Accreditations",
+    "intro": "Arco Angola holds three internationally recognised ISO management system certifications — independently audited and verified, the same standards required by global operators and clients across the energy and industrial sectors.",
+    "cert1Sub": "Quality Management System",
+    "cert2Sub": "Environmental Management System",
+    "cert3Sub": "Occupational Health & Safety",
+    "close": "Close"
+  },
+  "certHighlights": {
+    "badge": "Globally Accredited Programmes",
+    "heading": "What We Train",
+    "intro": "Every programme we deliver is backed by a globally recognised certification body — the same qualifications accepted on worksites and by employers worldwide, now available right here in Angola.",
+    "card1Title": "ISO Lead Auditor Training",
+    "card1Desc": "Accredited Lead Auditor programmes for Quality (ISO 9001), Environmental (ISO 14001) and Occupational Health & Safety (ISO 45001) management systems — equipping professionals and organisations for audit, compliance and certification.",
+    "card2Title": "ISO 9712 NDT Certification",
+    "card2Desc": "ISO 9712 Level 2 and Level 3 certification across all major NDT methods — conventional techniques, advanced methods (PAUT, TOFD) and specialised courses including ACFM and Eddy Current. The international benchmark for NDT personnel certification.",
+    "card3Title": "NDT Level II Certification",
+    "card3Desc": "ASNT-accredited non-destructive testing courses covering VT, MT, PT, UT, RT and RTFI — the globally accepted standard for NDT personnel qualification in the oil, gas and industrial sectors. Recognised by employers and clients worldwide.",
+    "card4Title": "Welding & Painting Inspection",
+    "card4Desc": "Internationally recognised welding and painting inspection certifications from TWI — covering visual welding inspection (CSWIP 3.0, 3.1, 3.2) and protective coatings inspection (BGAS Grade 1 & 2). The global benchmark for inspectors in the oil, gas and construction sectors.",
+    "card5Title": "Certified QC Professional Training",
+    "card5Desc": "Angola's only provider of comprehensive Certified Oil & Gas Industry Professional (COGIP) and Certified Mechanical QA/QC Industry Professional (CMQIP) programmes — intensive, industry-focused tracks built to globally recognised standards, producing QC professionals who are work-ready from day one.",
+    "viewCourses": "View Courses",
+    "viewProgrammes": "View Programmes"
   },
   "ndtServices": {
     "sectionBadge": "Field Inspection Services",
