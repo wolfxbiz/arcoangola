@@ -368,6 +368,47 @@
       }
     }
   },
+  "ndtServices": {
+    "sectionBadge": "Serviços de Inspecção de Campo",
+    "heading": "Inspecção e",
+    "headingHighlight": "Serviços de Campo",
+    "intro": "Para além da formação, a Arco Angola destacar inspectores certificados para serviços de inspecção de campo em três disciplinas — END, Soldadura e Pintura e inspecção API. Todo o trabalho é realizado segundo normas internacionais por pessoal qualificado e acreditado.",
+    "statNdt": "Métodos END",
+    "statWelding": "Serviços de Soldadura",
+    "statApi": "Inspecções API",
+    "cta": "Solicitar uma Inspecção",
+    "certifiedTo": "Certificado Por",
+    "tab1": "Inspecção END",
+    "tab2": "Soldadura e Pintura",
+    "tab3": "Inspecção API",
+    "footerNote": "Todas as inspecções são realizadas por pessoal acreditado segundo as normas internacionais aplicáveis (ISO 9712, ASNT SNT-TC-1A, TWI-CSWIP, BGAS, API 510/570/653). Os procedimentos são especificados pelo cliente e documentados com rastreabilidade total."
+  },
+  "about": {
+    "badge": "Sobre a Arco Angola",
+    "heading": "Quem Somos",
+    "p1": "A Arco Angola é uma organização orientada para a competência, especializada em Engenharia de QA/QC, Ensaios Não Destrutivos, Integridade de Activos e Programas Internacionais de Certificação. Com sede em Angola, servimos os sectores de petróleo e gás, construção e indústria em toda a região.",
+    "p2": "Entregamos formação estruturada e competências certificadas alinhadas com os requisitos globais de engenharia — os mesmos padrões exigidos em obras internacionais e reconhecidos por operadores e empregadores em todo o mundo. Enquanto primeiro centro de certificação industrial globalmente acreditado de Angola, existimos para fechar a lacuna entre a capacidade da mão-de-obra local e as expectativas da indústria internacional.",
+    "identityLabel": "A Nossa Identidade",
+    "pillar1Title": "Fornecedor Internacional de Formação e Certificação",
+    "pillar1Desc": "Entregando programas de certificação globalmente reconhecidos nas disciplinas de END, Soldadura, API e ISO.",
+    "pillar2Title": "Autoridade em QA/QC e Inspecção de END",
+    "pillar2Desc": "Serviços de inspecção de campo realizados por pessoal qualificado e acreditado segundo normas internacionais.",
+    "pillar3Title": "Suporte em Integridade de Activos e Engenharia",
+    "pillar3Desc": "Apoiando operadores e contratantes EPC com soluções estruturadas de garantia de qualidade e integridade."
+  },
+  "whyUs": {
+    "badge": "Por Que Arco Angola",
+    "heading": "Por Que Nos Escolher",
+    "subtitle": "Somos construídos de raiz para responder às exigências específicas do sector industrial de Angola — com padrões globais, entrega local e resultados mensuráveis.",
+    "reason1Title": "Formação de Padrão Internacional",
+    "reason1Desc": "Todos os programas são estruturados em torno de normas globalmente reconhecidas, incluindo TWI-CSWIP, ASNT, API e ISO — as mesmas qualificações exigidas nos maiores projectos a nível mundial.",
+    "reason2Title": "Certificação Baseada em Competências",
+    "reason2Desc": "Medimos o que os candidatos conseguem fazer, não apenas o que sabem. Cada percurso de certificação é construído em torno de competências demonstradas e resultados de desempenho prático.",
+    "reason3Title": "Instrutores com Experiência na Indústria",
+    "reason3Desc": "Os nossos instrutores trazem experiência real de campo em petróleo e gás, construção e operações industriais — não apenas teoria de sala de aula, mas especialização aplicada comprovada.",
+    "reason4Title": "Especialização em QA/QC Orientada a Projectos",
+    "reason4Desc": "A nossa formação em QA/QC e inspecção é desenvolvida directamente a partir dos requisitos dos projectos e especificações dos clientes, garantindo que os formandos estejam prontos desde o primeiro dia."
+  },
   "dualAudience": {
     "badge": "Para Quem?",
     "title": "Formação para Todos os Objetivos",

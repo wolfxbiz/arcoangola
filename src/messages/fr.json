@@ -368,6 +368,47 @@
       }
     }
   },
+  "ndtServices": {
+    "sectionBadge": "Services d'Inspection de Terrain",
+    "heading": "Inspection et",
+    "headingHighlight": "Services de Terrain",
+    "intro": "Au-delà de la formation, Arco Angola déploie des inspecteurs certifiés pour des services d'inspection de terrain dans trois disciplines — CND, Soudage et Peinture et inspection API. Tous les travaux sont réalisés selon les normes internationales par du personnel qualifié et accrédité.",
+    "statNdt": "Méthodes CND",
+    "statWelding": "Services de Soudage",
+    "statApi": "Inspections API",
+    "cta": "Demander une Inspection",
+    "certifiedTo": "Certifié Par",
+    "tab1": "Inspection CND",
+    "tab2": "Soudage et Peinture",
+    "tab3": "Inspection API",
+    "footerNote": "Toutes les inspections sont effectuées par du personnel accrédité selon les normes internationales applicables (ISO 9712, ASNT SNT-TC-1A, TWI-CSWIP, BGAS, API 510/570/653). Les procédures sont spécifiées par le client et documentées avec une traçabilité complète."
+  },
+  "about": {
+    "badge": "À propos d'Arco Angola",
+    "heading": "Qui Sommes-Nous",
+    "p1": "Arco Angola est une organisation axée sur les compétences, spécialisée dans l'ingénierie QA/QC, les essais non destructifs, l'intégrité des actifs et les programmes internationaux de certification. Basés en Angola, nous servons les secteurs pétrolier et gazier, la construction et l'industrie dans toute la région.",
+    "p2": "Nous dispensons une formation structurée et des compétences certifiées conformes aux exigences mondiales en matière d'ingénierie — les mêmes normes exigées sur les chantiers internationaux et reconnues par les opérateurs et les employeurs du monde entier. En tant que premier centre de certification industrielle mondialement accrédité d'Angola, nous existons pour combler le fossé entre les capacités de la main-d'œuvre locale et les attentes de l'industrie internationale.",
+    "identityLabel": "Notre Identité",
+    "pillar1Title": "Fournisseur International de Formation et Certification",
+    "pillar1Desc": "Dispensant des programmes de certification mondialement reconnus dans les disciplines CND, Soudage, API et ISO.",
+    "pillar2Title": "Autorité en QA/QC et Inspection CND",
+    "pillar2Desc": "Services d'inspection sur le terrain assurés par du personnel qualifié et accrédité selon les normes internationales.",
+    "pillar3Title": "Support en Intégrité des Actifs et Ingénierie",
+    "pillar3Desc": "Soutenant les opérateurs et les entrepreneurs EPC avec des solutions structurées d'assurance qualité et d'intégrité."
+  },
+  "whyUs": {
+    "badge": "Pourquoi Arco Angola",
+    "heading": "Pourquoi Nous Choisir",
+    "subtitle": "Nous sommes construits de fond en comble pour répondre aux exigences spécifiques du secteur industriel angolais — avec des normes mondiales, une livraison locale et des résultats mesurables.",
+    "reason1Title": "Formation aux Normes Internationales",
+    "reason1Desc": "Tous les programmes sont structurés autour de normes mondialement reconnues, notamment TWI-CSWIP, ASNT, API et ISO — les mêmes qualifications exigées sur les grands projets mondiaux.",
+    "reason2Title": "Certification Basée sur les Compétences",
+    "reason2Desc": "Nous mesurons ce que les candidats savent faire, pas seulement ce qu'ils savent. Chaque parcours de certification est construit autour de compétences démontrées et de résultats de performance pratique.",
+    "reason3Title": "Instructeurs Expérimentés dans l'Industrie",
+    "reason3Desc": "Nos instructeurs apportent une expérience terrain réelle dans le pétrole et le gaz, la construction et les opérations industrielles — pas seulement de la théorie en salle de classe, mais une expertise appliquée prouvée.",
+    "reason4Title": "Expertise QA/QC Axée sur les Projets",
+    "reason4Desc": "Notre formation en QA/QC et en inspection est développée directement à partir des exigences des projets et des spécifications des clients, garantissant que les diplômés sont prêts dès le premier jour."
+  },
   "dualAudience": {
     "badge": "Pour Qui ?",
     "title": "Formation pour Tous les Objectifs",

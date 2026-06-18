@@ -368,6 +368,47 @@
       }
     }
   },
+  "ndtServices": {
+    "sectionBadge": "Field Inspection Services",
+    "heading": "Inspection &",
+    "headingHighlight": "Field Services",
+    "intro": "Beyond training, Arco Angola deploys certified inspectors for field inspection services across three disciplines — NDT, Welding & Painting and API inspection. All work is conducted to international standards by qualified, accredited personnel.",
+    "statNdt": "NDT Methods",
+    "statWelding": "Welding Services",
+    "statApi": "API Inspections",
+    "cta": "Request an Inspection",
+    "certifiedTo": "Certified To",
+    "tab1": "NDT Inspection",
+    "tab2": "Welding & Painting",
+    "tab3": "API Inspection",
+    "footerNote": "All inspections are performed by accredited personnel to applicable international standards (ISO 9712, ASNT SNT-TC-1A, TWI-CSWIP, BGAS, API 510/570/653). Procedures are client-specified and documented to full traceability requirements."
+  },
+  "about": {
+    "badge": "About Arco Angola",
+    "heading": "Who We Are",
+    "p1": "Arco Angola is a competency-driven training and inspection organisation specialising in QA/QC Engineering, Non-Destructive Testing, Asset Integrity and International Certification Programmes. Based in Angola, we serve the oil & gas, construction and industrial sectors across the region.",
+    "p2": "We deliver structured training and certified competence aligned with global engineering requirements — the same standards demanded on international worksites and recognised by operators and employers worldwide. As Angola's first globally accredited industrial certification centre, we exist to close the gap between local workforce capability and international industry expectations.",
+    "identityLabel": "Our Identity",
+    "pillar1Title": "International Training & Certification Provider",
+    "pillar1Desc": "Delivering globally recognised certification programmes across NDT, Welding, API and ISO disciplines.",
+    "pillar2Title": "QA/QC & NDT Inspection Authority",
+    "pillar2Desc": "Field inspection services carried out by qualified, accredited personnel to international standards.",
+    "pillar3Title": "Asset Integrity & Engineering Support",
+    "pillar3Desc": "Supporting operators and EPC contractors with structured quality assurance and integrity solutions."
+  },
+  "whyUs": {
+    "badge": "Why Arco Angola",
+    "heading": "Why Choose Us",
+    "subtitle": "We are built from the ground up to meet the specific demands of Angola's industrial sector — with global standards, local delivery and measurable outcomes.",
+    "reason1Title": "International Standard Training",
+    "reason1Desc": "All programmes are structured around globally recognised standards including TWI-CSWIP, ASNT, API and ISO — the same qualifications demanded on major projects worldwide.",
+    "reason2Title": "Competency-Based Certification",
+    "reason2Desc": "We measure what candidates can do, not just what they know. Every certification pathway is built around demonstrated competence and practical performance outcomes.",
+    "reason3Title": "Industry-Experienced Instructors",
+    "reason3Desc": "Our instructors bring real-world field experience from oil & gas, construction and industrial operations — not just classroom theory, but proven applied expertise.",
+    "reason4Title": "Project-Driven QA/QC Expertise",
+    "reason4Desc": "Our QA/QC and inspection training is developed directly from project requirements and client specifications, ensuring graduates are ready from day one on the job."
+  },
   "dualAudience": {
     "badge": "Who Is This For?",
     "title": "Training for Every Goal",

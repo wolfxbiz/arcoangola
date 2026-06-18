@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const NDT = [
   {
@@ -99,18 +100,6 @@ const API = [
 type Tab = "ndt" | "welding" | "api";
 type AnyService = (typeof NDT | typeof WELDING | typeof API)[number];
 
-const TABS: { key: Tab; label: string; std: string; services: readonly AnyService[] }[] = [
-  { key: "ndt",     label: "NDT Inspection",     std: "ISO 9712 · ASNT",              services: NDT },
-  { key: "welding", label: "Welding & Painting",  std: "TWI-CSWIP · BGAS",            services: WELDING },
-  { key: "api",     label: "API Inspection",      std: "API 510 · 570 · 653",         services: API },
-];
-
-const STATS = [
-  { value: String(NDT.length),     label: "NDT Methods" },
-  { value: String(WELDING.length), label: "Welding Services" },
-  { value: String(API.length),     label: "API Inspections" },
-];
-
 function AccordionRow({
   service,
   isOpen,
@@ -173,10 +162,23 @@ function AccordionRow({
 }
 
 export default function NdtServices() {
+  const t = useTranslations("ndtServices");
   const [activeTab, setActiveTab] = useState<Tab>("ndt");
   const [openRow, setOpenRow] = useState<string | null>(null);
 
-  const currentTab = TABS.find((t) => t.key === activeTab)!;
+  const TABS_TRANSLATED: { key: Tab; label: string; std: string; services: readonly AnyService[] }[] = [
+    { key: "ndt",     label: t("tab1"), std: "ISO 9712 · ASNT",          services: NDT },
+    { key: "welding", label: t("tab2"), std: "TWI-CSWIP · BGAS",         services: WELDING },
+    { key: "api",     label: t("tab3"), std: "API 510 · 570 · 653",      services: API },
+  ];
+
+  const STATS = [
+    { value: String(NDT.length),     label: t("statNdt") },
+    { value: String(WELDING.length), label: t("statWelding") },
+    { value: String(API.length),     label: t("statApi") },
+  ];
+
+  const currentTab = TABS_TRANSLATED.find((tab) => tab.key === activeTab)!;
 
   function handleTabChange(key: Tab) {
     setActiveTab(key);
@@ -198,16 +200,16 @@ export default function NdtServices() {
           <div className="py-16 sm:py-20 lg:py-24 lg:pr-16 flex flex-col justify-center">
             <span className="inline-flex items-center gap-2 text-blue text-[11px] font-black uppercase tracking-widest mb-5">
               <span className="block w-6 h-px bg-blue" />
-              Field Inspection Services
+              {t("sectionBadge")}
             </span>
 
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.05] mb-6">
-              Inspection &amp;<br />
-              <span className="text-blue">Field Services</span>
+              {t("heading")}<br />
+              <span className="text-blue">{t("headingHighlight")}</span>
             </h2>
 
             <p className="text-white/80 leading-relaxed text-sm sm:text-base max-w-prose mb-8">
-              Beyond training, Arco Angola deploys certified inspectors for field inspection services across three disciplines — NDT, Welding &amp; Painting and API inspection. All work is conducted to international standards by qualified, accredited personnel.
+              {t("intro")}
             </p>
 
             <div className="flex gap-6 sm:gap-10 mb-10">
@@ -223,7 +225,7 @@ export default function NdtServices() {
               href="#contact"
               className="self-start inline-flex items-center gap-2.5 px-7 py-4 bg-blue text-white font-black text-sm uppercase tracking-wider hover:bg-white hover:text-navy transition-colors duration-200"
             >
-              Request an Inspection
+              {t("cta")}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -243,7 +245,7 @@ export default function NdtServices() {
               <div className="absolute inset-0 bg-navy/30" />
             </div>
             <div className="absolute bottom-8 left-12 z-10 bg-navy/80 backdrop-blur-sm border border-white/10 px-4 py-3">
-              <div className="text-[10px] font-black uppercase tracking-widest text-blue mb-0.5">Certified To</div>
+              <div className="text-[10px] font-black uppercase tracking-widest text-blue mb-0.5">{t("certifiedTo")}</div>
               <div className="text-white font-bold text-sm">ISO 9712 · ASNT · TWI-CSWIP · API</div>
             </div>
           </div>
@@ -259,7 +261,7 @@ export default function NdtServices() {
 
         {/* Tab bar — horizontally scrollable on mobile */}
         <div className="flex overflow-x-auto scrollbar-none border-b border-white/8 mb-8 -mx-4 px-4 sm:mx-0 sm:px-0">
-          {TABS.map(({ key, label, services }) => (
+          {TABS_TRANSLATED.map(({ key, label, services }) => (
             <button
               key={key}
               onClick={() => handleTabChange(key)}
@@ -303,7 +305,7 @@ export default function NdtServices() {
         <div className="mt-8 flex items-start gap-3">
           <div className="w-0.5 h-8 bg-blue shrink-0 mt-0.5" />
           <p className="text-white/65 text-xs leading-relaxed">
-            All inspections are performed by accredited personnel to applicable international standards (ISO 9712, ASNT SNT-TC-1A, TWI-CSWIP, BGAS, API 510/570/653). Procedures are client-specified and documented to full traceability requirements.
+            {t("footerNote")}
           </p>
         </div>
 
