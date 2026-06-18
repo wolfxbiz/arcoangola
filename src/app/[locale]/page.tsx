@@ -58,12 +58,12 @@ export default async function LandingPage({ params }: Props) {
       <main>
         <Hero />
 
-        <section id="about">
-          <AboutSection />
-        </section>
-
         <section id="accreditations">
           <Certificates />
+        </section>
+
+        <section id="about">
+          <AboutSection />
         </section>
 
         <section id="programmes">
