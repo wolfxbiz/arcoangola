@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
               <div
                 key={title}
                 className={[
-                  "px-5 py-6 sm:px-8 sm:py-8 flex gap-4",
+                  "px-8 py-8 flex gap-4",
                   !isLast ? "border-b border-white/15" : "",
                   !isRightCol && !isLast ? "sm:border-r border-white/15" : "",
                   isLast ? "sm:col-span-2" : "",

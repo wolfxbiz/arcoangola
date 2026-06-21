@@ -20,8 +20,8 @@ export default function CertBodiesStrip() {
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
-          {programs.map((p, i) => (
-            <div key={p.name} className={`flex items-start gap-3 border-l-2 border-blue pl-3 ${i === programs.length - 1 ? "col-span-2 sm:col-span-1" : ""}`}>
+          {programs.map((p) => (
+            <div key={p.name} className="flex items-start gap-3 border-l-2 border-blue pl-3">
               <div>
                 <p className="text-xs font-black text-navy leading-snug">{p.name}</p>
                 <p className="text-[10px] text-gray-400 font-semibold mt-0.5 leading-tight">{p.body}</p>
