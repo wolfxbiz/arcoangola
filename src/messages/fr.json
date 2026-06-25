@@ -51,24 +51,40 @@
     "api": "Programmes de Préparation API",
     "apiBody": "API 510 · 570 · 653"
   },
-  "premium": {
-    "badge": "Programmes Premium",
-    "title": "Parcours de Carrière Certifiés",
-    "subtitle": "Programmes intensifs et complets conçus pour les professionnels qui veulent maîtriser complètement l'industrie.",
-    "cogip": {
-      "tag": "7 Mois • Programme Intensif",
-      "title": "COGIP",
-      "fullName": "Professionnel Certifié de l'Industrie Pétrolière et Gazière",
-      "description": "Le programme le plus complet pour ceux qui souhaitent entrer ou progresser dans l'industrie pétrolière et gazière. Couvre l'inspection, le CND, le QA/QC et les systèmes de gestion.",
-      "cta": "En Savoir Plus"
-    },
-    "cmqip": {
-      "tag": "3 Mois • Axé sur l'Industrie",
-      "title": "CMQIP",
-      "fullName": "Professionnel Certifié QA/QC Mécanique Industriel",
-      "description": "Programme axé sur le contrôle qualité mécanique et l'inspection industrielle. Idéal pour les ingénieurs et inspecteurs recherchant une certification reconnue.",
-      "cta": "En Savoir Plus"
-    }
+  "ndtOverview": {
+    "badge": "Services d'Inspection CND",
+    "headline": "Fiables Aujourd'hui.",
+    "headlineHighlight": "Prêts pour Demain.",
+    "subtitle": "Fournir des solutions CND fiables avec précision, intégrité et sécurité pour le secteur Pétrolier & Gazier et Énergétique de l'Angola.",
+    "pillar1": "Sécurité d'Abord",
+    "pillar2": "Résultats Précis",
+    "pillar3": "Certifié & Conforme",
+    "pillar4": "Partenaire Fiable",
+    "servicesTitle": "Nos Services CND",
+    "viewDetails": "Voir le Service Complet",
+    "comingSoon": "Bientôt Disponible",
+    "localPresence": "Présence Locale. Standards Mondiaux. Engagé pour l'Angola.",
+    "promise": "Qualité. Intégrité. Fiabilité. C'est la promesse d'Arco Angola.",
+    "ut": "Contrôle par Ultrasons",
+    "utDesc": "Détection des défauts internes avec précision.",
+    "mt": "Magnétoscopie",
+    "mtDesc": "Révélation des défauts de surface et sous-surface.",
+    "pt": "Ressuage",
+    "ptDesc": "Détection des discontinuités de surface.",
+    "rt": "Radiographie Industrielle",
+    "rtDesc": "Examen radiographique de haute qualité.",
+    "vt": "Contrôle Visuel",
+    "vtDesc": "La première ligne d'inspection sur laquelle vous pouvez compter.",
+    "tmt": "Mesure d'Épaisseur",
+    "tmtDesc": "Surveillance de l'intégrité par des données d'épaisseur précises.",
+    "paut": "Contrôle par Ultrasons Multiéléments",
+    "pautDesc": "Imagerie haute résolution des soudures et géométries complexes.",
+    "tofd": "TOFD",
+    "tofdDesc": "Diffraction du temps de vol pour un dimensionnement précis des défauts.",
+    "cm": "Surveillance de la Corrosion",
+    "cmDesc": "Évaluation continue de la dégradation des matériaux et de la perte d'épaisseur.",
+    "pmi": "Identification Positive des Matériaux",
+    "pmiDesc": "Vérification de la composition des alliages selon les exigences de spécification."
   },
   "catalog": {
     "badge": "Catalogue de Cours",

@@ -51,24 +51,40 @@
     "api": "Programas de Preparação API",
     "apiBody": "API 510 · 570 · 653"
   },
-  "premium": {
-    "badge": "Programas Premium",
-    "title": "Trilhas de Carreira Certificadas",
-    "subtitle": "Programas intensivos e abrangentes desenhados para profissionais que querem dominar completamente a indústria.",
-    "cogip": {
-      "tag": "7 Meses • Programa Intensivo",
-      "title": "COGIP",
-      "fullName": "Profissional Certificado da Indústria de Petróleo e Gás",
-      "description": "O programa mais abrangente para quem quer entrar ou avançar na indústria de petróleo e gás. Cobre inspeção, END, QA/QC e gestão de sistemas.",
-      "cta": "Saber Mais"
-    },
-    "cmqip": {
-      "tag": "3 Meses • Foco Industrial",
-      "title": "CMQIP",
-      "fullName": "Profissional Certificado de QA/QC Mecânico",
-      "description": "Programa focado em controlo de qualidade mecânico e inspeção industrial. Ideal para engenheiros e inspetores que procuram certificação reconhecida.",
-      "cta": "Saber Mais"
-    }
+  "ndtOverview": {
+    "badge": "Serviços de Inspecção END",
+    "headline": "Confiáveis Hoje.",
+    "headlineHighlight": "Prontos para Amanhã.",
+    "subtitle": "Fornecendo soluções END confiáveis com precisão, integridade e segurança para o sector de Petróleo & Gás e Energia de Angola.",
+    "pillar1": "Segurança em Primeiro",
+    "pillar2": "Resultados Precisos",
+    "pillar3": "Certificado & Conforme",
+    "pillar4": "Parceiro de Confiança",
+    "servicesTitle": "Os Nossos Serviços END",
+    "viewDetails": "Ver Serviço Completo",
+    "comingSoon": "Em Breve",
+    "localPresence": "Presença Local. Normas Globais. Comprometidos com Angola.",
+    "promise": "Qualidade. Integridade. Fiabilidade. É a promessa da Arco Angola.",
+    "ut": "Inspecção Ultrasónica",
+    "utDesc": "Detecção de defeitos internos com precisão.",
+    "mt": "Partículas Magnéticas",
+    "mtDesc": "Revelação de defeitos de superfície e subsuperfície.",
+    "pt": "Líquidos Penetrantes",
+    "ptDesc": "Detecção de descontinuidades de superfície.",
+    "rt": "Radiografia Industrial",
+    "rtDesc": "Exame radiográfico de alta qualidade.",
+    "vt": "Inspecção Visual",
+    "vtDesc": "A primeira linha de inspecção em que pode confiar.",
+    "tmt": "Medição de Espessura",
+    "tmtDesc": "Monitorização da integridade através de dados de espessura precisos.",
+    "paut": "Ultrassom Phased Array",
+    "pautDesc": "Imagem de alta resolução de soldas e geometrias complexas.",
+    "tofd": "TOFD",
+    "tofdDesc": "Difracção por tempo de voo para dimensionamento preciso de defeitos.",
+    "cm": "Monitorização de Corrosão",
+    "cmDesc": "Avaliação contínua da degradação do material e perda de espessura.",
+    "pmi": "Identificação Positiva de Materiais",
+    "pmiDesc": "Verificação da composição de ligas para cumprir requisitos de especificação."
   },
   "catalog": {
     "badge": "Catálogo de Cursos",

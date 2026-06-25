@@ -85,16 +85,16 @@ export default async function LandingPage({ params }: Props) {
           <CatalogTabs courses={courses} labels={catalogLabels} />
         </section>
 
+        <section id="premium">
+          <PremiumTracks />
+        </section>
+
         <section id="ndt-services">
           <NdtServices />
         </section>
 
         <section id="corporate">
           <DualAudience />
-        </section>
-
-        <section id="premium">
-          <PremiumTracks />
         </section>
 
         <section id="why-us">

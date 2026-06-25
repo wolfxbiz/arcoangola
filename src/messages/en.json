@@ -51,24 +51,40 @@
     "api": "API Preparation Programs",
     "apiBody": "API 510 · 570 · 653"
   },
-  "premium": {
-    "badge": "Premium Programmes",
-    "title": "Certified Career Tracks",
-    "subtitle": "Intensive, comprehensive programmes designed for professionals who want to fully master the industry.",
-    "cogip": {
-      "tag": "7 Months • Intensive Programme",
-      "title": "COGIP",
-      "fullName": "Certified Oil & Gas Industry Professional",
-      "description": "The most comprehensive programme for those entering or advancing in the oil and gas industry. Covers inspection, NDT, QA/QC and management systems.",
-      "cta": "Learn More"
-    },
-    "cmqip": {
-      "tag": "3 Months • Industry Focused",
-      "title": "CMQIP",
-      "fullName": "Certified Mechanical QA/QC Industry Professional",
-      "description": "Focused programme in mechanical quality control and industrial inspection. Ideal for engineers and inspectors seeking recognised certification.",
-      "cta": "Learn More"
-    }
+  "ndtOverview": {
+    "badge": "NDT Inspection Services",
+    "headline": "Trusted Today.",
+    "headlineHighlight": "Ready for Tomorrow.",
+    "subtitle": "Delivering reliable NDT solutions with precision, integrity and safety for Angola's Oil & Gas and Energy sector.",
+    "pillar1": "Safety First",
+    "pillar2": "Accurate Results",
+    "pillar3": "Certified & Compliant",
+    "pillar4": "Reliable Partner",
+    "servicesTitle": "Our NDT Services",
+    "viewDetails": "View Full Service",
+    "comingSoon": "Coming Soon",
+    "localPresence": "Local Presence. Global Standards. Committed to Angola.",
+    "promise": "Quality. Integrity. Reliability. That's the Arco Angola promise.",
+    "ut": "Ultrasonic Testing",
+    "utDesc": "Detecting internal flaws with precision.",
+    "mt": "Magnetic Particle Testing",
+    "mtDesc": "Revealing surface and near-surface flaws.",
+    "pt": "Penetrant Testing",
+    "ptDesc": "Uncovering surface discontinuities.",
+    "rt": "Radiographic Testing",
+    "rtDesc": "High-quality radiographic examination.",
+    "vt": "Visual Testing",
+    "vtDesc": "The first line of inspection you can rely on.",
+    "tmt": "Thickness Measurement",
+    "tmtDesc": "Monitoring integrity through accurate thickness data.",
+    "paut": "Phased Array Testing",
+    "pautDesc": "High-resolution imaging of welds and complex geometries.",
+    "tofd": "TOFD",
+    "tofdDesc": "Time-of-flight diffraction for accurate flaw sizing.",
+    "cm": "Corrosion Monitoring",
+    "cmDesc": "Ongoing assessment of material degradation and wall loss.",
+    "pmi": "Positive Material Identification",
+    "pmiDesc": "Verifying alloy composition to meet specification requirements."
   },
   "catalog": {
     "badge": "Course Catalogue",
