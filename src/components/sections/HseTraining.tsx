@@ -150,7 +150,7 @@ export default function HseTraining() {
               src="/assets/img-hse-hero.png"
               alt="HSE training session for industrial safety professionals"
               fill
-              style={{ objectFit: "cover", objectPosition: "center" }}
+              style={{ objectFit: "cover", objectPosition: "center 20%" }}
             />
           </div>
           <span className="block text-blue text-xs font-bold uppercase tracking-widest mb-4">
