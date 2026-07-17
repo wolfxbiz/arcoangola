@@ -226,7 +226,7 @@ export default function NdtServices() {
             <div className="absolute inset-0" style={{ clipPath: "polygon(6% 0, 100% 0, 100% 100%, 0% 100%)" }}>
               <Image
                 src="/assets/img-ndt-services.webp"
-                alt="Field inspection on industrial asset"
+                alt="Professional training and certification environment"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top" }}
                 priority

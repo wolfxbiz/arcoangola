@@ -30,6 +30,14 @@ export default function Navbar() {
 
   useEffect(() => setMobileOpen(false), [pathname]);
 
+  const navItems = [
+    { href: "#programmes", label: t("internationalCertifications") },
+    { href: "#courses", label: t("professionalTraining") },
+    { href: "#corporate", label: t("corporateLearning") },
+    { href: "#courses", label: t("isoManagementSystems") },
+    { href: "#contact", label: t("contact") },
+  ];
+
   function switchLocalePath(newLocale: string) {
     const segments = pathname.split("/");
     segments[1] = newLocale;
@@ -45,7 +53,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between gap-3 h-16 lg:h-20">
 
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center shrink-0">
@@ -60,28 +68,24 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-8">
-            {[
-              { href: "#programmes",  label: t("programmes") },
-              { href: "#courses",     label: t("coursesCatalogue") },
-              { href: "#ndt-services", label: t("ndtServices") },
-              { href: "#corporate",   label: t("corporate") },
-              { href: "#contact",     label: t("contact") },
-            ].map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className={`text-sm font-semibold transition-colors duration-300 ${
-                  scrolled ? "text-navy hover:text-blue" : "text-white/90 hover:text-white"
-                }`}
-              >
-                {link.label}
-              </a>
-            ))}
+          <div className="hidden lg:flex flex-1 justify-center">
+            <div className="flex items-center gap-3 xl:gap-5">
+              {navItems.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`text-sm font-semibold whitespace-nowrap transition-colors duration-300 ${
+                    scrolled ? "text-navy hover:text-blue" : "text-white/90 hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Desktop right — flags + CTA */}
-          <div className="hidden lg:flex items-center gap-5">
+          <div className="hidden lg:flex items-center gap-3 xl:gap-5 shrink-0">
             <div className="flex items-center gap-2">
               {locales.map(({ code, flag, label }) => (
                 <Link
@@ -134,20 +138,14 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200 px-4 pb-6 pt-4">
-          <div className="flex flex-col gap-1">
-            {[
-              { href: "#programmes",   label: t("programmes") },
-              { href: "#courses",      label: t("coursesCatalogue") },
-              { href: "#ndt-services", label: t("ndtServices") },
-              { href: "#corporate",    label: t("corporate") },
-              { href: "#contact",      label: t("contact") },
-            ].map((link) => (
+        <div className="lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 pb-6 pt-5 shadow-[0_20px_45px_-20px_rgba(0,0,0,0.35)]">
+          <div className="flex flex-col gap-1.5">
+            {navItems.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="py-3 px-2 text-base font-semibold text-navy border-b border-gray-100 last:border-0 hover:text-blue transition-colors"
+                className="py-3 px-3 text-sm font-semibold text-navy rounded-lg hover:bg-gray-50 hover:text-blue transition-colors"
               >
                 {link.label}
               </a>

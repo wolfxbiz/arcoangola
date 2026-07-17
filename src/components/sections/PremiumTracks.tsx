@@ -50,7 +50,7 @@ export default function PremiumTracks() {
 
           {/* CTA */}
           <a
-            href="#ndt-accordion"
+            href="#courses"
             className="inline-flex items-center gap-2.5 px-8 py-4 bg-blue text-white font-black text-sm uppercase tracking-wider hover:bg-white hover:text-navy transition-colors duration-200"
           >
             {t("servicesTitle")}

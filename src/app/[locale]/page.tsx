@@ -6,7 +6,6 @@ import Certificates from "@/components/sections/Certificates";
 import CertificationHighlights from "@/components/sections/CertificationHighlights";
 import HseTraining from "@/components/sections/HseTraining";
 import CatalogTabs from "@/components/sections/CatalogTabs";
-import NdtServices from "@/components/sections/NdtServices";
 import DualAudience from "@/components/sections/DualAudience";
 import PremiumTracks from "@/components/sections/PremiumTracks";
 import AboutSection from "@/components/sections/AboutSection";
@@ -92,10 +91,6 @@ export default async function LandingPage({ params }: Props) {
 
         <section id="premium">
           <PremiumTracks />
-        </section>
-
-        <section id="ndt-services" className="scroll-mt-20">
-          <NdtServices />
         </section>
 
         <section id="corporate">

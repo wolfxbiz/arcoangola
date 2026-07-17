@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 const CARD_IMAGES = [
   { img: "/assets/corporate.webp",         imgAlt: "ISO Lead Auditor training session",       badge: "ISO 9001 · 14001 · 45001", titleKey: "card1Title" as const, descKey: "card1Desc" as const, tabKey: "iso" },
   { img: "/assets/engineer.webp",          imgAlt: "ISO 9712 certified NDT engineer",          badge: "ISO 9712",                  titleKey: "card2Title" as const, descKey: "card2Desc" as const, tabKey: "iso" },
-  { img: "/assets/inspector.webp",         imgAlt: "Industrial NDT inspector on site",          badge: "ASNT-SNT-TC-1A",            titleKey: "card3Title" as const, descKey: "card3Desc" as const, tabKey: "ndt" },
+  { img: "/assets/inspector.webp",         imgAlt: "Professional training in a technical learning environment",          badge: "ASNT-SNT-TC-1A",            titleKey: "card3Title" as const, descKey: "card3Desc" as const, tabKey: "ndt" },
   { img: "/assets/img-ndt-services.webp",  imgAlt: "Professional welder on pressure vessel",   badge: "TWI-CSWIP / BGAS",          titleKey: "card4Title" as const, descKey: "card4Desc" as const, tabKey: "welding" },
 ] as const;
 

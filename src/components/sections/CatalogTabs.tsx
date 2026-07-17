@@ -170,7 +170,7 @@ export default function CatalogTabs({ courses, labels }: Props) {
           <div className="relative h-56 sm:h-72 lg:h-80 overflow-hidden mb-6 sm:mb-8">
             <Image
               src="/assets/img-engineer.jpg"
-              alt="Certified industrial inspector on site"
+              alt="Certified professional in a training environment"
               fill
               style={{ objectFit: "cover", objectPosition: "center 30%" }}
             />

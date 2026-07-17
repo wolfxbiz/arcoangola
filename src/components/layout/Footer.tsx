@@ -14,7 +14,7 @@ const WHATSAPP_NUMBER = WHATSAPP_NUMBERS[0].number;
 
 const EMAILS = [
   { addr: "info01@arcoangola.com", label: "Info" },
-  { addr: "inspections01@arcoangola.com", label: "Inspections" },
+  { addr: "inspections01@arcoangola.com", label: "Training" },
   { addr: "operations01@arcoangola.com", label: "Operations" },
   { addr: "admin01@arcoangola.com", label: "Admin" },
 ];
