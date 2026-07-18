@@ -10,6 +10,8 @@ import DualAudience from "@/components/sections/DualAudience";
 import PremiumTracks from "@/components/sections/PremiumTracks";
 import AboutSection from "@/components/sections/AboutSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
+import FlagshipSolutions from "@/components/sections/FlagshipSolutions";
+import AdvancedNdtPrograms from "@/components/sections/AdvancedNdtPrograms";
 import CertBodiesStrip from "@/components/sections/CertBodiesStrip";
 import MissionStatement from "@/components/sections/MissionStatement";
 import ClosingBanner from "@/components/sections/ClosingBanner";
@@ -83,6 +85,14 @@ export default async function LandingPage({ params }: Props) {
 
         <section id="hse-training">
           <HseTraining />
+        </section>
+
+        <section id="solutions">
+          <FlagshipSolutions />
+        </section>
+
+        <section id="advanced-ndt">
+          <AdvancedNdtPrograms />
         </section>
 
         <section id="courses">

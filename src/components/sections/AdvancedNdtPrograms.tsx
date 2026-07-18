@@ -31,22 +31,24 @@ export default function AdvancedNdtPrograms() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="rounded-3xl border border-gray-200 bg-gray-50 p-8">
-            <div className="relative w-full h-44 mb-6 overflow-hidden rounded-md">
-              <Image src="/assets/img-ndt-services.webp" alt="Advanced NDT lab and equipment" fill style={{ objectFit: 'cover' }} />
+          <div className="border border-gray-200 bg-gray-50 shadow-sm">
+            <div className="relative w-full h-56 overflow-hidden">
+              <Image src="/assets/img-advanced-ndt.png" alt="Advanced NDT lab and equipment" fill style={{ objectFit: 'cover', objectPosition: 'center 35%' }} />
             </div>
-            <h3 className="text-xl font-black text-navy mb-4">{t("title")}</h3>
-            <p className="text-sm sm:text-base text-gray-500 leading-relaxed mb-6">
-              {t("body")}
-            </p>
-            <ul className="space-y-3">
-              {programs.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
-                  <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="p-8">
+              <h3 className="text-xl font-black text-navy mb-4">{t("title")}</h3>
+              <p className="text-sm sm:text-base text-gray-500 leading-relaxed mb-6">
+                {t("body")}
+              </p>
+              <ul className="space-y-3">
+                {programs.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
+                    <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="rounded-3xl bg-navy p-8 text-white">

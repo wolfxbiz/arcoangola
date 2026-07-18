@@ -43,68 +43,72 @@ export default function FlagshipSolutions() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6">
-          <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
-            <div className="relative w-full h-44 mb-6 overflow-hidden rounded-md">
-              <Image src="/assets/img-executive.webp" alt="Enterprise team reviewing management systems" fill style={{ objectFit: 'cover' }} />
+          <div className="border border-gray-200 bg-white shadow-sm">
+            <div className="relative w-full h-56 overflow-hidden">
+              <Image src="/assets/img-iso-managemnet-system.png" alt="Enterprise team reviewing management systems" fill style={{ objectFit: 'cover', objectPosition: 'center 20%' }} />
             </div>
-            <span className="inline-flex rounded-full bg-blue/10 px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-blue mb-5">
-              {t("enterpriseBadge")}
-            </span>
-            <h3 className="text-2xl font-black text-navy mb-4">
-              {t("enterpriseTitle")}
-            </h3>
-            <p className="text-sm sm:text-base text-gray-500 leading-relaxed mb-6">
-              {t("enterpriseBody")}
-            </p>
-            <ul className="space-y-3 mb-8">
-              {enterprisePoints.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
-                  <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href="#corporate"
-              className="inline-flex items-center text-sm font-black text-navy hover:text-blue transition-colors"
-            >
-              {t("enterpriseCta")}
-              <svg className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </a>
+            <div className="p-8">
+              <span className="inline-flex rounded-full bg-blue/10 px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-blue mb-5">
+                {t("enterpriseBadge")}
+              </span>
+              <h3 className="text-2xl font-black text-navy mb-4">
+                {t("enterpriseTitle")}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-500 leading-relaxed mb-6">
+                {t("enterpriseBody")}
+              </p>
+              <ul className="space-y-3 mb-8">
+                {enterprisePoints.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
+                    <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="#corporate"
+                className="inline-flex items-center text-sm font-black text-navy hover:text-blue transition-colors"
+              >
+                {t("enterpriseCta")}
+                <svg className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
           </div>
 
-          <div className="rounded-3xl bg-navy p-8 text-white shadow-sm">
-            <div className="relative w-full h-44 mb-6 overflow-hidden rounded-md">
-              <Image src="/assets/img-engineer.jpg" alt="NDT professional at work" fill style={{ objectFit: 'cover' }} />
+          <div className="bg-navy text-white shadow-sm">
+            <div className="relative w-full h-72 overflow-hidden">
+              <Image src="/assets/img-personnel-cert.png" alt="NDT professional at work" fill style={{ objectFit: 'cover', objectPosition: 'center 80%' }} />
             </div>
-            <span className="inline-flex rounded-full bg-white/10 px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-blue mb-5">
-              {t("personnelBadge")}
-            </span>
-            <h3 className="text-2xl font-black mb-4">
-              {t("personnelTitle")}
-            </h3>
-            <p className="text-sm sm:text-base text-white/75 leading-relaxed mb-6">
-              {t("personnelBody")}
-            </p>
-            <ul className="space-y-3 mb-8">
-              {personnelPoints.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-white/85">
-                  <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href="#courses"
-              className="inline-flex items-center text-sm font-black text-white hover:text-blue transition-colors"
-            >
-              {t("personnelCta")}
-              <svg className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </a>
+            <div className="p-8">
+              <span className="inline-flex rounded-full bg-white/10 px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-blue mb-5">
+                {t("personnelBadge")}
+              </span>
+              <h3 className="text-2xl font-black mb-4">
+                {t("personnelTitle")}
+              </h3>
+              <p className="text-sm sm:text-base text-white/75 leading-relaxed mb-6">
+                {t("personnelBody")}
+              </p>
+              <ul className="space-y-3 mb-8">
+                {personnelPoints.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-white/85">
+                    <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="#courses"
+                className="inline-flex items-center text-sm font-black text-white hover:text-blue transition-colors"
+              >
+                {t("personnelCta")}
+                <svg className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
