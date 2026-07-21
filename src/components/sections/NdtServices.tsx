@@ -79,7 +79,7 @@ function AccordionRow({
               {service.name}
             </span>
             {service.comingSoon && (
-              <span className="text-[9px] font-black uppercase tracking-widest text-blue border border-blue px-1.5 py-0.5 leading-none shrink-0">
+              <span className="text-[9px] font-black uppercase tracking-widest text-yellow-400 border border-yellow-400 px-1.5 py-0.5 leading-none shrink-0">
                 Coming Soon
               </span>
             )}
@@ -96,7 +96,7 @@ function AccordionRow({
 
         {/* Chevron */}
         <svg
-          className={`w-4 h-4 text-blue shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+          className={`w-4 h-4 text-yellow-400 shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
           fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -187,14 +187,14 @@ export default function NdtServices() {
 
           {/* Left */}
           <div className="py-16 sm:py-20 lg:py-24 lg:pr-16 flex flex-col justify-center">
-            <span className="inline-flex items-center gap-2 text-blue text-[11px] font-black uppercase tracking-widest mb-5">
+            <span className="inline-flex items-center gap-2 text-yellow-400 text-[11px] font-black uppercase tracking-widest mb-5">
               <span className="block w-6 h-px bg-blue" />
               {t("sectionBadge")}
             </span>
 
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.05] mb-6">
               {t("heading")}<br />
-              <span className="text-blue">{t("headingHighlight")}</span>
+              <span className="text-yellow-400">{t("headingHighlight")}</span>
             </h2>
 
             <p className="text-white/80 leading-relaxed text-sm sm:text-base max-w-prose mb-8">
@@ -234,7 +234,7 @@ export default function NdtServices() {
               <div className="absolute inset-0 bg-navy/30" />
             </div>
             <div className="absolute bottom-8 left-12 z-10 bg-navy/80 backdrop-blur-sm border border-white/10 px-4 py-3">
-              <div className="text-[10px] font-black uppercase tracking-widest text-blue mb-0.5">{t("certifiedTo")}</div>
+              <div className="text-[10px] font-black uppercase tracking-widest text-yellow-400 mb-0.5">{t("certifiedTo")}</div>
               <div className="text-white font-bold text-sm">ISO 9712 · ASNT · TWI-CSWIP · API</div>
             </div>
           </div>

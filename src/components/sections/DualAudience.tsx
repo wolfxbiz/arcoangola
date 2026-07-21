@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { whatsAppLink } from "@/lib/whatsapp";
 
 const CheckIcon = () => (
   <svg className="w-4 h-4 shrink-0 text-blue mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -129,7 +130,9 @@ export default function DualAudience() {
             </div>
 
             <a
-              href="#contact"
+              href={whatsAppLink(t("corporate.waMessage"))}
+              target="_blank"
+              rel="noopener noreferrer"
               className="self-start inline-flex items-center gap-2 px-5 py-2.5 bg-blue hover:bg-white hover:text-navy text-white text-sm font-black transition-colors"
             >
               {t("corporate.cta")}
@@ -154,7 +157,7 @@ export default function DualAudience() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
             {industries.map((industry) => (
               <div key={industry} className="flex items-center gap-3 border border-gray-200 px-5 py-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue shrink-0" />
+                <span className="w-1.5 h-1.5 bg-blue shrink-0" />
                 <span className="font-bold text-navy text-sm">{industry}</span>
               </div>
             ))}

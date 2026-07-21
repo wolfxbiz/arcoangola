@@ -27,7 +27,7 @@ export default function SignatureFlagshipBand() {
         <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
 
           <div className="flex items-center gap-3 shrink-0">
-            <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-md overflow-hidden border border-[#D4AF37]/50 shrink-0">
+            <div className="relative w-11 h-11 sm:w-12 sm:h-12 overflow-hidden border border-[#D4AF37]/50 shrink-0">
               <Image
                 src="/assets/img-signature-inspection.png"
                 alt="Certified NDT inspector performing field inspection"

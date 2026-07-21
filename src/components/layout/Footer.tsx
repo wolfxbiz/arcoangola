@@ -82,7 +82,7 @@ export default function Footer() {
               {t("tagline")}
             </p>
             <div className="flex items-start gap-2.5 text-xs text-white/55 leading-relaxed mb-6">
-              <span className="text-blue">
+              <span className="text-yellow-400">
                 <MapPinIcon />
               </span>
               <span>{COMPANY_ADDRESS}</span>
@@ -214,7 +214,7 @@ export default function Footer() {
                 key={l}
                 href={`/${l}`}
                 className={`text-xs font-black transition-colors ${
-                  l === locale ? "text-blue" : "text-white/50 hover:text-white"
+                  l === locale ? "text-yellow-400" : "text-white/50 hover:text-white"
                 }`}
               >
                 {l.toUpperCase()}

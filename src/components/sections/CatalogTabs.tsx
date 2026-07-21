@@ -189,9 +189,9 @@ export default function CatalogTabs({ courses, labels }: Props) {
           </h2>
           <p className="text-gray-500 max-w-xl text-sm sm:text-base">{labels.subtitle}</p>
 
-          <div className="mt-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-blue/15 bg-white px-3 py-2 shadow-sm">
+          <div className="mt-6 inline-flex flex-wrap items-center gap-2 border border-blue/15 bg-white px-3 py-2 shadow-sm">
             <span className="text-[10px] font-black uppercase tracking-[0.3em] text-blue">{labels.signatureFocusLabel}</span>
-            <span className="h-1 w-1 rounded-full bg-blue/70" />
+            <span className="h-1 w-1 bg-blue/70" />
             <span className="text-sm font-semibold text-navy">{labels.signatureFocus1}</span>
             <span className="text-gray-300">•</span>
             <span className="text-sm font-semibold text-navy">{labels.signatureFocus2}</span>
@@ -215,7 +215,7 @@ export default function CatalogTabs({ courses, labels }: Props) {
                     isActive ? "bg-navy border-navy" : "bg-white border-gray-200"
                   }`}
                 >
-                  <span className={`text-[9px] font-black uppercase tracking-widest mb-1.5 leading-tight ${isActive ? "text-blue" : "text-gray-400"}`}>
+                  <span className={`text-[9px] font-black uppercase tracking-widest mb-1.5 leading-tight ${isActive ? "text-yellow-400" : "text-gray-400"}`}>
                     {SECTION_BODIES[key]}
                   </span>
                   <span className={`font-black text-sm leading-tight ${isActive ? "text-white" : "text-navy"}`}>
@@ -253,7 +253,7 @@ export default function CatalogTabs({ courses, labels }: Props) {
                     isActive ? "bg-navy border-l-blue" : "bg-white hover:bg-gray-50 border-l-transparent"
                   }`}
                 >
-                  <span className={`block text-[10px] font-black uppercase tracking-widest mb-1.5 leading-tight ${isActive ? "text-blue" : "text-gray-400"}`}>
+                  <span className={`block text-[10px] font-black uppercase tracking-widest mb-1.5 leading-tight ${isActive ? "text-yellow-400" : "text-gray-400"}`}>
                     {SECTION_BODIES[key]}
                   </span>
                   <span className={`block font-black text-base leading-tight ${isActive ? "text-white" : "text-navy"}`}>

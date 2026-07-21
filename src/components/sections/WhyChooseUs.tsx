@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 function CheckIcon() {
   return (
     <svg
-      className="w-5 h-5 shrink-0 text-blue mt-0.5"
+      className="w-5 h-5 shrink-0 text-yellow-400 mt-0.5"
       viewBox="0 0 20 20"
       fill="currentColor"
       aria-hidden="true"
@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
 
         {/* Header */}
         <div className="mb-12 lg:mb-16 max-w-2xl">
-          <span className="block text-blue text-xs font-bold uppercase tracking-widest mb-4">
+          <span className="block text-yellow-400 text-xs font-bold uppercase tracking-widest mb-4">
             {t("badge")}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-5">

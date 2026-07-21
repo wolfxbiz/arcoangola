@@ -2,7 +2,13 @@
   "closing": {
     "headline": "Construindo o Futuro de Angola Através de Pessoas Competentes.",
     "body": "ARCO ANGOLA desenvolve os inspectores, técnicos e profissionais da indústria que reforçam a qualidade, segurança, integridade e excelência operacional nos sectores de Petróleo & Gás, Energia, Construção e Indústria de Angola.",
-    "tagline": "De Angola. Para Normas Internacionais."
+    "tagline": "De Angola. Para Normas Internacionais.",
+    "ctaConsultation": "Marcar Consulta",
+    "ctaCorporate": "Consulta Empresarial",
+    "ctaCatalogue": "Descarregar Catálogo",
+    "waConsultationMessage": "Olá ARCO ANGOLA, gostaria de marcar uma consulta sobre os vossos programas de formação e certificação.",
+    "waCorporateMessage": "Olá ARCO ANGOLA, tenho uma consulta empresarial sobre formação para a minha organização.",
+    "waCatalogueMessage": "Olá ARCO ANGOLA, por favor enviem-me o vosso catálogo de cursos."
   },
   "nav": {
     "programmes": "Programas",
@@ -17,7 +23,8 @@
     "professionalTraining": "Formação",
     "corporateLearning": "Formação Empresarial",
     "isoManagementSystems": "Programas ISO",
-    "signaturePrograms": "Programas Signature"
+    "signaturePrograms": "Programas Signature",
+    "waRequestTrainingMessage": "Olá ARCO ANGOLA, gostaria de solicitar informações sobre formação."
   },
   "hero": {
     "badge": "Especialista Angolana em END BS EN ISO 9712 e Certificação CSWIP/BGAS",
@@ -27,6 +34,7 @@
     "subtitle": "A ARCO ANGOLA é a especialista angolana em ensaios não destrutivos BS EN ISO 9712 e em certificação internacional CSWIP/BGAS, complementada por um portefólio completo de programas de formação internacionais.",
     "ctaExplore": "Explorar Certificações",
     "ctaCorporate": "Formação Empresarial",
+    "waCorporateMessage": "Olá ARCO ANGOLA, gostaria de saber mais sobre as vossas soluções de formação empresarial.",
     "stat1Value": "8+",
     "stat1Label": "Categorias de Certificação",
     "stat2Value": "40+",
@@ -563,12 +571,15 @@
     "card5bBadge": "Soluções para Empresas e Corporações",
     "card5bTitle": "Soluções de Certificação e Formação Corporativa",
     "card5bDesc": "Estabelecemos parcerias com empresas, contratantes EPC e operadores industriais para desenvolver programas de certificação e formação personalizados. Desde a implementação de sistemas de gestão ISO até à qualificação END de equipas completas — construímos equipas certificadas, prontas para auditorias e que cumprem os requisitos de projectos, licitações e regulamentos.",
+    "waCorporateMessage": "Olá ARCO ANGOLA, gostaria de solicitar uma proposta de formação empresarial.",
     "viewCourses": "Ver Cursos",
     "viewProgrammes": "Ver Programas",
     "requestProposal": "Solicitar Proposta Corporativa",
     "heroBadgeLabel": "Programa Signature",
     "heroCard1Title": "BS EN ISO 9712",
     "heroCard2Title": "CSWIP / BGAS",
+    "heroCard3Title": "Sistemas de Gestão ISO",
+    "heroCard3Desc": "Desenvolvimento de sistemas de gestão empresarial e certificação de Auditor Líder para ISO 9001, ISO 14001 e ISO 45001 — construindo organizações certificadas e prontas para auditoria, e profissionais de compliance prontos para a carreira internacional.",
     "portfolioLabel": "Portefólio de Certificações Internacionais",
     "portfolioIntro": "Complementado por um portefólio abrangente de programas de certificação técnica e de gestão acreditados internacionalmente.",
     "audienceLabel": "Lead Auditor ISO — Um Programa, Dois Caminhos",
@@ -659,6 +670,8 @@
     "why6": "Horários de Formação Flexíveis",
     "why7": "Aprendizagem Baseada em Competências",
     "why8": "Materiais de Curso Completos",
+    "cta": "Perguntar Sobre Formação HSE",
+    "waMessage": "Olá ARCO ANGOLA, gostaria de perguntar sobre os vossos programas de formação HSE (NEBOSH, IOSH, OSHA, CSP).",
     "disclaimer": "A ARCO ANGOLA disponibiliza programas de formação, preparação e desenvolvimento de competências. Os exames de certificação e as credenciais são atribuídos pelos respectivos organismos de certificação ou pelos seus fornecedores autorizados, quando aplicável."
   },
   "ndtServices": {
@@ -746,12 +759,13 @@
     "phoneLabel": "Telefone",
     "emailLabel": "E-mail",
     "locationLabel": "Localização",
+    "credentialsLabel": "Principais Credenciais",
     "kkRole": "Sócio de Operações",
-    "kkDesc": "Supervisiona as operações, a formação técnica e os programas de certificação, assegurando normas internacionais e excelência operacional em toda a ARCO Angola.",
+    "kkDesc": "Lidera as operações técnicas, os programas de formação internacional e as iniciativas de certificação, garantindo a excelência operacional e a conformidade com as normas internacionais do setor.",
     "prathapRole": "Sócio de Negócios",
-    "prathapDesc": "Lidera o desenvolvimento de negócios e as parcerias com clientes, apoiando a formação industrial, a certificação e iniciativas de crescimento estratégico.",
+    "prathapDesc": "Impulsiona o desenvolvimento de negócios, as parcerias estratégicas e as soluções de formação industrial em todo o Angola, apoiando simultaneamente a excelência técnica.",
     "abelRole": "Diretor Nacional",
-    "abelDesc": "Supervisiona as operações nacionais da ARCO Angola, fortalecendo as relações com a indústria local e impulsionando o crescimento organizacional em todo o país."
+    "abelDesc": "Supervisiona as operações nacionais, fortalece as relações com os clientes e lidera a execução das iniciativas estratégicas da ARCO Angola em todo o país."
   },
   "advancedNdt": {
     "badge": "Competência Avançada em END",
@@ -844,7 +858,8 @@
       "point3": "Programas de formação in-company disponíveis",
       "point4": "Prontos para licitações e auditorias",
       "isoHighlight": "Os cursos ISO Lead Auditor são estruturados especialmente para indivíduos E empresas que necessitam de conformidade organizacional.",
-      "cta": "Solicitar Proposta Empresarial"
+      "cta": "Solicitar Proposta Empresarial",
+      "waMessage": "Olá ARCO ANGOLA, gostaria de solicitar uma proposta empresarial para conformidade e certificação da força de trabalho."
     }
   },
   "footer": {

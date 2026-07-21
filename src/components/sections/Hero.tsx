@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { whatsAppLink } from "@/lib/whatsapp";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -37,7 +38,7 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-[1.05] tracking-tight text-white mb-6">
             {t("title")}
             <br />
-            <span className="text-blue">{t("titleHighlight")}</span>
+            <span className="text-yellow-400">{t("titleHighlight")}</span>
             <br />
             {t("titleSuffix")}
           </h1>
@@ -57,7 +58,9 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="#contact"
+              href={whatsAppLink(t("waCorporateMessage"))}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/30 hover:border-white text-white font-bold text-sm transition-colors"
             >
               {t("ctaCorporate")}

@@ -43,7 +43,7 @@ export default function AdvancedNdtPrograms() {
               <ul className="space-y-3">
                 {programs.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
-                    <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
+                    <span className="mt-1 h-2.5 w-2.5 shrink-0 bg-blue" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -51,21 +51,21 @@ export default function AdvancedNdtPrograms() {
             </div>
           </div>
 
-          <div className="rounded-3xl bg-navy p-8 text-white">
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-blue mb-4">
+          <div className="bg-navy p-8 text-white">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-yellow-400 mb-4">
               {t("valueTitle")}
             </p>
             <p className="text-sm sm:text-base text-white/80 leading-relaxed mb-6">
               {t("valueBody")}
             </p>
             <div className="space-y-3 text-sm">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="border border-white/10 bg-white/5 p-4">
                 <p className="font-black text-white">{t("value1")}</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="border border-white/10 bg-white/5 p-4">
                 <p className="font-black text-white">{t("value2")}</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="border border-white/10 bg-white/5 p-4">
                 <p className="font-black text-white">{t("value3")}</p>
               </div>
             </div>

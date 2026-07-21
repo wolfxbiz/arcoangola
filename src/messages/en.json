@@ -2,7 +2,13 @@
   "closing": {
     "headline": "Building Angola's Future Through Competent People.",
     "body": "ARCO ANGOLA develops the inspectors, technicians, and industry professionals who strengthen quality, safety, integrity, and operational excellence across Angola's Oil & Gas, Energy, Construction, and Industrial sectors.",
-    "tagline": "From Angola. To International Standards."
+    "tagline": "From Angola. To International Standards.",
+    "ctaConsultation": "Book Consultation",
+    "ctaCorporate": "Corporate Enquiry",
+    "ctaCatalogue": "Download Catalogue",
+    "waConsultationMessage": "Hello ARCO ANGOLA, I would like to book a consultation about your training and certification programmes.",
+    "waCorporateMessage": "Hello ARCO ANGOLA, I have a corporate training enquiry for my organisation.",
+    "waCatalogueMessage": "Hello ARCO ANGOLA, please send me your course catalogue."
   },
   "nav": {
     "programmes": "Programmes",
@@ -17,7 +23,8 @@
     "professionalTraining": "Training",
     "corporateLearning": "Corporate Learning",
     "isoManagementSystems": "ISO Programmes",
-    "signaturePrograms": "Signature Programmes"
+    "signaturePrograms": "Signature Programmes",
+    "waRequestTrainingMessage": "Hello ARCO ANGOLA, I would like to request training information."
   },
   "hero": {
     "badge": "Angola's Specialist in BS EN ISO 9712 NDT & CSWIP/BGAS Certification",
@@ -27,6 +34,7 @@
     "subtitle": "ARCO ANGOLA is Angola's specialist for BS EN ISO 9712 NDT and CSWIP/BGAS international certification, backed by a complete portfolio of supporting international training programmes.",
     "ctaExplore": "Explore Certifications",
     "ctaCorporate": "Corporate Training",
+    "waCorporateMessage": "Hello ARCO ANGOLA, I would like to learn more about your corporate training solutions.",
     "stat1Value": "8+",
     "stat1Label": "Certification Categories",
     "stat2Value": "40+",
@@ -563,12 +571,15 @@
     "card5bBadge": "Corporate & Business Solutions",
     "card5bTitle": "Corporate Certification & Training Solutions",
     "card5bDesc": "We partner with corporations, EPC contractors and industrial operators to deliver tailored in-company certification and training programmes. From ISO management system development to workforce capability building, we support certified, audit-ready teams that meet project, tender and regulatory requirements.",
+    "waCorporateMessage": "Hello ARCO ANGOLA, I would like to request a corporate training proposal.",
     "viewCourses": "View Courses",
     "viewProgrammes": "View Programmes",
     "requestProposal": "Request a Corporate Proposal",
     "heroBadgeLabel": "Signature Programme",
     "heroCard1Title": "BS EN ISO 9712",
     "heroCard2Title": "CSWIP / BGAS",
+    "heroCard3Title": "ISO Management Systems",
+    "heroCard3Desc": "Corporate management systems development and Lead Auditor certification for ISO 9001, ISO 14001 and ISO 45001 — building certified, audit-ready organisations and career-ready compliance professionals.",
     "portfolioLabel": "International Certification Portfolio",
     "portfolioIntro": "Supported by a comprehensive portfolio of internationally accredited technical and management certification programmes.",
     "audienceLabel": "ISO Lead Auditor — One Programme, Two Pathways",
@@ -659,6 +670,8 @@
     "why6": "Flexible Training Schedules",
     "why7": "Competency-Based Learning",
     "why8": "Comprehensive Course Materials",
+    "cta": "Enquire About HSE Training",
+    "waMessage": "Hello ARCO ANGOLA, I would like to enquire about your HSE training programmes (NEBOSH, IOSH, OSHA, CSP).",
     "disclaimer": "ARCO ANGOLA provides training, preparation, and competency development programs. Certification examinations and credentials are awarded by the respective certification bodies or their authorized providers, where applicable."
   },
   "ndtServices": {
@@ -698,12 +711,13 @@
     "phoneLabel": "Phone",
     "emailLabel": "Email",
     "locationLabel": "Location",
+    "credentialsLabel": "Key Credentials",
     "kkRole": "Operations Partner",
-    "kkDesc": "Oversees operations, technical training, and certification programmes while ensuring international standards and operational excellence across ARCO Angola.",
+    "kkDesc": "Leads technical operations, international training programs, and certification initiatives, ensuring operational excellence and compliance with global industry standards.",
     "prathapRole": "Business Partner",
-    "prathapDesc": "Leads business development and client partnerships, supporting industrial training, certification, and strategic growth initiatives.",
+    "prathapDesc": "Drives business development, strategic partnerships, and industrial training solutions across Angola while supporting technical excellence.",
     "abelRole": "National Director",
-    "abelDesc": "Oversees ARCO Angola's national operations, strengthening local industry relationships and driving organisational growth across Angola."
+    "abelDesc": "Oversees national operations, strengthens client relationships, and leads the execution of ARCO Angola's strategic initiatives throughout Angola."
   },
   "advancedNdt": {
     "badge": "Advanced NDT Competency",
@@ -796,7 +810,8 @@
       "point3": "In-company training programmes available",
       "point4": "Tender and audit ready",
       "isoHighlight": "The ISO Lead Auditor courses are uniquely structured for both individual professionals upgrading credentials AND businesses requiring organisational compliance.",
-      "cta": "Request Corporate Proposal"
+      "cta": "Request Corporate Proposal",
+      "waMessage": "Hello ARCO ANGOLA, I would like to request a corporate proposal for compliance and workforce certification."
     }
   },
   "footer": {

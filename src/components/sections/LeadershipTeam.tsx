@@ -13,6 +13,12 @@ const MEMBERS = [
     phoneHref: "tel:+244942742800",
     email: "kk@arcoangola.com",
     location: "Luanda, Angola",
+    credentials: [
+      "BS EN ISO 9712:2022 – NDT Level III",
+      "CSWIP 3.2.2 – Senior Welding Inspector",
+      "TWI BGAS Grade 2/3 – Painting Inspector",
+      "ISO 9001:2015 Lead Auditor",
+    ],
   },
   {
     key: "prathap",
@@ -23,6 +29,12 @@ const MEMBERS = [
     phoneHref: "tel:+244930408008",
     email: "prathap@arcoangola.com",
     location: "Luanda, Angola",
+    credentials: [
+      "B.Tech Mechanical Engineer",
+      "PCN Level III",
+      "Certified Technical Authority",
+      "Industrial Training & Certification Specialist",
+    ],
   },
   {
     key: "abel",
@@ -33,6 +45,12 @@ const MEMBERS = [
     phoneHref: "tel:+244926531906",
     email: "director01@arcoangola.com",
     location: "Luanda, Angola",
+    credentials: [
+      "National Operations Leadership",
+      "Business Development",
+      "Client Relationship Management",
+      "Strategic Planning",
+    ],
   },
 ] as const;
 
@@ -107,6 +125,22 @@ export default function LeadershipTeam() {
                 <p className="text-gray-500 text-sm leading-relaxed flex-1">
                   {t(`${m.key}Desc`)}
                 </p>
+
+                <div>
+                  <span className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2.5">
+                    {t("credentialsLabel")}
+                  </span>
+                  <ul className="flex flex-wrap gap-1.5">
+                    {m.credentials.map((c) => (
+                      <li
+                        key={c}
+                        className="border border-gray-200 bg-gray-50 px-2.5 py-1 text-[10px] font-bold text-navy/70 tracking-wide"
+                      >
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 <dl className="mt-2 pt-4 border-t border-gray-100 flex flex-col gap-2.5">
                   <div className="flex items-center gap-2.5">

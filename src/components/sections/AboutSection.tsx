@@ -34,7 +34,7 @@ export default function AboutSection() {
           {/* Right: identity pillars */}
           <div className="mt-12 lg:mt-2 flex flex-col gap-0 border border-gray-200">
             <div className="px-6 py-4 bg-navy border-b border-white/10">
-              <span className="text-[10px] font-black uppercase tracking-widest text-blue">
+              <span className="text-[10px] font-black uppercase tracking-widest text-yellow-400">
                 {t("identityLabel")}
               </span>
             </div>

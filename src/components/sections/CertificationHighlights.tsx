@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { whatsAppLink } from "@/lib/whatsapp";
 
 const HERO_CARDS = [
-  { img: "/assets/engineer.webp",          imgAlt: "ISO 9712 certified NDT engineer",        titleKey: "heroCard1Title" as const, descKey: "card2Desc" as const, tabKey: "iso" },
-  { img: "/assets/img-ndt-services.webp",  imgAlt: "Professional welder on pressure vessel", titleKey: "heroCard2Title" as const, descKey: "card4Desc" as const, tabKey: "welding" },
+  { img: "/assets/engineer.webp",                    imgAlt: "ISO 9712 certified NDT engineer",             titleKey: "heroCard1Title" as const, descKey: "card2Desc" as const,     tabKey: "iso" },
+  { img: "/assets/img-ndt-services.webp",            imgAlt: "Professional welder on pressure vessel",      titleKey: "heroCard2Title" as const, descKey: "card4Desc" as const,     tabKey: "welding" },
+  { img: "/assets/img-iso-managemnet-system.png",    imgAlt: "ISO Lead Auditor reviewing management system documentation", titleKey: "heroCard3Title" as const, descKey: "heroCard3Desc" as const, tabKey: "iso" },
 ] as const;
 
 const PORTFOLIO_ITEMS = [
@@ -68,8 +70,8 @@ export default function CertificationHighlights() {
           </p>
         </div>
 
-        {/* Hero cards: BS EN ISO 9712 + CSWIP/BGAS — the two flagship programmes */}
-        <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 mb-10 lg:mb-12">
+        {/* Hero cards: BS EN ISO 9712, CSWIP/BGAS, ISO Management Systems — the three flagship programmes */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-10 lg:mb-12">
           {HERO_CARDS.map(({ img, imgAlt, titleKey, descKey, tabKey }) => (
             <div key={titleKey} className="flex flex-col overflow-hidden bg-navy border-2 border-[#D4AF37]/60">
               <div className="relative h-60 sm:h-72 shrink-0">
@@ -159,7 +161,7 @@ export default function CertificationHighlights() {
             {PORTFOLIO_ITEMS.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-xs font-bold text-navy/70 tracking-wide"
+                className="border border-gray-200 bg-gray-50 px-4 py-2 text-xs font-bold text-navy/70 tracking-wide"
               >
                 {item}
               </span>
@@ -178,7 +180,7 @@ export default function CertificationHighlights() {
             />
           </div>
           <div className="p-6 lg:p-10 flex flex-col gap-3 flex-1 bg-navy">
-            <span className="text-[10px] font-black uppercase tracking-widest text-blue">
+            <span className="text-[10px] font-black uppercase tracking-widest text-yellow-400">
               {t("card5bBadge")}
             </span>
             <h3 className="text-xl font-black text-white leading-tight">
@@ -188,8 +190,10 @@ export default function CertificationHighlights() {
               {t("card5bDesc")}
             </p>
             <a
-              href="#contact"
-              className="self-start mt-2 inline-flex items-center gap-1.5 text-xs font-black text-blue hover:text-white uppercase tracking-widest transition-colors"
+              href={whatsAppLink(t("waCorporateMessage"))}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="self-start mt-2 inline-flex items-center gap-1.5 text-xs font-black text-yellow-400 hover:text-white uppercase tracking-widest transition-colors"
             >
               {t("requestProposal")}
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

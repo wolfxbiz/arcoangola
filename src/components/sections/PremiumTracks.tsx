@@ -25,13 +25,13 @@ export default function PremiumTracks() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36 w-full">
         <div className="max-w-2xl">
 
-          <span className="block text-blue text-xs font-bold uppercase tracking-widest mb-5">
+          <span className="block text-yellow-400 text-xs font-bold uppercase tracking-widest mb-5">
             {t("badge")}
           </span>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
             {t("headline")}{" "}
-            <span className="text-blue">{t("headlineHighlight")}</span>
+            <span className="text-yellow-400">{t("headlineHighlight")}</span>
           </h2>
 
           <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-10 max-w-xl">
@@ -42,7 +42,7 @@ export default function PremiumTracks() {
           <div className="flex flex-wrap gap-3 mb-10">
             {PILLARS.map((p) => (
               <span key={p} className="flex items-center gap-2 border border-white/20 px-4 py-2 text-xs font-black text-white uppercase tracking-wide">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue shrink-0" />
+                <span className="w-1.5 h-1.5 bg-blue shrink-0" />
                 {t(p)}
               </span>
             ))}

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
+import { whatsAppLink } from "@/lib/whatsapp";
 
 const locales = [
   { code: "pt", flag: "/assets/flag-pt.png", label: "PT" },
@@ -104,7 +105,9 @@ export default function Navbar() {
             </div>
 
             <a
-              href="#contact"
+              href={whatsAppLink(t("waRequestTrainingMessage"))}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`px-5 py-2.5 text-white text-sm font-bold transition-colors duration-300 ${
                 scrolled ? "bg-navy hover:bg-blue" : "bg-blue hover:bg-white hover:text-navy"
               }`}
@@ -144,7 +147,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="py-3 px-3 text-sm font-semibold text-navy rounded-lg hover:bg-gray-50 hover:text-blue transition-colors"
+                className="py-3 px-3 text-sm font-semibold text-navy hover:bg-gray-50 hover:text-blue transition-colors"
               >
                 {link.label}
               </a>
@@ -175,7 +178,9 @@ export default function Navbar() {
           </div>
 
           <a
-            href="#contact"
+            href={whatsAppLink(t("waRequestTrainingMessage"))}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
             className="mt-4 block text-center px-4 py-3 bg-navy hover:bg-blue text-white font-bold transition-colors"
           >

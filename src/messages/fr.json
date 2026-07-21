@@ -2,7 +2,13 @@
   "closing": {
     "headline": "Construire l'Avenir de l'Angola Grâce à des Personnes Compétentes.",
     "body": "ARCO ANGOLA développe les inspecteurs, techniciens et professionnels de l'industrie qui renforcent la qualité, la sécurité, l'intégrité et l'excellence opérationnelle dans les secteurs angolais du Pétrole & Gaz, de l'Énergie, de la Construction et de l'Industrie.",
-    "tagline": "D'Angola. Aux Normes Internationales."
+    "tagline": "D'Angola. Aux Normes Internationales.",
+    "ctaConsultation": "Réserver une Consultation",
+    "ctaCorporate": "Demande Entreprise",
+    "ctaCatalogue": "Télécharger le Catalogue",
+    "waConsultationMessage": "Bonjour ARCO ANGOLA, je souhaiterais réserver une consultation au sujet de vos programmes de formation et de certification.",
+    "waCorporateMessage": "Bonjour ARCO ANGOLA, j'ai une demande de formation d'entreprise pour mon organisation.",
+    "waCatalogueMessage": "Bonjour ARCO ANGOLA, merci de m'envoyer votre catalogue de cours."
   },
   "nav": {
     "programmes": "Programmes",
@@ -17,7 +23,8 @@
     "professionalTraining": "Formation",
     "corporateLearning": "Formation d'Entreprise",
     "isoManagementSystems": "Programmes ISO",
-    "signaturePrograms": "Programmes Signature"
+    "signaturePrograms": "Programmes Signature",
+    "waRequestTrainingMessage": "Bonjour ARCO ANGOLA, je souhaiterais demander des informations sur vos formations."
   },
   "hero": {
     "badge": "Spécialiste Angolais des END BS EN ISO 9712 & de la Certification CSWIP/BGAS",
@@ -27,6 +34,7 @@
     "subtitle": "ARCO ANGOLA est le spécialiste angolais des essais non destructifs BS EN ISO 9712 et de la certification internationale CSWIP/BGAS, complétés par un portefeuille complet de programmes de formation internationaux.",
     "ctaExplore": "Explorer les Certifications",
     "ctaCorporate": "Formation d'Entreprise",
+    "waCorporateMessage": "Bonjour ARCO ANGOLA, je souhaiterais en savoir plus sur vos solutions de formation d'entreprise.",
     "stat1Value": "8+",
     "stat1Label": "Catégories de Certification",
     "stat2Value": "40+",
@@ -563,12 +571,15 @@
     "card5bBadge": "Solutions pour Entreprises et Corporations",
     "card5bTitle": "Solutions de Certification et Formation Corporatives",
     "card5bDesc": "Nous nous associons à des entreprises, des entrepreneurs EPC et des opérateurs industriels pour développer des programmes de certification et de formation sur mesure. De la mise en œuvre de systèmes de management ISO à la qualification CND de toute une équipe — nous construisons des équipes certifiées, prêtes pour les audits et conformes aux exigences des projets, appels d'offres et réglementations.",
+    "waCorporateMessage": "Bonjour ARCO ANGOLA, je souhaiterais demander une proposition de formation d'entreprise.",
     "viewCourses": "Voir les Cours",
     "viewProgrammes": "Voir les Programmes",
     "requestProposal": "Demander une Proposition Corporative",
     "heroBadgeLabel": "Programme Signature",
     "heroCard1Title": "BS EN ISO 9712",
     "heroCard2Title": "CSWIP / BGAS",
+    "heroCard3Title": "Systèmes de Management ISO",
+    "heroCard3Desc": "Développement de systèmes de management d'entreprise et certification Auditeur Principal pour ISO 9001, ISO 14001 et ISO 45001 — bâtir des organisations certifiées, prêtes pour l'audit, et des professionnels de la conformité prêts pour une carrière internationale.",
     "portfolioLabel": "Portefeuille de Certifications Internationales",
     "portfolioIntro": "Complété par un portefeuille complet de programmes de certification technique et de management accrédités à l'échelle internationale.",
     "audienceLabel": "Auditeur Principal ISO — Un Programme, Deux Parcours",
@@ -659,6 +670,8 @@
     "why6": "Horaires de Formation Flexibles",
     "why7": "Apprentissage Basé sur les Compétences",
     "why8": "Supports de Cours Complets",
+    "cta": "Demander des Informations sur la Formation HSE",
+    "waMessage": "Bonjour ARCO ANGOLA, je souhaiterais me renseigner sur vos programmes de formation HSE (NEBOSH, IOSH, OSHA, CSP).",
     "disclaimer": "ARCO ANGOLA propose des programmes de formation, de préparation et de développement des compétences. Les examens de certification et les titres sont délivrés par les organismes de certification respectifs ou leurs fournisseurs agréés, le cas échéant."
   },
   "ndtServices": {
@@ -746,12 +759,13 @@
     "phoneLabel": "Téléphone",
     "emailLabel": "E-mail",
     "locationLabel": "Localisation",
+    "credentialsLabel": "Certifications Clés",
     "kkRole": "Associé Opérationnel",
-    "kkDesc": "Supervise les opérations, la formation technique et les programmes de certification, en garantissant les normes internationales et l'excellence opérationnelle au sein d'ARCO Angola.",
+    "kkDesc": "Dirige les opérations techniques, les programmes de formation internationale et les initiatives de certification, garantissant l'excellence opérationnelle et la conformité aux normes internationales du secteur.",
     "prathapRole": "Associé Commercial",
-    "prathapDesc": "Dirige le développement commercial et les partenariats clients, en soutenant la formation industrielle, la certification et les initiatives de croissance stratégique.",
+    "prathapDesc": "Pilote le développement commercial, les partenariats stratégiques et les solutions de formation industrielle à travers l'Angola, tout en soutenant l'excellence technique.",
     "abelRole": "Directeur National",
-    "abelDesc": "Supervise les opérations nationales d'ARCO Angola, renforçant les relations avec l'industrie locale et pilotant la croissance organisationnelle à travers l'Angola."
+    "abelDesc": "Supervise les opérations nationales, renforce les relations avec les clients et dirige l'exécution des initiatives stratégiques d'ARCO Angola à travers tout le pays."
   },
   "advancedNdt": {
     "badge": "Compétence Avancée en CND",
@@ -844,7 +858,8 @@
       "point3": "Programmes de formation en entreprise disponibles",
       "point4": "Prêts pour les appels d'offres et audits",
       "isoHighlight": "Les cours Auditeur Principal ISO sont spécialement structurés pour les professionnels individuels ET les entreprises nécessitant une conformité organisationnelle.",
-      "cta": "Demander une Proposition d'Entreprise"
+      "cta": "Demander une Proposition d'Entreprise",
+      "waMessage": "Bonjour ARCO ANGOLA, je souhaiterais demander une proposition d'entreprise pour la conformité et la certification de la main-d'œuvre."
     }
   },
   "footer": {

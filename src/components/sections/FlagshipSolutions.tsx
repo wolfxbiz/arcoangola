@@ -65,7 +65,7 @@ export default function FlagshipSolutions() {
               <ul className="space-y-3 mb-8">
                 {enterprisePoints.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
-                    <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
+                    <span className="mt-1 h-2.5 w-2.5 shrink-0 bg-blue" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -91,7 +91,7 @@ export default function FlagshipSolutions() {
               />
             </div>
             <div className="p-8">
-              <span className="inline-flex bg-white/10 px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-blue mb-4">
+              <span className="inline-flex bg-white/10 px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-yellow-400 mb-4">
                 {t("personnelBadge")}
               </span>
               <h3 className="text-2xl font-black mb-4">
@@ -103,14 +103,14 @@ export default function FlagshipSolutions() {
               <ul className="space-y-3 mb-8">
                 {personnelPoints.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-white/85">
-                    <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue" />
+                    <span className="mt-1 h-2.5 w-2.5 shrink-0 bg-blue" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
               <a
                 href="#courses"
-                className="inline-flex items-center text-sm font-black text-white hover:text-blue transition-colors"
+                className="inline-flex items-center text-sm font-black text-white hover:text-yellow-400 transition-colors"
               >
                 {t("personnelCta")}
                 <svg className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -125,7 +125,7 @@ export default function FlagshipSolutions() {
             </p>
             <div className="flex flex-wrap gap-2">
               {supportItems.map((item) => (
-                <span key={item} className="rounded-full border border-gray-200 px-3 py-2 text-sm text-gray-600">
+                <span key={item} className="border border-gray-200 px-3 py-2 text-sm text-gray-600">
                   {item}
                 </span>
               ))}
