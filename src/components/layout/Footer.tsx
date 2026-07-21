@@ -21,6 +21,16 @@ const EMAILS = [
 
 const CERTS = ["BS EN ISO 9712", "CSWIP/BGAS", "ASNT NDT", "API", "ISO Lead Auditor"];
 
+const COMPANY_ADDRESS = "Rua Direita da Samba, Bairro Corimba, Município de Samba, Luanda, Angola.";
+
+function MapPinIcon() {
+  return (
+    <svg className="w-4 h-4 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2C7.86 2 4.5 5.36 4.5 9.5c0 5.25 6.5 11.5 7.5 12.4 1-.9 7.5-7.15 7.5-12.4C19.5 5.36 16.14 2 12 2zm0 10.25a2.75 2.75 0 110-5.5 2.75 2.75 0 010 5.5z" />
+    </svg>
+  );
+}
+
 function WhatsAppIcon() {
   return (
     <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -68,9 +78,15 @@ export default function Footer() {
                 style={{ height: "40px", width: "auto" }}
               />
             </Link>
-            <p className="text-sm text-white/75 leading-relaxed mb-6">
+            <p className="text-sm text-white/75 leading-relaxed mb-5">
               {t("tagline")}
             </p>
+            <div className="flex items-start gap-2.5 text-xs text-white/55 leading-relaxed mb-6">
+              <span className="text-blue">
+                <MapPinIcon />
+              </span>
+              <span>{COMPANY_ADDRESS}</span>
+            </div>
             <div className="flex flex-wrap gap-1.5">
               {CERTS.map((c) => (
                 <span
