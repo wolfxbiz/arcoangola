@@ -19,7 +19,7 @@ const EMAILS = [
   { addr: "admin01@arcoangola.com", label: "Admin" },
 ];
 
-const CERTS = ["TWI/CSWIP", "ASNT NDT", "API", "ISO Lead Auditor", "ISO 9712"];
+const CERTS = ["BS EN ISO 9712", "CSWIP/BGAS", "ASNT NDT", "API", "ISO Lead Auditor"];
 
 function WhatsAppIcon() {
   return (
@@ -43,6 +43,7 @@ export default function Footer() {
   }
 
   const links = [
+    { href: "#programmes", label: nav("signaturePrograms") },
     { href: `/${locale}`, label: "Home" },
     { href: `/${locale}/courses`, label: nav("courses") },
     { href: `/${locale}/corporate`, label: nav("corporate") },
@@ -90,13 +91,13 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               {links.map((l) => (
                 <li key={l.href}>
-                  <Link
+                  <a
                     href={l.href}
                     className="group flex items-center gap-2 text-sm text-white/75 hover:text-white transition-colors"
                   >
                     <span className="w-3 h-px bg-blue opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
                     {l.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

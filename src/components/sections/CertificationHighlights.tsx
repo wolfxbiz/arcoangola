@@ -3,12 +3,29 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-const CARD_IMAGES = [
-  { img: "/assets/corporate.webp",         imgAlt: "ISO Lead Auditor training session",       badge: "ISO 9001 · 14001 · 45001", titleKey: "card1Title" as const, descKey: "card1Desc" as const, tabKey: "iso" },
-  { img: "/assets/engineer.webp",          imgAlt: "ISO 9712 certified NDT engineer",          badge: "ISO 9712",                  titleKey: "card2Title" as const, descKey: "card2Desc" as const, tabKey: "iso" },
-  { img: "/assets/inspector.webp",         imgAlt: "Professional training in a technical learning environment",          badge: "ASNT-SNT-TC-1A",            titleKey: "card3Title" as const, descKey: "card3Desc" as const, tabKey: "ndt" },
-  { img: "/assets/img-ndt-services.webp",  imgAlt: "Professional welder on pressure vessel",   badge: "TWI-CSWIP / BGAS",          titleKey: "card4Title" as const, descKey: "card4Desc" as const, tabKey: "welding" },
+const HERO_CARDS = [
+  { img: "/assets/engineer.webp",          imgAlt: "ISO 9712 certified NDT engineer",        titleKey: "heroCard1Title" as const, descKey: "card2Desc" as const, tabKey: "iso" },
+  { img: "/assets/img-ndt-services.webp",  imgAlt: "Professional welder on pressure vessel", titleKey: "heroCard2Title" as const, descKey: "card4Desc" as const, tabKey: "welding" },
 ] as const;
+
+const PORTFOLIO_ITEMS = [
+  "ISO Lead Auditor",
+  "ISO Management Systems",
+  "ASNT",
+  "API",
+  "NEBOSH",
+  "IOSH",
+  "OSHA",
+  "CSP",
+];
+
+function StarIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path d="M10 1.5l2.59 5.25 5.79.84-4.19 4.08.99 5.77L10 14.77l-5.18 2.67.99-5.77L1.62 7.6l5.79-.84L10 1.5z" />
+    </svg>
+  );
+}
 
 function handleViewCourses(tabKey: string) {
   window.dispatchEvent(new CustomEvent("setCatalogTab", { detail: tabKey }));
@@ -35,11 +52,11 @@ export default function CertificationHighlights() {
           </p>
         </div>
 
-        {/* 2×2 grid */}
-        <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-8">
-          {CARD_IMAGES.map(({ img, imgAlt, badge, titleKey, descKey, tabKey }) => (
-            <div key={titleKey} className="border border-gray-200 flex flex-col overflow-hidden">
-              <div className="relative h-56 sm:h-64 shrink-0">
+        {/* Hero cards: BS EN ISO 9712 + CSWIP/BGAS — the two flagship programmes */}
+        <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 mb-10 lg:mb-12">
+          {HERO_CARDS.map(({ img, imgAlt, titleKey, descKey, tabKey }) => (
+            <div key={titleKey} className="flex flex-col overflow-hidden bg-navy border-2 border-[#D4AF37]/60">
+              <div className="relative h-60 sm:h-72 shrink-0">
                 <Image
                   src={img}
                   alt={imgAlt}
@@ -48,18 +65,19 @@ export default function CertificationHighlights() {
                 />
               </div>
               <div className="p-6 lg:p-8 flex flex-col gap-3 flex-1">
-                <span className="text-[10px] font-black uppercase tracking-widest text-blue">
-                  {badge}
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-[#D4AF37]">
+                  <StarIcon className="w-3.5 h-3.5" />
+                  {t("heroBadgeLabel")}
                 </span>
-                <h3 className="text-xl font-black text-navy leading-tight">
+                <h3 className="text-2xl font-black text-white leading-tight">
                   {t(titleKey)}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed flex-1">
+                <p className="text-white/70 text-sm leading-relaxed flex-1">
                   {t(descKey)}
                 </p>
                 <button
                   onClick={() => handleViewCourses(tabKey)}
-                  className="self-start mt-2 inline-flex items-center gap-1.5 text-xs font-black text-blue hover:text-navy uppercase tracking-widest transition-colors"
+                  className="self-start mt-2 inline-flex items-center gap-1.5 text-xs font-black text-[#D4AF37] hover:text-white uppercase tracking-widest transition-colors"
                 >
                   {t("viewCourses")}
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -69,6 +87,30 @@ export default function CertificationHighlights() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Divider + supporting portfolio */}
+        <div className="mb-10 lg:mb-12">
+          <div className="flex items-center gap-4 mb-5">
+            <span className="h-px flex-1 bg-gray-200" />
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 text-center">
+              {t("portfolioLabel")}
+            </span>
+            <span className="h-px flex-1 bg-gray-200" />
+          </div>
+          <p className="text-gray-500 text-sm max-w-2xl mx-auto text-center mb-6">
+            {t("portfolioIntro")}
+          </p>
+          <div className="flex flex-wrap justify-center gap-2.5">
+            {PORTFOLIO_ITEMS.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-xs font-bold text-navy/70 tracking-wide"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Bottom row: Corporate Solutions — full width */}

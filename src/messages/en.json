@@ -16,14 +16,15 @@
     "internationalCertifications": "Certifications",
     "professionalTraining": "Training",
     "corporateLearning": "Corporate Learning",
-    "isoManagementSystems": "ISO Programmes"
+    "isoManagementSystems": "ISO Programmes",
+    "signaturePrograms": "Signature Programmes"
   },
   "hero": {
-    "badge": "Africa's Trusted Partner for International Certifications & Professional Training",
+    "badge": "Angola's Specialist in BS EN ISO 9712 NDT & CSWIP/BGAS Certification",
     "title": "Building Africa's",
     "titleHighlight": "Globally Competent Workforce",
     "titleSuffix": "Through Certification & Training",
-    "subtitle": "ARCO ANGOLA delivers internationally recognised certification, professional training and corporate competency development solutions for individuals and organisations across Angola and the wider region.",
+    "subtitle": "ARCO ANGOLA is Angola's specialist for BS EN ISO 9712 NDT and CSWIP/BGAS international certification, backed by a complete portfolio of supporting international training programmes.",
     "ctaExplore": "Explore Certifications",
     "ctaCorporate": "Corporate Training",
     "stat1Value": "8+",
@@ -32,6 +33,15 @@
     "stat2Label": "Courses Available",
     "stat3Value": "3",
     "stat3Label": "Languages of Instruction"
+  },
+  "flagshipBand": {
+    "label": "Signature Programme",
+    "title": "BS EN ISO 9712:2022",
+    "levelsValue": "Level I · Level II · Level III",
+    "conventionalValue": "VT · PT · MT · UT · RT · RTFI",
+    "advancedValue": "PAUT · TOFD · ET · ACFM",
+    "dataValue": "AUT · PAUT · TOFD",
+    "cta": "View Programmes"
   },
   "mission": {
     "statement": "Angola's industrial future depends not only on technology and infrastructure, but on the competence of its people.",
@@ -98,6 +108,10 @@
     "badge": "Course Catalogue",
     "title": "All Certifications",
     "subtitle": "Filter by category to find the right course for your career or business need.",
+    "signatureFocusLabel": "Signature focus",
+    "signatureFocus1": "ISO 9712 Level II & III",
+    "signatureFocus2": "CSWIP 3.1 · 3.2",
+    "signatureFocus3": "PAUT · TOFD · ACFM",
     "filterAll": "All",
     "filterWelding": "Welding & Painting",
     "filterNdt": "ASNT-NDT Programmes",
@@ -455,7 +469,12 @@
     "card5bDesc": "We partner with corporations, EPC contractors and industrial operators to deliver tailored in-company certification and training programmes. From ISO management system development to workforce capability building, we support certified, audit-ready teams that meet project, tender and regulatory requirements.",
     "viewCourses": "View Courses",
     "viewProgrammes": "View Programmes",
-    "requestProposal": "Request a Corporate Proposal"
+    "requestProposal": "Request a Corporate Proposal",
+    "heroBadgeLabel": "Signature Programme",
+    "heroCard1Title": "BS EN ISO 9712",
+    "heroCard2Title": "CSWIP / BGAS",
+    "portfolioLabel": "International Certification Portfolio",
+    "portfolioIntro": "Supported by a comprehensive portfolio of internationally accredited technical and management certification programmes."
   },
   "hseTraining": {
     "badge": "Workplace Safety Programmes",
@@ -553,7 +572,7 @@
   "about": {
     "badge": "About Arco Angola",
     "heading": "Who We Are",
-    "p1": "ARCO ANGOLA is an international training and certification organisation dedicated to developing globally competent professionals and high-performing organisations through internationally recognised certification, professional training and competency development solutions.",
+    "p1": "ARCO ANGOLA is Angola's leading provider of internationally recognised BS EN ISO 9712:2022 NDT Training & Personnel Certification and CSWIP/BGAS Inspection Certification, supported by a comprehensive portfolio of internationally accredited technical and management certification programmes.",
     "p2": "We deliver structured learning pathways and certification excellence for individuals and companies across Angola's industrial sectors, supporting workforce capability, professional growth and organisational readiness in line with international expectations.",
     "identityLabel": "Our Identity",
     "pillar1Title": "International Certification Excellence",

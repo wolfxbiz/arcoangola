@@ -16,14 +16,15 @@
     "internationalCertifications": "Certifications",
     "professionalTraining": "Formation",
     "corporateLearning": "Formation d'Entreprise",
-    "isoManagementSystems": "Programmes ISO"
+    "isoManagementSystems": "Programmes ISO",
+    "signaturePrograms": "Programmes Signature"
   },
   "hero": {
-    "badge": "Partenaire de Confiance en Afrique pour les Certifications Internationales & la Formation Professionnelle",
+    "badge": "Spécialiste Angolais des END BS EN ISO 9712 & de la Certification CSWIP/BGAS",
     "title": "Construire une Main-d'œuvre",
     "titleHighlight": "Compétente à l'Échelle Mondiale",
     "titleSuffix": "Grâce à la Certification & la Formation",
-    "subtitle": "ARCO ANGOLA propose des solutions internationales de certification, de formation professionnelle et de développement des compétences pour les particuliers et les organisations en Angola et dans la région.",
+    "subtitle": "ARCO ANGOLA est le spécialiste angolais des essais non destructifs BS EN ISO 9712 et de la certification internationale CSWIP/BGAS, complétés par un portefeuille complet de programmes de formation internationaux.",
     "ctaExplore": "Explorer les Certifications",
     "ctaCorporate": "Formation d'Entreprise",
     "stat1Value": "8+",
@@ -32,6 +33,15 @@
     "stat2Label": "Cours Disponibles",
     "stat3Value": "3",
     "stat3Label": "Langues d'Enseignement"
+  },
+  "flagshipBand": {
+    "label": "Programme Signature",
+    "title": "BS EN ISO 9712:2022",
+    "levelsValue": "Niveau I · Niveau II · Niveau III",
+    "conventionalValue": "VT · PT · MT · UT · RT · RTFI",
+    "advancedValue": "PAUT · TOFD · ET · ACFM",
+    "dataValue": "AUT · PAUT · TOFD",
+    "cta": "Voir les Programmes"
   },
   "mission": {
     "statement": "L'avenir industriel de l'Angola dépend non seulement de la technologie et de l'infrastructure, mais de la compétence de son peuple.",
@@ -98,6 +108,10 @@
     "badge": "Catalogue de Cours",
     "title": "Toutes les Certifications",
     "subtitle": "Filtrez par catégorie pour trouver le cours adapté à votre carrière ou besoin professionnel.",
+    "signatureFocusLabel": "Focus signature",
+    "signatureFocus1": "ISO 9712 Niveau II & III",
+    "signatureFocus2": "CSWIP 3.1 · 3.2",
+    "signatureFocus3": "PAUT · TOFD · ACFM",
     "filterAll": "Tous",
     "filterWelding": "Soudage & Peinture",
     "filterNdt": "Cours ASNT-CND",
@@ -455,7 +469,12 @@
     "card5bDesc": "Nous nous associons à des entreprises, des entrepreneurs EPC et des opérateurs industriels pour développer des programmes de certification et de formation sur mesure. De la mise en œuvre de systèmes de management ISO à la qualification CND de toute une équipe — nous construisons des équipes certifiées, prêtes pour les audits et conformes aux exigences des projets, appels d'offres et réglementations.",
     "viewCourses": "Voir les Cours",
     "viewProgrammes": "Voir les Programmes",
-    "requestProposal": "Demander une Proposition Corporative"
+    "requestProposal": "Demander une Proposition Corporative",
+    "heroBadgeLabel": "Programme Signature",
+    "heroCard1Title": "BS EN ISO 9712",
+    "heroCard2Title": "CSWIP / BGAS",
+    "portfolioLabel": "Portefeuille de Certifications Internationales",
+    "portfolioIntro": "Complété par un portefeuille complet de programmes de certification technique et de management accrédités à l'échelle internationale."
   },
   "hseTraining": {
     "badge": "Programmes de Sécurité au Travail",
@@ -601,7 +620,7 @@
   "about": {
     "badge": "À propos d'Arco Angola",
     "heading": "Qui Sommes-Nous",
-    "p1": "ARCO ANGOLA est une organisation internationale de formation et de certification dédiée à développer des professionnels compétents à l'échelle mondiale et des organisations performantes grâce à des solutions de certification, de formation professionnelle et de développement des compétences reconnues internationalement.",
+    "p1": "ARCO ANGOLA est le principal fournisseur angolais de Formation et Certification du Personnel en Essais Non Destructifs (END) BS EN ISO 9712:2022, reconnue internationalement, ainsi que de la Certification d'Inspection CSWIP/BGAS, soutenu par un portefeuille complet de programmes de certification technique et de management accrédités à l'échelle internationale.",
     "p2": "Nous dispensons des parcours d'apprentissage structurés et une excellence de certification aux particuliers et aux entreprises de l'industrie angolaise, soutenant la capacité de la main-d'œuvre, la croissance professionnelle et la préparation organisationnelle conformément aux attentes internationales.",
     "identityLabel": "Notre Identité",
     "pillar1Title": "Excellence en Certification Internationale",

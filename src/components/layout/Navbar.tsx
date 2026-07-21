@@ -31,10 +31,9 @@ export default function Navbar() {
   useEffect(() => setMobileOpen(false), [pathname]);
 
   const navItems = [
+    { href: "#programmes", label: t("signaturePrograms") },
     { href: "#programmes", label: t("internationalCertifications") },
-    { href: "#courses", label: t("professionalTraining") },
     { href: "#corporate", label: t("corporateLearning") },
-    { href: "#courses", label: t("isoManagementSystems") },
     { href: "#contact", label: t("contact") },
   ];
 

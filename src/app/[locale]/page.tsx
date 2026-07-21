@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
+import SignatureFlagshipBand from "@/components/sections/SignatureFlagshipBand";
 import Certificates from "@/components/sections/Certificates";
 import CertificationHighlights from "@/components/sections/CertificationHighlights";
 import HseTraining from "@/components/sections/HseTraining";
@@ -60,6 +61,10 @@ export default async function LandingPage({ params }: Props) {
     badge: t("badge"),
     title: t("title"),
     subtitle: t("subtitle"),
+    signatureFocusLabel: t("signatureFocusLabel"),
+    signatureFocus1: t("signatureFocus1"),
+    signatureFocus2: t("signatureFocus2"),
+    signatureFocus3: t("signatureFocus3"),
   };
 
   return (
@@ -67,6 +72,7 @@ export default async function LandingPage({ params }: Props) {
       <Navbar />
       <main>
         <Hero />
+        <SignatureFlagshipBand />
         <CertBodiesStrip />
 
         <MissionStatement />

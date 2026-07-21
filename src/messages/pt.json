@@ -16,14 +16,15 @@
     "internationalCertifications": "Certificações",
     "professionalTraining": "Formação",
     "corporateLearning": "Formação Empresarial",
-    "isoManagementSystems": "Programas ISO"
+    "isoManagementSystems": "Programas ISO",
+    "signaturePrograms": "Programas Signature"
   },
   "hero": {
-    "badge": "Parceiro de Confiança em África para Certificações Internacionais e Formação Profissional",
+    "badge": "Especialista Angolana em END BS EN ISO 9712 e Certificação CSWIP/BGAS",
     "title": "Construir uma Força de Trabalho",
     "titleHighlight": "Competente a Nível Global",
     "titleSuffix": "Através de Certificação e Formação",
-    "subtitle": "A ARCO ANGOLA oferece soluções internacionais de certificação, formação profissional e desenvolvimento de competências para indivíduos e organizações em Angola e na região.",
+    "subtitle": "A ARCO ANGOLA é a especialista angolana em ensaios não destrutivos BS EN ISO 9712 e em certificação internacional CSWIP/BGAS, complementada por um portefólio completo de programas de formação internacionais.",
     "ctaExplore": "Explorar Certificações",
     "ctaCorporate": "Formação Empresarial",
     "stat1Value": "8+",
@@ -32,6 +33,15 @@
     "stat2Label": "Cursos Disponíveis",
     "stat3Value": "3",
     "stat3Label": "Idiomas de Ensino"
+  },
+  "flagshipBand": {
+    "label": "Programa Signature",
+    "title": "BS EN ISO 9712:2022",
+    "levelsValue": "Nível I · Nível II · Nível III",
+    "conventionalValue": "VT · PT · MT · UT · RT · RTFI",
+    "advancedValue": "PAUT · TOFD · ET · ACFM",
+    "dataValue": "AUT · PAUT · TOFD",
+    "cta": "Ver Programas"
   },
   "mission": {
     "statement": "O futuro industrial de Angola depende não apenas da tecnologia e infraestrutura, mas da competência do seu povo.",
@@ -98,6 +108,10 @@
     "badge": "Catálogo de Cursos",
     "title": "Todas as Certificações",
     "subtitle": "Filtre por categoria para encontrar o curso certo para a sua carreira ou necessidade empresarial.",
+    "signatureFocusLabel": "Foco signature",
+    "signatureFocus1": "ISO 9712 Nível II & III",
+    "signatureFocus2": "CSWIP 3.1 · 3.2",
+    "signatureFocus3": "PAUT · TOFD · ACFM",
     "filterAll": "Todos",
     "filterWelding": "Soldagem & Pintura",
     "filterNdt": "Cursos ASNT-END",
@@ -455,7 +469,12 @@
     "card5bDesc": "Estabelecemos parcerias com empresas, contratantes EPC e operadores industriais para desenvolver programas de certificação e formação personalizados. Desde a implementação de sistemas de gestão ISO até à qualificação END de equipas completas — construímos equipas certificadas, prontas para auditorias e que cumprem os requisitos de projectos, licitações e regulamentos.",
     "viewCourses": "Ver Cursos",
     "viewProgrammes": "Ver Programas",
-    "requestProposal": "Solicitar Proposta Corporativa"
+    "requestProposal": "Solicitar Proposta Corporativa",
+    "heroBadgeLabel": "Programa Signature",
+    "heroCard1Title": "BS EN ISO 9712",
+    "heroCard2Title": "CSWIP / BGAS",
+    "portfolioLabel": "Portefólio de Certificações Internacionais",
+    "portfolioIntro": "Complementado por um portefólio abrangente de programas de certificação técnica e de gestão acreditados internacionalmente."
   },
   "hseTraining": {
     "badge": "Programas de Segurança no Trabalho",
@@ -601,7 +620,7 @@
   "about": {
     "badge": "Sobre a Arco Angola",
     "heading": "Quem Somos",
-    "p1": "A ARCO ANGOLA é uma organização internacional de formação e certificação dedicada a desenvolver profissionais globalmente competentes e organizações de alto desempenho através de soluções de certificação, formação profissional e desenvolvimento de competências internacionalmente reconhecidas.",
+    "p1": "A ARCO ANGOLA é a principal fornecedora angolana de Formação e Certificação de Pessoal em Ensaios Não Destrutivos (END) BS EN ISO 9712:2022, internacionalmente reconhecida, e de Certificação de Inspeção CSWIP/BGAS, apoiada por um portefólio abrangente de programas de certificação técnica e de gestão acreditados internacionalmente.",
     "p2": "Entregamos percursos de aprendizagem estruturados e excelência em certificação para indivíduos e empresas dos sectores industriais de Angola, reforçando a capacidade da força de trabalho, o crescimento profissional e a preparação organizacional de acordo com as expectativas internacionais.",
     "identityLabel": "A Nossa Identidade",
     "pillar1Title": "Excelência em Certificação Internacional",

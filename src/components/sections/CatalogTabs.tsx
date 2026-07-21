@@ -29,6 +29,10 @@ type Props = {
     badge: string;
     title: string;
     subtitle: string;
+    signatureFocusLabel: string;
+    signatureFocus1: string;
+    signatureFocus2: string;
+    signatureFocus3: string;
   };
 };
 
@@ -184,6 +188,16 @@ export default function CatalogTabs({ courses, labels }: Props) {
             {labels.title}
           </h2>
           <p className="text-gray-500 max-w-xl text-sm sm:text-base">{labels.subtitle}</p>
+
+          <div className="mt-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-blue/15 bg-white px-3 py-2 shadow-sm">
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-blue">{labels.signatureFocusLabel}</span>
+            <span className="h-1 w-1 rounded-full bg-blue/70" />
+            <span className="text-sm font-semibold text-navy">{labels.signatureFocus1}</span>
+            <span className="text-gray-300">•</span>
+            <span className="text-sm font-semibold text-navy">{labels.signatureFocus2}</span>
+            <span className="text-gray-300">•</span>
+            <span className="text-sm font-semibold text-navy">{labels.signatureFocus3}</span>
+          </div>
 
         </div>
 
