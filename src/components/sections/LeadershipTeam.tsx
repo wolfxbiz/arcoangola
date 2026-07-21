@@ -14,6 +14,7 @@ const MEMBERS = [
     email: "kk@arcoangola.com",
     location: "Luanda, Angola",
     credentials: [
+      "B.E. Mechanical Engineer",
       "BS EN ISO 9712:2022 – NDT Level III",
       "CSWIP 3.2.2 – Senior Welding Inspector",
       "TWI BGAS Grade 2/3 – Painting Inspector",
