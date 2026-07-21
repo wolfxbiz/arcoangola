@@ -59,7 +59,7 @@
     "iso9712": "Programas ISO 9712 END",
     "iso9712Body": "Certificação Nível II & III",
     "iso": "Programas ISO Lead Auditor",
-    "isoBody": "ISO 9001 · 14001 · 45001",
+    "isoBody": "15 Normas de Sistemas de Gestão",
     "api": "Programas de Preparação API",
     "apiBody": "API 510 · 570 · 653",
     "hse": "Programas de Formação HSE",
@@ -252,6 +252,102 @@
       "iso45001": {
         "title": "ISO 45001:2018",
         "subtitle": "Segurança e Saúde Ocupacional – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso27001": {
+        "title": "ISO/IEC 27001:2022",
+        "subtitle": "Sistema de Gestão de Segurança da Informação – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso22301": {
+        "title": "ISO 22301:2019",
+        "subtitle": "Sistema de Gestão de Continuidade de Negócios – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso50001": {
+        "title": "ISO 50001:2018",
+        "subtitle": "Sistema de Gestão de Energia – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso55001": {
+        "title": "ISO 55001:2024",
+        "subtitle": "Sistema de Gestão de Ativos – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso37001": {
+        "title": "ISO 37001:2025",
+        "subtitle": "Sistema de Gestão Antissuborno – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso22000": {
+        "title": "ISO 22000:2018",
+        "subtitle": "Sistema de Gestão de Segurança Alimentar – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso28000": {
+        "title": "ISO 28000:2022",
+        "subtitle": "Sistema de Gestão de Segurança da Cadeia de Abastecimento – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso41001": {
+        "title": "ISO 41001:2018",
+        "subtitle": "Sistema de Gestão de Instalações – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso21001": {
+        "title": "ISO 21001:2018",
+        "subtitle": "Sistema de Gestão de Organizações Educacionais – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso20000": {
+        "title": "ISO/IEC 20000-1:2018",
+        "subtitle": "Sistema de Gestão de Serviços de TI – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso39001": {
+        "title": "ISO 39001:2012",
+        "subtitle": "Sistema de Gestão de Segurança Rodoviária – Lead Auditor",
+        "duration": "5 Dias",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "ims": {
+        "title": "Sistemas de Gestão Integrados (IMS)",
+        "subtitle": "Auditoria Integrada Multi-Normas – Lead Auditor",
         "duration": "5 Dias",
         "level": "Lead Auditor",
         "category": "isoSystems",
@@ -474,7 +570,20 @@
     "heroCard1Title": "BS EN ISO 9712",
     "heroCard2Title": "CSWIP / BGAS",
     "portfolioLabel": "Portefólio de Certificações Internacionais",
-    "portfolioIntro": "Complementado por um portefólio abrangente de programas de certificação técnica e de gestão acreditados internacionalmente."
+    "portfolioIntro": "Complementado por um portefólio abrangente de programas de certificação técnica e de gestão acreditados internacionalmente.",
+    "audienceLabel": "Lead Auditor ISO — Um Programa, Dois Caminhos",
+    "organizationsTitle": "Para Organizações",
+    "org1": "Desenvolvimento de Sistemas de Gestão Empresarial",
+    "org2": "Sensibilização para Sistemas de Gestão",
+    "org3": "Desenvolvimento de Auditores Internos",
+    "org4": "Programas para Executivos e Liderança",
+    "org5": "Capacitação Corporativa",
+    "professionalsTitle": "Para Profissionais",
+    "pro1": "Certificação Lead Auditor",
+    "pro2": "Certificação de Auditor Interno",
+    "pro3": "Desenvolvimento Profissional",
+    "pro4": "Avanço de Carreira Internacional",
+    "audienceNote": "Um mesmo conjunto de normas ISO, dois caminhos: a mesma experiência torna as organizações conformes e certifica profissionais prontos para a carreira internacional."
   },
   "hseTraining": {
     "badge": "Programas de Segurança no Trabalho",
@@ -629,6 +738,20 @@
     "pillar2Desc": "Apoiando indivíduos e equipas com aprendizagem estruturada, desenvolvimento técnico e reforço de capacidades orientado para a indústria.",
     "pillar3Title": "Desenvolvimento de Competências Corporativas",
     "pillar3Desc": "Ajudando as organizações a reforçar a prontidão da força de trabalho, a confiança na conformidade e o desempenho a longo prazo através de soluções de formação personalizadas."
+  },
+  "leadership": {
+    "badge": "A Nossa Liderança",
+    "heading": "Equipa de Liderança",
+    "subtitle": "Líderes experientes que impulsionam a excelência operacional, o crescimento do negócio e o cumprimento de normas internacionais em toda a ARCO Angola.",
+    "phoneLabel": "Telefone",
+    "emailLabel": "E-mail",
+    "locationLabel": "Localização",
+    "kkRole": "Sócio de Operações",
+    "kkDesc": "Supervisiona as operações, a formação técnica e os programas de certificação, assegurando normas internacionais e excelência operacional em toda a ARCO Angola.",
+    "prathapRole": "Sócio de Negócios",
+    "prathapDesc": "Lidera o desenvolvimento de negócios e as parcerias com clientes, apoiando a formação industrial, a certificação e iniciativas de crescimento estratégico.",
+    "abelRole": "Diretor Nacional",
+    "abelDesc": "Supervisiona as operações nacionais da ARCO Angola, fortalecendo as relações com a indústria local e impulsionando o crescimento organizacional em todo o país."
   },
   "advancedNdt": {
     "badge": "Competência Avançada em END",

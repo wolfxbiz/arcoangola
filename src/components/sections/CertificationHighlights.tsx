@@ -27,6 +27,22 @@ function StarIcon({ className }: { className?: string }) {
   );
 }
 
+function CheckIcon() {
+  return (
+    <svg className="w-4 h-4 shrink-0 text-blue mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+  );
+}
+
+function CheckIconWhite() {
+  return (
+    <svg className="w-4 h-4 shrink-0 text-white/60 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+  );
+}
+
 function handleViewCourses(tabKey: string) {
   window.dispatchEvent(new CustomEvent("setCatalogTab", { detail: tabKey }));
   document.getElementById("courses")?.scrollIntoView({ behavior: "smooth" });
@@ -87,6 +103,44 @@ export default function CertificationHighlights() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* ISO Lead Auditor — Supporting Organizations / Supporting Professionals */}
+        <div className="mb-10 lg:mb-12">
+          <span className="block text-center text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mb-5">
+            {t("audienceLabel")}
+          </span>
+          <div className="grid lg:grid-cols-2 gap-0 border border-gray-200">
+            <div className="p-8 lg:p-10 flex flex-col gap-5 border-b lg:border-b-0 lg:border-r border-gray-200 bg-white">
+              <span className="text-xs font-black uppercase tracking-widest text-blue">
+                {t("organizationsTitle")}
+              </span>
+              <ul className="flex flex-col gap-3">
+                {(["org1", "org2", "org3", "org4", "org5"] as const).map((p) => (
+                  <li key={p} className="flex items-start gap-3 text-sm text-navy">
+                    <CheckIcon />
+                    {t(p)}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="p-8 lg:p-10 flex flex-col gap-5 bg-navy">
+              <span className="text-xs font-black uppercase tracking-widest text-white/50">
+                {t("professionalsTitle")}
+              </span>
+              <ul className="flex flex-col gap-3">
+                {(["pro1", "pro2", "pro3", "pro4"] as const).map((p) => (
+                  <li key={p} className="flex items-start gap-3 text-sm text-white">
+                    <CheckIconWhite />
+                    {t(p)}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <p className="mt-4 text-xs text-gray-400 italic max-w-2xl mx-auto text-center leading-relaxed">
+            {t("audienceNote")}
+          </p>
         </div>
 
         {/* Divider + supporting portfolio */}

@@ -59,7 +59,7 @@
     "iso9712": "ISO 9712 Certification Programmes",
     "iso9712Body": "Level II & III Certification",
     "iso": "ISO Lead Auditor Programs",
-    "isoBody": "ISO 9001 · 14001 · 45001",
+    "isoBody": "15 Management System Standards",
     "api": "API Preparation Programs",
     "apiBody": "API 510 · 570 · 653",
     "hse": "HSE Training Programs",
@@ -252,6 +252,102 @@
       "iso45001": {
         "title": "ISO 45001:2018",
         "subtitle": "Occupational Health & Safety Management – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso27001": {
+        "title": "ISO/IEC 27001:2022",
+        "subtitle": "Information Security Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso22301": {
+        "title": "ISO 22301:2019",
+        "subtitle": "Business Continuity Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso50001": {
+        "title": "ISO 50001:2018",
+        "subtitle": "Energy Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso55001": {
+        "title": "ISO 55001:2024",
+        "subtitle": "Asset Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso37001": {
+        "title": "ISO 37001:2025",
+        "subtitle": "Anti-Bribery Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso22000": {
+        "title": "ISO 22000:2018",
+        "subtitle": "Food Safety Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso28000": {
+        "title": "ISO 28000:2022",
+        "subtitle": "Supply Chain Security Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso41001": {
+        "title": "ISO 41001:2018",
+        "subtitle": "Facility Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso21001": {
+        "title": "ISO 21001:2018",
+        "subtitle": "Educational Organizations Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso20000": {
+        "title": "ISO/IEC 20000-1:2018",
+        "subtitle": "IT Service Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso39001": {
+        "title": "ISO 39001:2012",
+        "subtitle": "Road Traffic Safety Management System – Lead Auditor",
+        "duration": "5 Days",
+        "level": "Lead Auditor",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "ims": {
+        "title": "Integrated Management Systems (IMS)",
+        "subtitle": "Multi-Standard Integrated Audit – Lead Auditor",
         "duration": "5 Days",
         "level": "Lead Auditor",
         "category": "isoSystems",
@@ -474,7 +570,20 @@
     "heroCard1Title": "BS EN ISO 9712",
     "heroCard2Title": "CSWIP / BGAS",
     "portfolioLabel": "International Certification Portfolio",
-    "portfolioIntro": "Supported by a comprehensive portfolio of internationally accredited technical and management certification programmes."
+    "portfolioIntro": "Supported by a comprehensive portfolio of internationally accredited technical and management certification programmes.",
+    "audienceLabel": "ISO Lead Auditor — One Programme, Two Pathways",
+    "organizationsTitle": "Supporting Organizations",
+    "org1": "Enterprise Management System Development",
+    "org2": "Management System Awareness",
+    "org3": "Internal Auditor Development",
+    "org4": "Executive & Leadership Programs",
+    "org5": "Corporate Capacity Building",
+    "professionalsTitle": "Supporting Professionals",
+    "pro1": "Lead Auditor Certification",
+    "pro2": "Internal Auditor Certification",
+    "pro3": "Professional Development",
+    "pro4": "International Career Advancement",
+    "audienceNote": "One set of ISO standards, two pathways — the same expertise builds compliant organisations and certifies career-ready professionals."
   },
   "hseTraining": {
     "badge": "Workplace Safety Programmes",
@@ -581,6 +690,20 @@
     "pillar2Desc": "Supporting individuals and teams with structured learning, technical development and industry-focused capability building.",
     "pillar3Title": "Corporate Competency Development",
     "pillar3Desc": "Helping organisations strengthen workforce readiness, compliance confidence and long-term performance through tailored training solutions."
+  },
+  "leadership": {
+    "badge": "Our Leadership",
+    "heading": "Leadership Team",
+    "subtitle": "Experienced leaders driving operational excellence, business growth and international standards across ARCO Angola.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "locationLabel": "Location",
+    "kkRole": "Operations Partner",
+    "kkDesc": "Oversees operations, technical training, and certification programmes while ensuring international standards and operational excellence across ARCO Angola.",
+    "prathapRole": "Business Partner",
+    "prathapDesc": "Leads business development and client partnerships, supporting industrial training, certification, and strategic growth initiatives.",
+    "abelRole": "National Director",
+    "abelDesc": "Oversees ARCO Angola's national operations, strengthening local industry relationships and driving organisational growth across Angola."
   },
   "advancedNdt": {
     "badge": "Advanced NDT Competency",

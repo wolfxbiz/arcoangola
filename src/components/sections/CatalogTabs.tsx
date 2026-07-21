@@ -50,7 +50,7 @@ const CATEGORY_GROUPS: Record<string, string> = {
 
 // Certification body names shown in the sidebar / mobile grid
 const SECTION_BODIES: Record<string, string> = {
-  iso:     "ISO 9001 · 14001 · 45001 · 9712",
+  iso:     "15 ISO Standards · 9712",
   welding: "TWI-CSWIP / BGAS",
   ndt:     "ASNT-SNT-TC-1A",
   api:     "API 653 · 570 · 510",

@@ -10,6 +10,7 @@ import CatalogTabs from "@/components/sections/CatalogTabs";
 import DualAudience from "@/components/sections/DualAudience";
 import PremiumTracks from "@/components/sections/PremiumTracks";
 import AboutSection from "@/components/sections/AboutSection";
+import LeadershipTeam from "@/components/sections/LeadershipTeam";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import FlagshipSolutions from "@/components/sections/FlagshipSolutions";
 import AdvancedNdtPrograms from "@/components/sections/AdvancedNdtPrograms";
@@ -24,6 +25,8 @@ const COURSE_KEYS = [
   "asntVt","asntMt","asntPt","asntUt","asntRt","asntRtfi",
   "api653","api570","api510",
   "iso9001","iso14001","iso45001",
+  "iso27001","iso22301","iso50001","iso55001","iso37001",
+  "iso22000","iso28000","iso41001","iso21001","iso20000","iso39001","ims",
   "iso9712WiL2","iso9712MtL2","iso9712VtL2","iso9712RtfiL2",
   "iso9712PtL2","iso9712UtL2","iso9712RtL2","iso9712PautL2","iso9712TofdL2",
   "iso9712WiL3","iso9712BasicL3","iso9712MtL3","iso9712VtL3",
@@ -83,6 +86,10 @@ export default async function LandingPage({ params }: Props) {
 
         <section id="about">
           <AboutSection />
+        </section>
+
+        <section id="leadership">
+          <LeadershipTeam />
         </section>
 
         <section id="programmes">

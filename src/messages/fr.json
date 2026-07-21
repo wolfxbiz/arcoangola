@@ -59,7 +59,7 @@
     "iso9712": "Programmes ISO 9712 CND",
     "iso9712Body": "Certification Niveaux II & III",
     "iso": "Programmes Auditeur Principal ISO",
-    "isoBody": "ISO 9001 · 14001 · 45001",
+    "isoBody": "15 Normes de Systèmes de Management",
     "api": "Programmes de Préparation API",
     "apiBody": "API 510 · 570 · 653",
     "hse": "Programmes de Formation HSE",
@@ -252,6 +252,102 @@
       "iso45001": {
         "title": "ISO 45001:2018",
         "subtitle": "Santé et Sécurité au Travail – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso27001": {
+        "title": "ISO/IEC 27001:2022",
+        "subtitle": "Système de Management de la Sécurité de l'Information – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso22301": {
+        "title": "ISO 22301:2019",
+        "subtitle": "Système de Management de la Continuité d'Activité – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso50001": {
+        "title": "ISO 50001:2018",
+        "subtitle": "Système de Management de l'Énergie – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso55001": {
+        "title": "ISO 55001:2024",
+        "subtitle": "Système de Management des Actifs – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso37001": {
+        "title": "ISO 37001:2025",
+        "subtitle": "Système de Management Anti-Corruption – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso22000": {
+        "title": "ISO 22000:2018",
+        "subtitle": "Système de Management de la Sécurité des Denrées Alimentaires – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso28000": {
+        "title": "ISO 28000:2022",
+        "subtitle": "Système de Management de la Sûreté de la Chaîne d'Approvisionnement – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso41001": {
+        "title": "ISO 41001:2018",
+        "subtitle": "Système de Management des Installations – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso21001": {
+        "title": "ISO 21001:2018",
+        "subtitle": "Système de Management des Organismes Éducatifs – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso20000": {
+        "title": "ISO/IEC 20000-1:2018",
+        "subtitle": "Système de Management des Services Informatiques – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "iso39001": {
+        "title": "ISO 39001:2012",
+        "subtitle": "Système de Management de la Sécurité Routière – Auditeur Principal",
+        "duration": "5 Jours",
+        "level": "Auditeur Principal",
+        "category": "isoSystems",
+        "dualAudience": true
+      },
+      "ims": {
+        "title": "Systèmes de Management Intégrés (IMS)",
+        "subtitle": "Audit Intégré Multi-Normes – Auditeur Principal",
         "duration": "5 Jours",
         "level": "Auditeur Principal",
         "category": "isoSystems",
@@ -474,7 +570,20 @@
     "heroCard1Title": "BS EN ISO 9712",
     "heroCard2Title": "CSWIP / BGAS",
     "portfolioLabel": "Portefeuille de Certifications Internationales",
-    "portfolioIntro": "Complété par un portefeuille complet de programmes de certification technique et de management accrédités à l'échelle internationale."
+    "portfolioIntro": "Complété par un portefeuille complet de programmes de certification technique et de management accrédités à l'échelle internationale.",
+    "audienceLabel": "Auditeur Principal ISO — Un Programme, Deux Parcours",
+    "organizationsTitle": "Pour les Organisations",
+    "org1": "Développement de Systèmes de Management d'Entreprise",
+    "org2": "Sensibilisation aux Systèmes de Management",
+    "org3": "Développement d'Auditeurs Internes",
+    "org4": "Programmes pour Cadres & Dirigeants",
+    "org5": "Renforcement des Capacités de l'Entreprise",
+    "professionalsTitle": "Pour les Professionnels",
+    "pro1": "Certification Auditeur Principal",
+    "pro2": "Certification Auditeur Interne",
+    "pro3": "Développement Professionnel",
+    "pro4": "Évolution de Carrière à l'International",
+    "audienceNote": "Un même socle de normes ISO, deux parcours : la même expertise rend les organisations conformes et prépare des professionnels prêts pour leur carrière."
   },
   "hseTraining": {
     "badge": "Programmes de Sécurité au Travail",
@@ -629,6 +738,20 @@
     "pillar2Desc": "Soutenant les individus et les équipes par un apprentissage structuré, un développement technique et un renforcement des compétences orienté vers l'industrie.",
     "pillar3Title": "Développement des Compétences de l'Entreprise",
     "pillar3Desc": "Aider les organisations à renforcer la préparation de la main-d'œuvre, la confiance en matière de conformité et la performance à long terme grâce à des solutions de formation sur mesure."
+  },
+  "leadership": {
+    "badge": "Notre Direction",
+    "heading": "Équipe de Direction",
+    "subtitle": "Des dirigeants expérimentés qui pilotent l'excellence opérationnelle, la croissance commerciale et le respect des normes internationales au sein d'ARCO Angola.",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "E-mail",
+    "locationLabel": "Localisation",
+    "kkRole": "Associé Opérationnel",
+    "kkDesc": "Supervise les opérations, la formation technique et les programmes de certification, en garantissant les normes internationales et l'excellence opérationnelle au sein d'ARCO Angola.",
+    "prathapRole": "Associé Commercial",
+    "prathapDesc": "Dirige le développement commercial et les partenariats clients, en soutenant la formation industrielle, la certification et les initiatives de croissance stratégique.",
+    "abelRole": "Directeur National",
+    "abelDesc": "Supervise les opérations nationales d'ARCO Angola, renforçant les relations avec l'industrie locale et pilotant la croissance organisationnelle à travers l'Angola."
   },
   "advancedNdt": {
     "badge": "Compétence Avancée en CND",
