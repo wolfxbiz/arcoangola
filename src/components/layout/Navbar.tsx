@@ -70,9 +70,9 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden lg:flex flex-1 justify-center">
             <div className="flex items-center gap-3 xl:gap-5">
-              {navItems.map((link) => (
+              {navItems.map((link, i) => (
                 <a
-                  key={link.href}
+                  key={i}
                   href={link.href}
                   className={`text-sm font-semibold whitespace-nowrap transition-colors duration-300 ${
                     scrolled ? "text-navy hover:text-blue" : "text-white/90 hover:text-white"
@@ -142,9 +142,9 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 pb-6 pt-5 shadow-[0_20px_45px_-20px_rgba(0,0,0,0.35)]">
           <div className="flex flex-col gap-1.5">
-            {navItems.map((link) => (
+            {navItems.map((link, i) => (
               <a
-                key={link.href}
+                key={i}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className="py-3 px-3 text-sm font-semibold text-navy hover:bg-gray-50 hover:text-blue transition-colors"
