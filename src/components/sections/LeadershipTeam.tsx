@@ -37,22 +37,6 @@ const MEMBERS = [
       "Industrial Training & Certification Specialist",
     ],
   },
-  {
-    key: "abel",
-    name: "Abel Timoteo",
-    photo: "/assets/leader-abel-timoteo.jpeg",
-    photoPosition: "center 15%",
-    phone: "+244 926 531 906",
-    phoneHref: "tel:+244926531906",
-    email: "director01@arcoangola.com",
-    location: "Luanda, Angola",
-    credentials: [
-      "National Operations Leadership",
-      "Business Development",
-      "Client Relationship Management",
-      "Strategic Planning",
-    ],
-  },
 ] as const;
 
 function PhoneIcon() {
@@ -101,7 +85,7 @@ export default function LeadershipTeam() {
         </div>
 
         {/* Team grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
           {MEMBERS.map((m) => (
             <div key={m.key} className="border border-gray-200 bg-white flex flex-col overflow-hidden">
               <div className="relative h-72 sm:h-80 shrink-0 bg-navy">

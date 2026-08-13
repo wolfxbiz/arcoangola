@@ -788,12 +788,10 @@
     "emailLabel": "E-mail",
     "locationLabel": "Localização",
     "credentialsLabel": "Principais Credenciais",
-    "kkRole": "Sócio de Operações",
-    "kkDesc": "Lidera as operações técnicas, os programas de formação internacional e as iniciativas de certificação, garantindo a excelência operacional e a conformidade com as normas internacionais do setor.",
-    "prathapRole": "Sócio de Negócios",
-    "prathapDesc": "Impulsiona o desenvolvimento de negócios, as parcerias estratégicas e as soluções de formação industrial em todo o Angola, apoiando simultaneamente a excelência técnica.",
-    "abelRole": "Diretor Nacional",
-    "abelDesc": "Supervisiona as operações nacionais, fortalece as relações com os clientes e lidera a execução das iniciativas estratégicas da ARCO Angola em todo o país."
+    "kkRole": "Diretor — Operações e Autoridade Técnica",
+    "kkDesc": "Lidera as operações técnicas, os programas de formação internacional e as iniciativas de certificação como Autoridade Técnica, garantindo a excelência operacional e a conformidade com as normas internacionais do setor.",
+    "prathapRole": "Diretor — Desenvolvimento de Negócios e Administração",
+    "prathapDesc": "Impulsiona o desenvolvimento de negócios, as parcerias estratégicas e a administração em todo o Angola, apoiando simultaneamente as soluções de formação industrial e a excelência técnica."
   },
   "advancedNdt": {
     "badge": "Competência Avançada em END",

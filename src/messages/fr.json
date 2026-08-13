@@ -788,12 +788,10 @@
     "emailLabel": "E-mail",
     "locationLabel": "Localisation",
     "credentialsLabel": "Certifications Clés",
-    "kkRole": "Associé Opérationnel",
-    "kkDesc": "Dirige les opérations techniques, les programmes de formation internationale et les initiatives de certification, garantissant l'excellence opérationnelle et la conformité aux normes internationales du secteur.",
-    "prathapRole": "Associé Commercial",
-    "prathapDesc": "Pilote le développement commercial, les partenariats stratégiques et les solutions de formation industrielle à travers l'Angola, tout en soutenant l'excellence technique.",
-    "abelRole": "Directeur National",
-    "abelDesc": "Supervise les opérations nationales, renforce les relations avec les clients et dirige l'exécution des initiatives stratégiques d'ARCO Angola à travers tout le pays."
+    "kkRole": "Directeur — Opérations et Autorité Technique",
+    "kkDesc": "Dirige les opérations techniques, les programmes de formation internationale et les initiatives de certification en tant qu'Autorité Technique, garantissant l'excellence opérationnelle et la conformité aux normes internationales du secteur.",
+    "prathapRole": "Directeur — Développement Commercial et Administration",
+    "prathapDesc": "Pilote le développement commercial, les partenariats stratégiques et l'administration à travers l'Angola, tout en soutenant les solutions de formation industrielle et l'excellence technique."
   },
   "advancedNdt": {
     "badge": "Compétence Avancée en CND",

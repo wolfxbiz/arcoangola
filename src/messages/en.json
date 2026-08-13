@@ -740,12 +740,10 @@
     "emailLabel": "Email",
     "locationLabel": "Location",
     "credentialsLabel": "Key Credentials",
-    "kkRole": "Operations Partner",
-    "kkDesc": "Leads technical operations, international training programs, and certification initiatives, ensuring operational excellence and compliance with global industry standards.",
-    "prathapRole": "Business Partner",
-    "prathapDesc": "Drives business development, strategic partnerships, and industrial training solutions across Angola while supporting technical excellence.",
-    "abelRole": "National Director",
-    "abelDesc": "Oversees national operations, strengthens client relationships, and leads the execution of ARCO Angola's strategic initiatives throughout Angola."
+    "kkRole": "Director — Operations & Technical Authority",
+    "kkDesc": "Leads technical operations, international training programs, and certification initiatives as Technical Authority, ensuring operational excellence and compliance with global industry standards.",
+    "prathapRole": "Director — Business Development & Administration",
+    "prathapDesc": "Drives business development, strategic partnerships, and administration across Angola while supporting industrial training solutions and technical excellence."
   },
   "advancedNdt": {
     "badge": "Advanced NDT Competency",
