@@ -568,9 +568,9 @@
     "learnMore": "Voir les Programmes"
   },
   "certificates": {
-    "badge": "Accréditation Internationale",
-    "heading": "Nos Accréditations ISO",
-    "intro": "Arco Angola détient trois certifications de systèmes de management ISO internationalement reconnues — auditées et vérifiées de manière indépendante, les mêmes normes exigées par les opérateurs et clients mondiaux dans les secteurs de l'énergie et de l'industrie.",
+    "badge": "Certifiée et Agréée",
+    "heading": "Accréditations et Statut Juridique",
+    "intro": "Arco Angola détient trois certifications de systèmes de management ISO internationalement reconnues — auditées et vérifiées de manière indépendante — et opère en tant qu'entité commerciale pleinement agréée, enregistrée auprès du Ministère de l'Industrie et du Commerce de l'Angola.",
     "cert1Sub": "Système de Management de la Qualité",
     "cert2Sub": "Système de Management Environnemental",
     "cert3Sub": "Santé et Sécurité au Travail",
@@ -578,7 +578,9 @@
     "accredBody1Label": "Accrédité UAF",
     "accredBody1Sub": "United Accreditation Foundation",
     "accredBody2Label": "Reconnu IAF",
-    "accredBody2Sub": "International Accreditation Forum"
+    "accredBody2Sub": "International Accreditation Forum",
+    "licenseLabel": "Entreprise Agréée",
+    "licenseSub": "Alvará Comercial · Ministério da Indústria e Comércio"
   },
   "certHighlights": {
     "badge": "Programmes Mondialement Accrédités",

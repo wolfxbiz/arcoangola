@@ -15,11 +15,26 @@ const ACCREDITATIONS = [
   { labelKey: "accredBody2Label" as const, subKey: "accredBody2Sub" as const },
 ];
 
+const LICENSE = {
+  src: "/assets/license-alvara-comercial.webp",
+  labelKey: "licenseLabel" as const,
+  subKey: "licenseSub" as const,
+};
+
 function ShieldIcon() {
   return (
     <svg className="w-5 h-5 shrink-0 text-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z" />
       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+    </svg>
+  );
+}
+
+function DocumentIcon() {
+  return (
+    <svg className="w-5 h-5 shrink-0 text-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8M8 16h5M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M14 3v5h5" />
     </svg>
   );
 }
@@ -78,6 +93,16 @@ export default function Certificates() {
           </div>
 
           <div className="mt-4 sm:mt-6 flex flex-wrap gap-3 sm:gap-4">
+            <button
+              onClick={() => setLightbox(LICENSE.src)}
+              className="group flex items-center gap-3 border border-gray-200 hover:border-blue px-5 py-3 text-left transition-colors"
+            >
+              <DocumentIcon />
+              <div>
+                <p className="text-[11px] font-black text-blue uppercase tracking-widest leading-tight">{t(LICENSE.labelKey)}</p>
+                <p className="text-[10px] text-gray-400 leading-tight">{t(LICENSE.subKey)}</p>
+              </div>
+            </button>
             {ACCREDITATIONS.map(({ labelKey, subKey }) => (
               <div key={labelKey} className="flex items-center gap-3 border border-gray-200 px-5 py-3">
                 <ShieldIcon />
