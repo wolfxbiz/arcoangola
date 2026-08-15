@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 import { whatsAppLink } from "@/lib/whatsapp";
 
 const HERO_CARDS = [
-  { img: "/assets/engineer.webp",                    imgAlt: "ISO 9712 certified NDT engineer",             titleKey: "heroCard1Title" as const, descKey: "card2Desc" as const,     tabKey: "iso" },
-  { img: "/assets/img-ndt-services.webp",            imgAlt: "Professional welder on pressure vessel",      titleKey: "heroCard2Title" as const, descKey: "card4Desc" as const,     tabKey: "welding" },
-  { img: "/assets/img-iso-managemnet-system.png",    imgAlt: "ISO Lead Auditor reviewing management system documentation", titleKey: "heroCard3Title" as const, descKey: "heroCard3Desc" as const, tabKey: "iso" },
+  { img: "/assets/engineer.webp",                    imgAlt: "ISO 9712 certified NDT engineer",             titleKey: "heroCard1Title" as const, descKey: "card2Desc" as const,     tabKey: "iso", href: "/signature-programmes/bs-en-iso-9712" },
+  { img: "/assets/img-ndt-services.webp",            imgAlt: "Professional welder on pressure vessel",      titleKey: "heroCard2Title" as const, descKey: "card4Desc" as const,     tabKey: "welding", href: null },
+  { img: "/assets/img-iso-managemnet-system.png",    imgAlt: "ISO Lead Auditor reviewing management system documentation", titleKey: "heroCard3Title" as const, descKey: "heroCard3Desc" as const, tabKey: "iso", href: null },
 ] as const;
 
 const PORTFOLIO_ITEMS = [
@@ -52,6 +53,7 @@ function handleViewCourses(tabKey: string) {
 
 export default function CertificationHighlights() {
   const t = useTranslations("certHighlights");
+  const locale = useLocale();
 
   return (
     <section className="py-14 sm:py-20 lg:py-28 bg-white border-b border-gray-100">
@@ -72,7 +74,7 @@ export default function CertificationHighlights() {
 
         {/* Hero cards: BS EN ISO 9712, CSWIP/BGAS, ISO Management Systems — the three flagship programmes */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-10 lg:mb-12">
-          {HERO_CARDS.map(({ img, imgAlt, titleKey, descKey, tabKey }) => (
+          {HERO_CARDS.map(({ img, imgAlt, titleKey, descKey, tabKey, href }) => (
             <div key={titleKey} className="flex flex-col overflow-hidden bg-navy border-2 border-[#D4AF37]/60">
               <div className="relative h-60 sm:h-72 shrink-0">
                 <Image
@@ -93,15 +95,27 @@ export default function CertificationHighlights() {
                 <p className="text-white/70 text-sm leading-relaxed flex-1">
                   {t(descKey)}
                 </p>
-                <button
-                  onClick={() => handleViewCourses(tabKey)}
-                  className="self-start mt-2 inline-flex items-center gap-1.5 text-xs font-black text-[#D4AF37] hover:text-white uppercase tracking-widest transition-colors"
-                >
-                  {t("viewCourses")}
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </button>
+                {href ? (
+                  <Link
+                    href={`/${locale}${href}`}
+                    className="self-start mt-2 inline-flex items-center gap-1.5 text-xs font-black text-[#D4AF37] hover:text-white uppercase tracking-widest transition-colors"
+                  >
+                    {t("viewCourses")}
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => handleViewCourses(tabKey)}
+                    className="self-start mt-2 inline-flex items-center gap-1.5 text-xs font-black text-[#D4AF37] hover:text-white uppercase tracking-widest transition-colors"
+                  >
+                    {t("viewCourses")}
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </button>
+                )}
               </div>
             </div>
           ))}

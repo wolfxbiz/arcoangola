@@ -7,6 +7,14 @@ import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { whatsAppLink } from "@/lib/whatsapp";
 
+function ChevronIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
+    </svg>
+  );
+}
+
 const locales = [
   { code: "pt", flag: "/assets/flag-pt.png", label: "PT" },
   { code: "en", flag: "/assets/flag-en.png", label: "EN" },
@@ -19,6 +27,8 @@ export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [programmesOpen, setProgrammesOpen] = useState(false);
+  const [mobileProgrammesOpen, setMobileProgrammesOpen] = useState(false);
 
   useEffect(() => {
     const handler = () => {
@@ -29,13 +39,24 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  useEffect(() => setMobileOpen(false), [pathname]);
+  useEffect(() => {
+    setMobileOpen(false);
+    setMobileProgrammesOpen(false);
+    setProgrammesOpen(false);
+  }, [pathname]);
 
   const navItems = [
-    { href: "#programmes", label: t("signaturePrograms") },
     { href: "#programmes", label: t("internationalCertifications") },
     { href: "#corporate", label: t("corporateLearning") },
     { href: "#contact", label: t("contact") },
+  ];
+
+  const signatureProgrammes = [
+    {
+      href: `/${locale}/signature-programmes/bs-en-iso-9712`,
+      title: "BS EN ISO 9712:2022",
+      subtitle: t("signatureProgrammeSubtitle"),
+    },
   ];
 
   function switchLocalePath(newLocale: string) {
@@ -70,6 +91,45 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden lg:flex flex-1 justify-center">
             <div className="flex items-center gap-3 xl:gap-5">
+              {/* Signature Programmes dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setProgrammesOpen(true)}
+                onMouseLeave={() => setProgrammesOpen(false)}
+              >
+                <button
+                  type="button"
+                  onClick={() => setProgrammesOpen((v) => !v)}
+                  aria-expanded={programmesOpen}
+                  className={`flex items-center gap-1.5 text-sm font-semibold whitespace-nowrap transition-colors duration-300 ${
+                    scrolled ? "text-navy hover:text-blue" : "text-white/90 hover:text-white"
+                  }`}
+                >
+                  {t("signaturePrograms")}
+                  <ChevronIcon
+                    className={`w-3 h-3 transition-transform duration-200 ${programmesOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                {programmesOpen && (
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-80">
+                    <div className="bg-white border border-gray-200 shadow-xl py-2">
+                      {signatureProgrammes.map((p) => (
+                        <Link
+                          key={p.href}
+                          href={p.href}
+                          onClick={() => setProgrammesOpen(false)}
+                          className="flex flex-col gap-0.5 px-4 py-3 hover:bg-gray-50 transition-colors border-l-2 border-transparent hover:border-[#D4AF37]"
+                        >
+                          <span className="text-sm font-black text-navy">{p.title}</span>
+                          <span className="text-xs text-gray-400">{p.subtitle}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
               {navItems.map((link, i) => (
                 <a
                   key={i}
@@ -142,6 +202,36 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 pb-6 pt-5 shadow-[0_20px_45px_-20px_rgba(0,0,0,0.35)]">
           <div className="flex flex-col gap-1.5">
+            {/* Signature Programmes accordion */}
+            <div>
+              <button
+                type="button"
+                onClick={() => setMobileProgrammesOpen((v) => !v)}
+                aria-expanded={mobileProgrammesOpen}
+                className="w-full flex items-center justify-between py-3 px-3 text-sm font-semibold text-navy hover:bg-gray-50 hover:text-blue transition-colors"
+              >
+                {t("signaturePrograms")}
+                <ChevronIcon
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${mobileProgrammesOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {mobileProgrammesOpen && (
+                <div className="flex flex-col pb-1">
+                  {signatureProgrammes.map((p) => (
+                    <Link
+                      key={p.href}
+                      href={p.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="flex flex-col gap-0.5 py-2.5 pl-6 pr-3 border-l-2 border-[#D4AF37]/40 ml-3 hover:border-[#D4AF37] transition-colors"
+                    >
+                      <span className="text-sm font-bold text-navy">{p.title}</span>
+                      <span className="text-xs text-gray-400">{p.subtitle}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {navItems.map((link, i) => (
               <a
                 key={i}

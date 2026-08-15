@@ -15,10 +15,21 @@ const ACCREDITATIONS = [
   { labelKey: "accredBody2Label" as const, subKey: "accredBody2Sub" as const },
 ];
 
-const LICENSE = {
-  src: "/assets/license-alvara-comercial.webp",
-  labelKey: "licenseLabel" as const,
-  subKey: "licenseSub" as const,
+const LEGAL_DOCUMENTS = [
+  { src: "/assets/license-alvara-comercial.webp", labelKey: "licenseLabel" as const, subKey: "licenseSub" as const },
+  { src: "/assets/doc-matricula.webp", labelKey: "matriculaLabel" as const, subKey: "matriculaSub" as const },
+  { src: "/assets/doc-estatutos.webp", labelKey: "estatutosLabel" as const, subKey: "estatutosSub" as const },
+  { src: "/assets/doc-publicacao.webp", labelKey: "publicacaoLabel" as const, subKey: "publicacaoSub" as const },
+];
+
+const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
+  "/assets/cert-qms.webp": { width: 2359, height: 3334 },
+  "/assets/cert-ems.webp": { width: 2359, height: 3334 },
+  "/assets/cert-ohsms.webp": { width: 2359, height: 3334 },
+  "/assets/license-alvara-comercial.webp": { width: 2382, height: 3368 },
+  "/assets/doc-matricula.webp": { width: 1341, height: 2256 },
+  "/assets/doc-estatutos.webp": { width: 1247, height: 3582 },
+  "/assets/doc-publicacao.webp": { width: 1493, height: 3808 },
 };
 
 function ShieldIcon() {
@@ -42,6 +53,7 @@ function DocumentIcon() {
 export default function Certificates() {
   const t = useTranslations("certificates");
   const [lightbox, setLightbox] = useState<string | null>(null);
+  const [galleryOpen, setGalleryOpen] = useState(false);
 
   return (
     <>
@@ -71,8 +83,8 @@ export default function Certificates() {
                   <Image
                     src={src}
                     alt={label}
-                    width={1131}
-                    height={1600}
+                    width={IMAGE_DIMENSIONS[src].width}
+                    height={IMAGE_DIMENSIONS[src].height}
                     style={{ width: "100%", height: "auto", display: "block" }}
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-200 flex items-center justify-center">
@@ -94,13 +106,13 @@ export default function Certificates() {
 
           <div className="mt-4 sm:mt-6 flex flex-wrap gap-3 sm:gap-4">
             <button
-              onClick={() => setLightbox(LICENSE.src)}
+              onClick={() => setGalleryOpen(true)}
               className="group flex items-center gap-3 border border-gray-200 hover:border-blue px-5 py-3 text-left transition-colors"
             >
               <DocumentIcon />
               <div>
-                <p className="text-[11px] font-black text-blue uppercase tracking-widest leading-tight">{t(LICENSE.labelKey)}</p>
-                <p className="text-[10px] text-gray-400 leading-tight">{t(LICENSE.subKey)}</p>
+                <p className="text-[11px] font-black text-blue uppercase tracking-widest leading-tight">{t("legalDocsLabel")}</p>
+                <p className="text-[10px] text-gray-400 leading-tight">{t("legalDocsSub")}</p>
               </div>
             </button>
             {ACCREDITATIONS.map(({ labelKey, subKey }) => (
@@ -116,6 +128,63 @@ export default function Certificates() {
 
         </div>
       </section>
+
+      {/* Legal documents gallery */}
+      {galleryOpen && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/92 flex items-center justify-center p-4 sm:p-10"
+          onClick={() => setGalleryOpen(false)}
+        >
+          <div className="relative w-full max-w-2xl" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={() => setGalleryOpen(false)}
+              className="absolute -top-9 right-0 text-white/60 hover:text-white font-bold text-xs uppercase tracking-widest flex items-center gap-2"
+            >
+              {t("close")}
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div className="bg-white p-5 sm:p-6">
+              <p className="text-[11px] font-black text-navy uppercase tracking-widest mb-4">{t("legalDocsLabel")}</p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {LEGAL_DOCUMENTS.map(({ src, labelKey, subKey }) => (
+                  <button
+                    key={src}
+                    onClick={() => {
+                      setGalleryOpen(false);
+                      setLightbox(src);
+                    }}
+                    className="group flex flex-col overflow-hidden border border-gray-200 hover:border-blue transition-colors duration-200 text-left"
+                  >
+                    <div className="relative aspect-[3/4] overflow-hidden bg-gray-50">
+                      <Image
+                        src={src}
+                        alt={t(labelKey)}
+                        fill
+                        sizes="(min-width: 640px) 25vw, 40vw"
+                        style={{ objectFit: "cover", objectPosition: "top" }}
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-200 flex items-center justify-center">
+                        <svg
+                          className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="px-2 py-2 border-t border-gray-100">
+                      <p className="text-[9px] font-black text-blue uppercase tracking-wide leading-tight">{t(labelKey)}</p>
+                      <p className="text-[8px] text-gray-400 mt-0.5 leading-tight hidden sm:block">{t(subKey)}</p>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Lightbox */}
       {lightbox && (
@@ -136,8 +205,8 @@ export default function Certificates() {
             <Image
               src={lightbox}
               alt="Certificate"
-              width={1131}
-              height={1600}
+              width={IMAGE_DIMENSIONS[lightbox].width}
+              height={IMAGE_DIMENSIONS[lightbox].height}
               style={{ maxHeight: "90vh", width: "auto", objectFit: "contain" }}
             />
           </div>

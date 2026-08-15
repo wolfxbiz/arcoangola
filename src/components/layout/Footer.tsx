@@ -8,7 +8,6 @@ import { useTranslations, useLocale } from "next-intl";
 const WHATSAPP_NUMBERS = [
   { number: "244927789106", label: "+244 927 789 106" },
   { number: "244930408008", label: "+244 930 408 008" },
-  { number: "244926531906", label: "+244 926 531 906" },
 ];
 const WHATSAPP_NUMBER = WHATSAPP_NUMBERS[0].number;
 
@@ -53,8 +52,8 @@ export default function Footer() {
   }
 
   const links = [
-    { href: "#programmes", label: nav("signaturePrograms") },
     { href: `/${locale}`, label: "Home" },
+    { href: `/${locale}/signature-programmes/bs-en-iso-9712`, label: "BS EN ISO 9712:2022" },
     { href: `/${locale}/courses`, label: nav("courses") },
     { href: `/${locale}/corporate`, label: nav("corporate") },
   ];
@@ -206,7 +205,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Arco Angola. {t("rights")}
           </p>
           <p className="text-[11px] font-black uppercase tracking-widest text-white/20 order-first sm:order-none">
-            Quality&nbsp;·&nbsp;Integrity&nbsp;·&nbsp;Commitment
+            Quality&nbsp;·&nbsp;Trust&nbsp;·&nbsp;Commitment
           </p>
           <div className="flex items-center gap-6">
             {(["pt", "en", "fr"] as const).map((l) => (

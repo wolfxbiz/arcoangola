@@ -14,6 +14,12 @@ const CheckIconWhite = () => (
   </svg>
 );
 
+const StarIcon = () => (
+  <svg className="w-3.5 h-3.5 inline-block mr-1.5 -mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path d="M10 1.5l2.59 5.25 5.79.84-4.19 4.08.99 5.77L10 14.77l-5.18 2.67.99-5.77L1.62 7.6l5.79-.84L10 1.5z" />
+  </svg>
+);
+
 export default function DualAudience() {
   const t = useTranslations("dualAudience");
 
@@ -125,7 +131,7 @@ export default function DualAudience() {
 
             {/* ISO Highlight */}
             <div className="border-l-4 border-blue bg-white/5 p-4 text-sm text-white/80 leading-relaxed">
-              <span className="font-black text-white block mb-1">★ ISO Lead Auditor</span>
+              <span className="font-black text-white block mb-1"><StarIcon />ISO Lead Auditor</span>
               {t("corporate.isoHighlight")}
             </div>
 

@@ -1,7 +1,7 @@
 {
   "closing": {
     "headline": "Building Angola's Future Through Competent People.",
-    "body": "ARCO ANGOLA develops the inspectors, technicians, and industry professionals who strengthen quality, safety, integrity, and operational excellence across Angola's Oil & Gas, Energy, Construction, and Industrial sectors.",
+    "body": "ARCO ANGOLA develops the inspectors, technicians, and industry professionals who strengthen quality, safety, professionalism, and operational excellence across Angola's Oil & Gas, Energy, Construction, and Industrial sectors.",
     "tagline": "From Angola. To International Standards.",
     "ctaConsultation": "Book Consultation",
     "ctaCorporate": "Corporate Enquiry",
@@ -24,6 +24,7 @@
     "corporateLearning": "Corporate Learning",
     "isoManagementSystems": "ISO Programmes",
     "signaturePrograms": "Signature Programmes",
+    "signatureProgrammeSubtitle": "International NDT Personnel Certification",
     "waRequestTrainingMessage": "Hello ARCO ANGOLA, I would like to request training information."
   },
   "hero": {
@@ -59,7 +60,7 @@
     "statement": "Angola's industrial future depends not only on technology and infrastructure, but on the competence of its people.",
     "body": "is committed to developing world-class professionals through Training, Certification, and Technical Competency Development.",
     "tagline1": "Empowering Angola Through",
-    "tagline2": "Competence, Integrity",
+    "tagline2": "Competence, Trust",
     "tagline3": "& Quality."
   },
   "certStrip": {
@@ -90,7 +91,7 @@
     "viewDetails": "View Full Service",
     "comingSoon": "Coming Soon",
     "localPresence": "Local Presence. Global Standards. Committed to Angola.",
-    "promise": "Quality. Integrity. Reliability. That's the Arco Angola promise.",
+    "promise": "Quality. Trust. Reliability. That's the Arco Angola promise.",
     "ut": "Ultrasonic Testing",
     "utDesc": "Detecting internal flaws with precision.",
     "mt": "Magnetic Particle Testing",
@@ -580,7 +581,15 @@
     "accredBody2Label": "IAF Recognized",
     "accredBody2Sub": "International Accreditation Forum",
     "licenseLabel": "Licensed Business",
-    "licenseSub": "Alvará Comercial · Ministério da Indústria e Comércio"
+    "licenseSub": "Alvará Comercial · Ministério da Indústria e Comércio",
+    "matriculaLabel": "Company Registration",
+    "matriculaSub": "Matrícula · Conservatória do Registo Comercial",
+    "estatutosLabel": "Company Bylaws",
+    "estatutosSub": "Estatutos · Pacto de Sociedade Unipessoal",
+    "publicacaoLabel": "Official Publication",
+    "publicacaoSub": "Publicação Online · Guiché Único da Empresa",
+    "legalDocsLabel": "Company & Legal Registration",
+    "legalDocsSub": "Matrícula · Estatutos · Alvará · Publicação"
   },
   "certHighlights": {
     "badge": "Globally Accredited Programmes",
@@ -833,7 +842,7 @@
     "reason6Desc": "A consistent track record of rigorous quality control and high-standard training delivery, ensuring every certification we issue reflects real, verifiable competence.",
     "reason7Title": "Continuous Improvement",
     "reason7Desc": "We constantly refine our programmes, processes and materials to stay ahead of evolving industry standards and the changing needs of our clients.",
-    "reason8Title": "Safety & Integrity",
+    "reason8Title": "Safety & Accountability",
     "reason8Desc": "We uphold the highest standards of safety, ethics and transparency in everything we do, building trust with every learner, client and partner."
   },
   "dualAudience": {
@@ -885,5 +894,199 @@
     "inquirySend": "Send",
     "rights": "All rights reserved.",
     "certifications": "Certifications"
+  },
+  "iso9712": {
+    "hero": {
+      "eyebrow": "Signature Programme",
+      "badgeLine": "Conventional NDT • Advanced NDT Techniques • Data Interpretation • Welding Inspection",
+      "levelsLine": "Levels I • II • III",
+      "title": "BS EN ISO 9712:2022",
+      "subtitle": "International NDT Training & Personnel Certification",
+      "statement": "ARCO ANGOLA is developing its IANDT-approved Training Organization pathway in Angola, bringing internationally structured NDT training and personnel certification pathways closer to professionals and organizations across Africa.",
+      "supporting": "Our NDT portfolio spans conventional methods, advanced NDT techniques, advanced data interpretation and welding inspection, supporting professional development from foundational competency through advanced technical capability.",
+      "ctaExplore": "Explore NDT Programmes",
+      "ctaCorporate": "Request Corporate Training",
+      "breadcrumbHome": "Home",
+      "breadcrumbProgrammes": "Signature Programmes",
+      "breadcrumbSelf": "BS EN ISO 9712:2022",
+      "waCorporateMessage": "Hello ARCO ANGOLA, I would like to request corporate training for BS EN ISO 9712 NDT certification."
+    },
+    "ecosystem": {
+      "badge": "Certification Ecosystem",
+      "heading": "An International Certification Framework. Delivered in Africa.",
+      "step1Org": "ARCO ANGOLA",
+      "step1Role": "Authorised African Training Organisation",
+      "step2Org": "IANDT",
+      "step2Role": "International Academy of NDT — Independent Personnel Certification Body — PCB-124",
+      "step3Org": "IAS",
+      "step3Role": "Accreditation to ISO/IEC 17024:2012",
+      "resultLabel": "The Credential",
+      "step4Title": "BS EN ISO 9712:2022",
+      "step4Role": "NDT Personnel Qualification & Certification",
+      "certNote": "IANDT's current certificate identifies it as PCB-124, accredited to ISO/IEC 17024:2012, with an effective date of 22 May 2026.",
+      "supportingNote": "ARCO ANGOLA delivers the training and education as IANDT's partner organisation in Angola and the wider African market. IANDT, as the independent Personnel Certification Body, retains sole responsibility for personnel certification decisions under its applicable certification scheme.",
+      "positioning": "ARCO ANGOLA is Africa's Authorised Training Organisation for BS EN ISO 9712:2022 NDT programmes — delivering training across Angola and the wider African market in partnership with IANDT, the Personnel Certification Body accredited by IAS to ISO/IEC 17024:2012."
+    },
+    "about": {
+      "badge": "The Standard",
+      "heading": "International NDT Competence",
+      "body": "BS EN ISO 9712:2022 provides an internationally structured framework for the qualification and certification of personnel performing non-destructive testing. ARCO ANGOLA's programme pathway is designed to support NDT professionals through structured training and the applicable independent personnel certification process.",
+      "level1Title": "Level I",
+      "level1Desc": "Foundational NDT competence",
+      "level2Title": "Level II",
+      "level2Desc": "Inspection, interpretation and evaluation",
+      "level3Title": "Level III",
+      "level3Desc": "Advanced technical responsibility"
+    },
+    "portfolio": {
+      "badge": "The Portfolio",
+      "heading": "Our NDT Certification & Advanced Techniques Portfolio",
+      "intro": "A structured portfolio spanning conventional methods, advanced techniques, data interpretation and welding inspection — organized around internationally recognized qualification levels.",
+      "conventional": {
+        "label": "A",
+        "title": "Conventional NDT",
+        "note": "These categories and levels are reflected in the current IANDT IAS-accredited scope.",
+        "vtCode": "VT", "vtName": "Visual & Optical Testing", "vtLevels": "Levels II & III",
+        "mtCode": "MT", "mtName": "Magnetic Particle Testing", "mtLevels": "Levels II & III",
+        "ptCode": "PT", "ptName": "Penetrant Testing", "ptLevels": "Levels II & III",
+        "utCode": "UT", "utName": "Ultrasonic Testing", "utLevels": "Levels II & III",
+        "rtCode": "RT", "rtName": "Radiographic Testing", "rtLevels": "Levels II & III",
+        "etCode": "ET", "etName": "Eddy Current Testing", "etLevels": "Levels II & III",
+        "riCode": "RI", "riName": "Radiographic Film Interpretation", "riLevels": "Level II",
+        "brsCode": "BRS", "brsName": "Basic Radiation Safety", "brsLevels": "Level I"
+      },
+      "advanced": {
+        "label": "Advanced",
+        "title": "Advanced NDT Techniques",
+        "pautName": "PAUT", "pautDesc": "Phased Array Ultrasonic Testing", "pautLevels": "Levels II & III",
+        "tofdName": "TOFD", "tofdDesc": "Time of Flight Diffraction", "tofdLevels": "Levels II & III",
+        "autName": "AUT", "autDesc": "Automated Ultrasonic Testing", "autLevels": "Levels II & III",
+        "fmctfmName": "FMC–TFM", "fmctfmDesc": "Full Matrix Capture – Total Focusing Method", "fmctfmLevels": "Levels II & III",
+        "acfmName": "ACFM", "acfmDesc": "Alternating Current Field Measurement", "acfmLevels": "Levels II & III",
+        "irisName": "IRIS", "irisDesc": "Internal Rotary Inspection System", "irisLevels": "Levels II & III",
+        "pecName": "Pulsed Eddy Current (PEC)", "pecDesc": "Advanced Eddy Current Technique"
+      },
+      "dataInterp": {
+        "label": "Data Interpretation",
+        "title": "NDT Data Interpretation",
+        "positioning": "Develop the specialist capability to interpret advanced NDT examination data and support technically informed inspection decisions.",
+        "autDataName": "AUT Data Interpretation", "autDataLevel": "Level II",
+        "pautDataName": "PAUT Data Interpretation", "pautDataLevel": "Level II",
+        "tofdDataName": "TOFD Data Interpretation", "tofdDataLevel": "Level II"
+      },
+      "welding": {
+        "label": "Welding Inspection",
+        "title": "Welding Inspection Certification",
+        "level1Title": "Level I", "level1Name": "Associate Welding Inspector",
+        "level2Title": "Level II", "level2Name": "Welding Inspector",
+        "level3Title": "Level III", "level3Name": "Senior Welding Inspector",
+        "note": "The current IANDT accreditation specifically identifies all three Welding Inspection levels and references BS EN ISO 9712 and BS EN ISO 17637.",
+        "cta": "Explore Welding Inspection",
+        "waMessage": "Hello ARCO ANGOLA, I would like information about your Welding Inspection certification programme."
+      }
+    },
+    "pathway": {
+      "badge": "Career Pathway",
+      "heading": "Build Your NDT Career",
+      "level1Title": "Level I",
+      "level1Sub": "Build Foundational Competence",
+      "level2Title": "Level II",
+      "level2Sub": "Perform • Interpret • Evaluate",
+      "level3Title": "Level III",
+      "level3Sub": "Lead • Develop • Technically Direct",
+      "statement": "Build your NDT career through progressive technical competence and internationally structured certification pathways."
+    },
+    "process": {
+      "badge": "From Training to Certification",
+      "heading": "From Training to Certification",
+      "step1Title": "Training",
+      "step1Org": "ARCO ANGOLA",
+      "step1Desc": "Structured training aligned with the applicable programme requirements.",
+      "step2Title": "Candidate Preparation",
+      "step2Desc": "Eligibility, documentation and examination readiness.",
+      "step3Title": "Examination",
+      "step3Desc": "Conducted under the applicable IANDT certification framework.",
+      "step4Title": "Certification Decision",
+      "step4Org": "IANDT",
+      "step4Desc": "Independent Personnel Certification Body",
+      "step5Title": "Certification",
+      "step5Desc": "Certificate issued under the applicable certification scheme.",
+      "note": "IANDT's documented scheme separates training and examination functions; its materials specifically state that trainers are not examiners and examiners are not involved in training.",
+      "integrityBadge": "Certification Assurance",
+      "integrityHeading": "Independent. Controlled. Competence-Based.",
+      "card1Title": "Impartiality",
+      "card1Desc": "Independent certification decision-making.",
+      "card2Title": "Examination Rigour",
+      "card2Desc": "Controlled examination and evaluation processes.",
+      "card3Title": "Competence",
+      "card3Desc": "Structured qualification, examination and certification requirements.",
+      "integrityNote": "The IANDT material describes candidate screening, evaluation checks, examination controls, confidentiality and question-paper validation at certification-body level."
+    },
+    "whyArco": {
+      "badge": "Why ARCO ANGOLA",
+      "heading": "Why ARCO ANGOLA?",
+      "card1Title": "Africa-Focused",
+      "card1Desc": "Internationally structured programmes delivered with a clear focus on African professionals and organizations.",
+      "card2Title": "International Pathways",
+      "card2Desc": "Access to internationally structured NDT training and personnel-certification pathways.",
+      "card3Title": "Technical Depth",
+      "card3Desc": "Conventional NDT, advanced NDT techniques, data interpretation and welding inspection.",
+      "card4Title": "Professional Development",
+      "card4Desc": "Progression across Levels I, II and III.",
+      "card5Title": "Corporate Solutions",
+      "card5Desc": "Individual, group, in-house and workforce development programmes.",
+      "card6Title": "International Certification Framework",
+      "card6Desc": "Training delivered through ARCO ANGOLA with the independent certification pathway maintained through IANDT."
+    },
+    "corporate": {
+      "badge": "Corporate Solutions",
+      "heading": "NDT Training for Organizations",
+      "intro": "Develop your inspection workforce through structured NDT training and internationally recognized personnel-certification pathways.",
+      "item1": "Individual certification programmes",
+      "item2": "Corporate batches",
+      "item3": "In-house training",
+      "item4": "Workforce competency development",
+      "item5": "Conventional NDT",
+      "item6": "Advanced NDT",
+      "item7": "Data interpretation",
+      "item8": "Welding inspection",
+      "item9": "Examination coordination",
+      "item10": "Certification pathway support",
+      "cta": "Request a Corporate NDT Programme",
+      "waMessage": "Hello ARCO ANGOLA, I would like to request a corporate NDT training programme."
+    },
+    "angolaAfrica": {
+      "badge": "From Angola to Africa",
+      "heading": "Building African NDT Capability",
+      "statement": "From Angola, ARCO ANGOLA is developing an internationally structured NDT training and personnel-certification platform designed to serve professionals, organizations and industries across Africa.",
+      "tagline": "International Standards. African Capability."
+    },
+    "credential": {
+      "badge": "Certification Credential",
+      "heading": "Delivered by ARCO ANGOLA. Certified by IANDT. Accredited by IAS.",
+      "intro": "ARCO ANGOLA delivers the training. IANDT — the International Academy of NDT — independently certifies personnel under the framework below, accredited by IAS to ISO/IEC 17024:2012.",
+      "orgName": "International Academy of NDT — IANDT",
+      "orgLocation": "Chennai, India",
+      "pcbLabel": "Personnel Certification Body",
+      "pcbValue": "PCB-124",
+      "accredLabel": "Accredited To",
+      "accredValue": "ISO/IEC 17024:2012",
+      "bodyLabel": "Accreditation Body",
+      "bodyValue": "International Accreditation Service (IAS)",
+      "refLabel": "Certification Reference",
+      "refValue": "BS EN ISO 9712:2022 / ISO 9712:2021",
+      "cta": "View Certification Scope"
+    },
+    "finalCta": {
+      "heading": "Start Your NDT Certification Pathway",
+      "line1": "Choose your method.",
+      "line2": "Choose your level.",
+      "line3": "Build your competence.",
+      "line4": "Progress toward international personnel certification.",
+      "cta1": "Explore Programmes",
+      "cta2": "Request Corporate Training",
+      "cta3": "Contact ARCO ANGOLA",
+      "waMessage": "Hello ARCO ANGOLA, I would like to start my NDT certification pathway."
+    }
   }
 }

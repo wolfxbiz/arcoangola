@@ -1,7 +1,7 @@
 {
   "closing": {
     "headline": "Construire l'Avenir de l'Angola Grâce à des Personnes Compétentes.",
-    "body": "ARCO ANGOLA développe les inspecteurs, techniciens et professionnels de l'industrie qui renforcent la qualité, la sécurité, l'intégrité et l'excellence opérationnelle dans les secteurs angolais du Pétrole & Gaz, de l'Énergie, de la Construction et de l'Industrie.",
+    "body": "ARCO ANGOLA développe les inspecteurs, techniciens et professionnels de l'industrie qui renforcent la qualité, la sécurité, le professionnalisme et l'excellence opérationnelle dans les secteurs angolais du Pétrole & Gaz, de l'Énergie, de la Construction et de l'Industrie.",
     "tagline": "D'Angola. Aux Normes Internationales.",
     "ctaConsultation": "Réserver une Consultation",
     "ctaCorporate": "Demande Entreprise",
@@ -24,6 +24,7 @@
     "corporateLearning": "Formation d'Entreprise",
     "isoManagementSystems": "Programmes ISO",
     "signaturePrograms": "Programmes Signature",
+    "signatureProgrammeSubtitle": "Certification Internationale du Personnel END",
     "waRequestTrainingMessage": "Bonjour ARCO ANGOLA, je souhaiterais demander des informations sur vos formations."
   },
   "hero": {
@@ -59,7 +60,7 @@
     "statement": "L'avenir industriel de l'Angola dépend non seulement de la technologie et de l'infrastructure, mais de la compétence de son peuple.",
     "body": "s'engage à développer des professionnels de classe mondiale à travers la Formation, la Certification et le Développement des Compétences Techniques.",
     "tagline1": "Renforcer l'Angola À Travers la",
-    "tagline2": "Compétence, l'Intégrité",
+    "tagline2": "Compétence, la Confiance",
     "tagline3": "& la Qualité."
   },
   "certStrip": {
@@ -81,7 +82,7 @@
     "badge": "Programmes de Formation Internationale",
     "headline": "Fiables Aujourd'hui.",
     "headlineHighlight": "Prêts pour Demain.",
-    "subtitle": "Fournir des solutions CND fiables avec précision, intégrité et sécurité pour le secteur Pétrolier & Gazier et Énergétique de l'Angola.",
+    "subtitle": "Fournir des solutions CND fiables avec précision, rigueur et sécurité pour le secteur Pétrolier & Gazier et Énergétique de l'Angola.",
     "pillar1": "Sécurité d'Abord",
     "pillar2": "Résultats Précis",
     "pillar3": "Certifié & Conforme",
@@ -90,7 +91,7 @@
     "viewDetails": "Voir le Service Complet",
     "comingSoon": "Bientôt Disponible",
     "localPresence": "Présence Locale. Standards Mondiaux. Engagé pour l'Angola.",
-    "promise": "Qualité. Intégrité. Fiabilité. C'est la promesse d'Arco Angola.",
+    "promise": "Qualité. Confiance. Fiabilité. C'est la promesse d'Arco Angola.",
     "ut": "Contrôle par Ultrasons",
     "utDesc": "Détection des défauts internes avec précision.",
     "mt": "Magnétoscopie",
@@ -580,7 +581,15 @@
     "accredBody2Label": "Reconnu IAF",
     "accredBody2Sub": "International Accreditation Forum",
     "licenseLabel": "Entreprise Agréée",
-    "licenseSub": "Alvará Comercial · Ministério da Indústria e Comércio"
+    "licenseSub": "Alvará Comercial · Ministério da Indústria e Comércio",
+    "matriculaLabel": "Immatriculation de l'Entreprise",
+    "matriculaSub": "Matrícula · Conservatória do Registo Comercial",
+    "estatutosLabel": "Statuts de l'Entreprise",
+    "estatutosSub": "Estatutos · Pacto de Sociedade Unipessoal",
+    "publicacaoLabel": "Publication Officielle",
+    "publicacaoSub": "Publicação Online · Guiché Único da Empresa",
+    "legalDocsLabel": "Immatriculation & Documents Légaux",
+    "legalDocsSub": "Matrícula · Estatutos · Alvará · Publicação"
   },
   "certHighlights": {
     "badge": "Programmes Mondialement Accrédités",
@@ -881,7 +890,7 @@
     "reason6Desc": "Un bilan constant de contrôle qualité rigoureux et de formation de haut niveau, garantissant que chaque certification délivrée reflète une compétence réelle et vérifiable.",
     "reason7Title": "Amélioration Continue",
     "reason7Desc": "Nous perfectionnons constamment nos programmes, processus et supports pour anticiper l'évolution des normes du secteur et des besoins de nos clients.",
-    "reason8Title": "Sécurité et Intégrité",
+    "reason8Title": "Sécurité et Responsabilité",
     "reason8Desc": "Nous respectons les normes les plus strictes en matière de sécurité, d'éthique et de transparence dans tout ce que nous faisons, construisant la confiance avec chaque apprenant, client et partenaire."
   },
   "dualAudience": {
@@ -933,5 +942,199 @@
     "inquirySend": "Envoyer",
     "rights": "Tous droits réservés.",
     "certifications": "Certifications"
+  },
+  "iso9712": {
+    "hero": {
+      "eyebrow": "Programme Signature",
+      "badgeLine": "END Conventionnel • Techniques Avancées d'END • Interprétation de Données • Inspection de Soudure",
+      "levelsLine": "Niveaux I • II • III",
+      "title": "BS EN ISO 9712:2022",
+      "subtitle": "Formation Internationale en END et Certification du Personnel",
+      "statement": "ARCO ANGOLA développe son parcours d'Organisme de Formation approuvé par l'IANDT en Angola, rapprochant la formation en END et les parcours de certification du personnel, structurés à l'échelle internationale, des professionnels et organisations à travers l'Afrique.",
+      "supporting": "Notre portefeuille END couvre les méthodes conventionnelles, les techniques avancées d'END, l'interprétation avancée des données et l'inspection de soudure, soutenant le développement professionnel depuis la compétence fondamentale jusqu'à la capacité technique avancée.",
+      "ctaExplore": "Découvrir les Programmes END",
+      "ctaCorporate": "Demander une Formation d'Entreprise",
+      "breadcrumbHome": "Accueil",
+      "breadcrumbProgrammes": "Programmes Signature",
+      "breadcrumbSelf": "BS EN ISO 9712:2022",
+      "waCorporateMessage": "Bonjour ARCO ANGOLA, je souhaiterais demander une formation d'entreprise pour la certification END BS EN ISO 9712."
+    },
+    "ecosystem": {
+      "badge": "Écosystème de Certification",
+      "heading": "Un Cadre International de Certification. Délivré en Afrique.",
+      "step1Org": "ARCO ANGOLA",
+      "step1Role": "Organisme de Formation Autorisé pour l'Afrique",
+      "step2Org": "IANDT",
+      "step2Role": "International Academy of NDT — Organisme Indépendant de Certification du Personnel — PCB-124",
+      "step3Org": "IAS",
+      "step3Role": "Accréditation selon l'ISO/IEC 17024:2012",
+      "resultLabel": "La Certification",
+      "step4Title": "BS EN ISO 9712:2022",
+      "step4Role": "Qualification et Certification du Personnel END",
+      "certNote": "Le certificat actuel de l'IANDT l'identifie sous le numéro PCB-124, accrédité selon l'ISO/IEC 17024:2012, avec une date d'effet au 22 mai 2026.",
+      "supportingNote": "ARCO ANGOLA assure la formation et l'éducation en tant qu'organisation partenaire de l'IANDT en Angola et sur l'ensemble du marché africain. L'IANDT, en tant qu'organisme indépendant de certification du personnel, conserve l'entière responsabilité des décisions de certification du personnel dans le cadre de son schéma de certification applicable.",
+      "positioning": "ARCO ANGOLA est l'Organisme de Formation Autorisé de l'Afrique pour les programmes END BS EN ISO 9712:2022 — déployés en Angola et sur l'ensemble du marché africain, en partenariat avec l'IANDT, l'Organisme de Certification du Personnel accrédité par l'IAS selon l'ISO/IEC 17024:2012."
+    },
+    "about": {
+      "badge": "La Norme",
+      "heading": "Compétence Internationale en END",
+      "body": "La norme BS EN ISO 9712:2022 établit un cadre structuré à l'échelle internationale pour la qualification et la certification du personnel effectuant des essais non destructifs. Le parcours du programme d'ARCO ANGOLA est conçu pour accompagner les professionnels END à travers une formation structurée et le processus de certification du personnel indépendant applicable.",
+      "level1Title": "Niveau I",
+      "level1Desc": "Compétence fondamentale en END",
+      "level2Title": "Niveau II",
+      "level2Desc": "Inspection, interprétation et évaluation",
+      "level3Title": "Niveau III",
+      "level3Desc": "Responsabilité technique avancée"
+    },
+    "portfolio": {
+      "badge": "Le Portefeuille",
+      "heading": "Notre Portefeuille de Certification END et de Techniques Avancées",
+      "intro": "Un portefeuille structuré couvrant les méthodes conventionnelles, les techniques avancées, l'interprétation des données et l'inspection de soudure — organisé autour de niveaux de qualification reconnus à l'échelle internationale.",
+      "conventional": {
+        "label": "A",
+        "title": "END Conventionnel",
+        "note": "Ces catégories et niveaux reflètent le périmètre actuellement accrédité par l'IAS auprès de l'IANDT.",
+        "vtCode": "VT", "vtName": "Contrôle Visuel et Optique", "vtLevels": "Niveaux II et III",
+        "mtCode": "MT", "mtName": "Magnétoscopie", "mtLevels": "Niveaux II et III",
+        "ptCode": "PT", "ptName": "Ressuage", "ptLevels": "Niveaux II et III",
+        "utCode": "UT", "utName": "Contrôle par Ultrasons", "utLevels": "Niveaux II et III",
+        "rtCode": "RT", "rtName": "Contrôle Radiographique", "rtLevels": "Niveaux II et III",
+        "etCode": "ET", "etName": "Contrôle par Courants de Foucault", "etLevels": "Niveaux II et III",
+        "riCode": "RI", "riName": "Interprétation de Film Radiographique", "riLevels": "Niveau II",
+        "brsCode": "BRS", "brsName": "Radioprotection de Base", "brsLevels": "Niveau I"
+      },
+      "advanced": {
+        "label": "Avancé",
+        "title": "Techniques Avancées d'END",
+        "pautName": "PAUT", "pautDesc": "Ultrasons Multiéléments (Phased Array)", "pautLevels": "Niveaux II et III",
+        "tofdName": "TOFD", "tofdDesc": "Diffraction des Temps de Vol", "tofdLevels": "Niveaux II et III",
+        "autName": "AUT", "autDesc": "Contrôle Ultrasonore Automatisé", "autLevels": "Niveaux II et III",
+        "fmctfmName": "FMC–TFM", "fmctfmDesc": "Capture de Matrice Totale – Méthode de Focalisation Totale", "fmctfmLevels": "Niveaux II et III",
+        "acfmName": "ACFM", "acfmDesc": "Mesure de Champ par Courant Alternatif", "acfmLevels": "Niveaux II et III",
+        "irisName": "IRIS", "irisDesc": "Système d'Inspection Rotative Interne", "irisLevels": "Niveaux II et III",
+        "pecName": "Courants de Foucault Pulsés (PEC)", "pecDesc": "Technique Avancée de Courants de Foucault"
+      },
+      "dataInterp": {
+        "label": "Interprétation de Données",
+        "title": "Interprétation des Données END",
+        "positioning": "Développez la capacité spécialisée d'interpréter les données d'examen END avancées et de soutenir des décisions d'inspection techniquement fondées.",
+        "autDataName": "Interprétation des Données AUT", "autDataLevel": "Niveau II",
+        "pautDataName": "Interprétation des Données PAUT", "pautDataLevel": "Niveau II",
+        "tofdDataName": "Interprétation des Données TOFD", "tofdDataLevel": "Niveau II"
+      },
+      "welding": {
+        "label": "Inspection de Soudure",
+        "title": "Certification en Inspection de Soudure",
+        "level1Title": "Niveau I", "level1Name": "Inspecteur de Soudure Associé",
+        "level2Title": "Niveau II", "level2Name": "Inspecteur de Soudure",
+        "level3Title": "Niveau III", "level3Name": "Inspecteur de Soudure Senior",
+        "note": "L'accréditation actuelle de l'IANDT identifie spécifiquement les trois niveaux d'Inspection de Soudure et fait référence aux normes BS EN ISO 9712 et BS EN ISO 17637.",
+        "cta": "Découvrir l'Inspection de Soudure",
+        "waMessage": "Bonjour ARCO ANGOLA, je souhaiterais des informations sur votre programme de certification en Inspection de Soudure."
+      }
+    },
+    "pathway": {
+      "badge": "Parcours de Carrière",
+      "heading": "Construisez Votre Carrière en END",
+      "level1Title": "Niveau I",
+      "level1Sub": "Construire une Compétence Fondamentale",
+      "level2Title": "Niveau II",
+      "level2Sub": "Exécuter • Interpréter • Évaluer",
+      "level3Title": "Niveau III",
+      "level3Sub": "Diriger • Développer • Orienter Techniquement",
+      "statement": "Construisez votre carrière en END grâce à une compétence technique progressive et à des parcours de certification structurés à l'échelle internationale."
+    },
+    "process": {
+      "badge": "De la Formation à la Certification",
+      "heading": "De la Formation à la Certification",
+      "step1Title": "Formation",
+      "step1Org": "ARCO ANGOLA",
+      "step1Desc": "Formation structurée alignée sur les exigences du programme applicable.",
+      "step2Title": "Préparation du Candidat",
+      "step2Desc": "Éligibilité, documentation et préparation à l'examen.",
+      "step3Title": "Examen",
+      "step3Desc": "Réalisé dans le cadre du dispositif de certification IANDT applicable.",
+      "step4Title": "Décision de Certification",
+      "step4Org": "IANDT",
+      "step4Desc": "Organisme Indépendant de Certification du Personnel",
+      "step5Title": "Certification",
+      "step5Desc": "Certificat délivré dans le cadre du schéma de certification applicable.",
+      "note": "Le schéma documenté de l'IANDT sépare les fonctions de formation et d'examen ; ses documents précisent explicitement que les formateurs ne sont pas examinateurs et que les examinateurs ne sont pas impliqués dans la formation.",
+      "integrityBadge": "Assurance de la Certification",
+      "integrityHeading": "Indépendante. Contrôlée. Fondée sur la Compétence.",
+      "card1Title": "Impartialité",
+      "card1Desc": "Prise de décision de certification indépendante.",
+      "card2Title": "Rigueur de l'Examen",
+      "card2Desc": "Processus contrôlés d'examen et d'évaluation.",
+      "card3Title": "Compétence",
+      "card3Desc": "Exigences structurées de qualification, d'examen et de certification.",
+      "integrityNote": "La documentation de l'IANDT décrit la sélection des candidats, les vérifications d'évaluation, les contrôles d'examen, la confidentialité et la validation des sujets d'examen au niveau de l'organisme de certification."
+    },
+    "whyArco": {
+      "badge": "Pourquoi ARCO ANGOLA",
+      "heading": "Pourquoi ARCO ANGOLA ?",
+      "card1Title": "Focalisé sur l'Afrique",
+      "card1Desc": "Des programmes structurés à l'échelle internationale, délivrés avec une attention claire portée aux professionnels et organisations africains.",
+      "card2Title": "Parcours Internationaux",
+      "card2Desc": "Accès à des parcours de formation END et de certification du personnel structurés à l'échelle internationale.",
+      "card3Title": "Profondeur Technique",
+      "card3Desc": "END conventionnel, techniques avancées d'END, interprétation de données et inspection de soudure.",
+      "card4Title": "Développement Professionnel",
+      "card4Desc": "Progression à travers les Niveaux I, II et III.",
+      "card5Title": "Solutions pour Entreprises",
+      "card5Desc": "Programmes individuels, en groupe, internes et de développement des compétences de la main-d'œuvre.",
+      "card6Title": "Cadre International de Certification",
+      "card6Desc": "Formation délivrée par ARCO ANGOLA, avec le parcours de certification indépendant maintenu par l'IANDT."
+    },
+    "corporate": {
+      "badge": "Solutions pour Entreprises",
+      "heading": "Formation END pour les Organisations",
+      "intro": "Développez votre effectif d'inspection grâce à une formation END structurée et à des parcours de certification du personnel reconnus à l'échelle internationale.",
+      "item1": "Programmes de certification individuels",
+      "item2": "Groupes d'entreprise",
+      "item3": "Formation en interne",
+      "item4": "Développement des compétences de la main-d'œuvre",
+      "item5": "END conventionnel",
+      "item6": "END avancé",
+      "item7": "Interprétation de données",
+      "item8": "Inspection de soudure",
+      "item9": "Coordination des examens",
+      "item10": "Accompagnement du parcours de certification",
+      "cta": "Demander un Programme END d'Entreprise",
+      "waMessage": "Bonjour ARCO ANGOLA, je souhaiterais demander un programme de formation END pour mon entreprise."
+    },
+    "angolaAfrica": {
+      "badge": "De l'Angola à l'Afrique",
+      "heading": "Construire la Capacité Africaine en END",
+      "statement": "Depuis l'Angola, ARCO ANGOLA développe une plateforme de formation END et de certification du personnel structurée à l'échelle internationale, conçue pour servir les professionnels, organisations et industries à travers l'Afrique.",
+      "tagline": "Normes Internationales. Capacité Africaine."
+    },
+    "credential": {
+      "badge": "Référence de Certification",
+      "heading": "Formation par ARCO ANGOLA. Certification par l'IANDT. Accréditation par l'IAS.",
+      "intro": "ARCO ANGOLA assure la formation. L'IANDT — International Academy of NDT — certifie le personnel de manière indépendante selon le cadre ci-dessous, accrédité par l'IAS selon l'ISO/IEC 17024:2012.",
+      "orgName": "International Academy of NDT — IANDT",
+      "orgLocation": "Chennai, Inde",
+      "pcbLabel": "Organisme de Certification du Personnel",
+      "pcbValue": "PCB-124",
+      "accredLabel": "Accrédité Selon",
+      "accredValue": "ISO/IEC 17024:2012",
+      "bodyLabel": "Organisme d'Accréditation",
+      "bodyValue": "International Accreditation Service (IAS)",
+      "refLabel": "Référence de Certification",
+      "refValue": "BS EN ISO 9712:2022 / ISO 9712:2021",
+      "cta": "Voir le Périmètre de Certification"
+    },
+    "finalCta": {
+      "heading": "Démarrez Votre Parcours de Certification END",
+      "line1": "Choisissez votre méthode.",
+      "line2": "Choisissez votre niveau.",
+      "line3": "Construisez votre compétence.",
+      "line4": "Progressez vers la certification internationale du personnel.",
+      "cta1": "Découvrir les Programmes",
+      "cta2": "Demander une Formation d'Entreprise",
+      "cta3": "Contacter ARCO ANGOLA",
+      "waMessage": "Bonjour ARCO ANGOLA, je souhaiterais démarrer mon parcours de certification END."
+    }
   }
 }
