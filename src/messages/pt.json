@@ -963,7 +963,7 @@
       "badge": "Ecossistema de Certificação",
       "heading": "Um Enquadramento Internacional de Certificação. Entregue em África.",
       "step1Org": "ARCO ANGOLA",
-      "step1Role": "Organização de Formação Autorizada para África",
+      "step1Role": "Percurso de Organização de Formação IANDT — África",
       "step2Org": "IANDT",
       "step2Role": "International Academy of NDT — Entidade Independente de Certificação de Pessoal — PCB-124",
       "step3Org": "IAS",
@@ -973,7 +973,7 @@
       "step4Role": "Qualificação e Certificação de Pessoal de END",
       "certNote": "O certificado atual da IANDT identifica-a como PCB-124, acreditada segundo a ISO/IEC 17024:2012, com data de vigência de 22 de maio de 2026.",
       "supportingNote": "A ARCO ANGOLA presta a formação e a educação como organização parceira da IANDT em Angola e no mercado africano em geral. A IANDT, enquanto entidade independente de certificação de pessoal, mantém total responsabilidade pelas decisões de certificação de pessoal ao abrigo do seu esquema de certificação aplicável.",
-      "positioning": "A ARCO ANGOLA é a Organização de Formação Autorizada de África para os programas de END BS EN ISO 9712:2022 — entregues em Angola e no mercado africano em geral, em parceria com a IANDT, a Entidade de Certificação de Pessoal acreditada pela IAS segundo a ISO/IEC 17024:2012."
+      "positioning": "A ARCO ANGOLA está a desenvolver o seu percurso como Organização de Formação aprovada pela IANDT em Angola, prestando formação estruturada em END em parceria com a IANDT, a Entidade Independente de Certificação de Pessoal."
     },
     "about": {
       "badge": "A Norma",
@@ -1111,8 +1111,8 @@
     },
     "credential": {
       "badge": "Credencial de Certificação",
-      "heading": "Formação pela ARCO ANGOLA. Certificação pela IANDT. Acreditação pela IAS.",
-      "intro": "A ARCO ANGOLA presta a formação. A IANDT — International Academy of NDT — certifica o pessoal de forma independente segundo o enquadramento abaixo, acreditado pela IAS segundo a ISO/IEC 17024:2012.",
+      "heading": "Formação pela ARCO ANGOLA. Certificação de Pessoal pela IANDT. IANDT Acreditada pela IAS.",
+      "intro": "A ARCO ANGOLA presta a formação e apoia o percurso de certificação. A IANDT — International Academy of NDT — certifica o pessoal de forma independente ao abrigo do seu esquema de certificação aplicável. A IANDT é acreditada pela IAS segundo a ISO/IEC 17024:2012.",
       "orgName": "International Academy of NDT — IANDT",
       "orgLocation": "Chennai, Índia",
       "pcbLabel": "Entidade de Certificação de Pessoal",
