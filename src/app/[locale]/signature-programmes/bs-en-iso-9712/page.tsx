@@ -54,7 +54,7 @@ export default async function Iso9712Page({ params }: Props) {
         <WhyArco />
         <CorporateSolutions />
         <AngolaToAfrica />
-        <IandtCredential locale={locale} />
+        <IandtCredential />
         <FinalCta />
       </main>
       <Footer />

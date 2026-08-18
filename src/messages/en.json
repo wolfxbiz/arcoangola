@@ -1075,7 +1075,10 @@
       "bodyValue": "International Accreditation Service (IAS)",
       "refLabel": "Certification Reference",
       "refValue": "BS EN ISO 9712:2022 / ISO 9712:2021",
-      "cta": "View Certification Scope"
+      "cta": "View Certification Scope",
+      "certificateLabel": "Certificate of Accreditation",
+      "scopeLabel": "Scope of Accreditation",
+      "close": "Close"
     },
     "finalCta": {
       "heading": "Start Your NDT Certification Pathway",

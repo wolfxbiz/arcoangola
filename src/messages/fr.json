@@ -1123,7 +1123,10 @@
       "bodyValue": "International Accreditation Service (IAS)",
       "refLabel": "Référence de Certification",
       "refValue": "BS EN ISO 9712:2022 / ISO 9712:2021",
-      "cta": "Voir le Périmètre de Certification"
+      "cta": "Voir le Périmètre de Certification",
+      "certificateLabel": "Certificat d'Accréditation",
+      "scopeLabel": "Périmètre d'Accréditation",
+      "close": "Fermer"
     },
     "finalCta": {
       "heading": "Démarrez Votre Parcours de Certification END",
