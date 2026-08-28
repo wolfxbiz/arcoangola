@@ -7,7 +7,7 @@ const MEMBERS = [
   {
     key: "kk",
     name: "Krishnakumar Manmathan",
-    photo: "/assets/leader-krishnakumar-manmathan.png",
+    photo: "/assets/leader-krishnakumar-manmathan.jpeg",
     photoPosition: "center 22%",
     phone: "+244 942 742 800",
     phoneHref: "tel:+244942742800",
@@ -24,7 +24,7 @@ const MEMBERS = [
   {
     key: "prathap",
     name: "Prathap Parthiban",
-    photo: "/assets/leader-prathap-parthiban.jpeg",
+    photo: "/assets/leader-prathap-parthiban-v2.jpeg",
     photoPosition: "center 20%",
     phone: "+244 930 408 008",
     phoneHref: "tel:+244930408008",
