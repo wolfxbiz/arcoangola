@@ -797,10 +797,19 @@
     "emailLabel": "E-mail",
     "locationLabel": "Localização",
     "credentialsLabel": "Principais Credenciais",
-    "kkRole": "Diretor — Operações e Autoridade Técnica",
-    "kkDesc": "Lidera as operações técnicas, os programas de formação internacional e as iniciativas de certificação como Autoridade Técnica, garantindo a excelência operacional e a conformidade com as normas internacionais do setor.",
+    "expertiseLabel": "Principais Áreas de Especialização",
+    "educationLabel": "Formação Académica",
+    "whatsappLabel": "WhatsApp",
+    "experienceSuffix": "Anos de Experiência Internacional em Óleo & Gás",
+    "kkRole": "Diretor — Parceiro de Operações e Autoridade Técnica",
+    "kkBio1": "Krishnakumar Manmathan (KK) é Autoridade Técnica e Parceiro de Operações, com mais de 24 anos de experiência internacional em projetos EPC de Óleo & Gás, abrangendo mega projetos offshore e onshore em África, no Médio Oriente e na Ásia.",
+    "kkBio2": "Possui vasta experiência em Garantia e Controlo de Qualidade (QA/QC), inspeção, soldadura, END, supervisão de fornecedores, governação da qualidade de projetos, conclusão de sistemas e prontidão para o arranque (commissioning).",
+    "kkCta": "Fale com a nossa Autoridade Técnica",
+    "kkWaMessage": "Olá ARCO ANGOLA, gostaria de falar com a vossa Autoridade Técnica, Krishnakumar Manmathan (KK).",
     "prathapRole": "Diretor — Desenvolvimento de Negócios e Administração",
-    "prathapDesc": "Impulsiona o desenvolvimento de negócios, as parcerias estratégicas e a administração em todo o Angola, apoiando simultaneamente as soluções de formação industrial e a excelência técnica."
+    "prathapBio1": "Impulsiona o desenvolvimento de negócios, as parcerias estratégicas e a administração em todo o Angola, apoiando simultaneamente as soluções de formação industrial e a excelência técnica.",
+    "prathapCta": "Contacte a ARCO Angola",
+    "prathapWaMessage": "Olá ARCO ANGOLA, gostaria de entrar em contacto sobre desenvolvimento de negócios e administração."
   },
   "advancedNdt": {
     "badge": "Competência Avançada em END",

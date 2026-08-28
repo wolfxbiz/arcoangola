@@ -797,10 +797,19 @@
     "emailLabel": "E-mail",
     "locationLabel": "Localisation",
     "credentialsLabel": "Certifications Clés",
-    "kkRole": "Directeur — Opérations et Autorité Technique",
-    "kkDesc": "Dirige les opérations techniques, les programmes de formation internationale et les initiatives de certification en tant qu'Autorité Technique, garantissant l'excellence opérationnelle et la conformité aux normes internationales du secteur.",
+    "expertiseLabel": "Principaux Domaines d'Expertise",
+    "educationLabel": "Formation",
+    "whatsappLabel": "WhatsApp",
+    "experienceSuffix": "Ans d'Expérience Internationale en Pétrole & Gaz",
+    "kkRole": "Directeur — Partenaire des Opérations et Autorité Technique",
+    "kkBio1": "Krishnakumar Manmathan (KK) est Autorité Technique et Partenaire des Opérations, avec plus de 24 ans d'expérience internationale dans des projets EPC Pétrole & Gaz, couvrant des méga-projets offshore et onshore en Afrique, au Moyen-Orient et en Asie.",
+    "kkBio2": "Il possède une expertise approfondie en Assurance et Contrôle Qualité (QA/QC), inspection, soudage, END, surveillance des fournisseurs, gouvernance qualité des projets, achèvement des systèmes et préparation à la mise en service (commissioning).",
+    "kkCta": "Contacter notre Autorité Technique",
+    "kkWaMessage": "Bonjour ARCO ANGOLA, je souhaiterais contacter votre Autorité Technique, Krishnakumar Manmathan (KK).",
     "prathapRole": "Directeur — Développement Commercial et Administration",
-    "prathapDesc": "Pilote le développement commercial, les partenariats stratégiques et l'administration à travers l'Angola, tout en soutenant les solutions de formation industrielle et l'excellence technique."
+    "prathapBio1": "Pilote le développement commercial, les partenariats stratégiques et l'administration à travers l'Angola, tout en soutenant les solutions de formation industrielle et l'excellence technique.",
+    "prathapCta": "Contacter ARCO Angola",
+    "prathapWaMessage": "Bonjour ARCO ANGOLA, je souhaiterais vous contacter au sujet du développement commercial et de l'administration."
   },
   "advancedNdt": {
     "badge": "Compétence Avancée en CND",

@@ -749,10 +749,19 @@
     "emailLabel": "Email",
     "locationLabel": "Location",
     "credentialsLabel": "Key Credentials",
-    "kkRole": "Director — Operations & Technical Authority",
-    "kkDesc": "Leads technical operations, international training programs, and certification initiatives as Technical Authority, ensuring operational excellence and compliance with global industry standards.",
+    "expertiseLabel": "Key Areas of Expertise",
+    "educationLabel": "Education",
+    "whatsappLabel": "WhatsApp",
+    "experienceSuffix": "Years of International Oil & Gas Experience",
+    "kkRole": "Director — Operations Partner & Technical Authority",
+    "kkBio1": "Krishnakumar Manmathan (KK) is a Technical Authority and Operations Partner with 24+ years of international experience in EPC Oil & Gas projects, covering offshore and onshore mega projects across Africa, the Middle East, and Asia.",
+    "kkBio2": "He brings extensive expertise in Quality Assurance & Quality Control (QA/QC), inspection, welding, NDT, vendor surveillance, project quality governance, system completion, and commissioning readiness.",
+    "kkCta": "Connect with our Technical Authority",
+    "kkWaMessage": "Hello ARCO ANGOLA, I would like to connect with your Technical Authority, Krishnakumar Manmathan (KK).",
     "prathapRole": "Director — Business Development & Administration",
-    "prathapDesc": "Drives business development, strategic partnerships, and administration across Angola while supporting industrial training solutions and technical excellence."
+    "prathapBio1": "Drives business development, strategic partnerships, and administration across Angola while supporting industrial training solutions and technical excellence.",
+    "prathapCta": "Contact ARCO Angola",
+    "prathapWaMessage": "Hello ARCO ANGOLA, I would like to get in touch regarding business development and administration."
   },
   "advancedNdt": {
     "badge": "Advanced NDT Competency",
