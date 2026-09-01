@@ -9,7 +9,7 @@ const MEMBERS = [
     key: "kk",
     name: "Krishnakumar Manmathan",
     nickname: "KK",
-    photo: "/assets/leader-krishnakumar-manmathan.jpeg",
+    photo: "/assets/leader-krishnakumar-manmathan-v2.jpeg",
     photoPosition: "center 22%",
     hasBio2: true,
     yearsExperience: "24+",
