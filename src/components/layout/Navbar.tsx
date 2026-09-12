@@ -57,6 +57,11 @@ export default function Navbar() {
       title: "BS EN ISO 9712:2022",
       subtitle: t("signatureProgrammeSubtitle"),
     },
+    {
+      href: `/${locale}/signature-programmes/iso-management-systems`,
+      title: "ISO Management Systems",
+      subtitle: t("isoMsProgrammeSubtitle"),
+    },
   ];
 
   function switchLocalePath(newLocale: string) {

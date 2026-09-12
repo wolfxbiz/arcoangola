@@ -8,7 +8,7 @@ import { whatsAppLink } from "@/lib/whatsapp";
 const HERO_CARDS = [
   { img: "/assets/engineer.webp",                    imgAlt: "ISO 9712 certified NDT engineer",             titleKey: "heroCard1Title" as const, descKey: "card2Desc" as const,     tabKey: "iso", href: "/signature-programmes/bs-en-iso-9712" },
   { img: "/assets/img-ndt-services.webp",            imgAlt: "Professional welder on pressure vessel",      titleKey: "heroCard2Title" as const, descKey: "card4Desc" as const,     tabKey: "welding", href: null },
-  { img: "/assets/img-iso-managemnet-system.png",    imgAlt: "ISO Lead Auditor reviewing management system documentation", titleKey: "heroCard3Title" as const, descKey: "heroCard3Desc" as const, tabKey: "iso", href: null },
+  { img: "/assets/img-iso-managemnet-system.png",    imgAlt: "ISO Lead Auditor reviewing management system documentation", titleKey: "heroCard3Title" as const, descKey: "heroCard3Desc" as const, tabKey: "iso", href: "/signature-programmes/iso-management-systems" },
 ] as const;
 
 const PORTFOLIO_ITEMS = [

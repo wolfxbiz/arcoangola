@@ -54,6 +54,7 @@ export default function Footer() {
   const links = [
     { href: `/${locale}`, label: "Home" },
     { href: `/${locale}/signature-programmes/bs-en-iso-9712`, label: "BS EN ISO 9712:2022" },
+    { href: `/${locale}/signature-programmes/iso-management-systems`, label: "ISO Management Systems" },
     { href: `/${locale}/courses`, label: nav("courses") },
     { href: `/${locale}/corporate`, label: nav("corporate") },
   ];
