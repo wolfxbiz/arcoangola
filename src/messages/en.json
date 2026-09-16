@@ -759,10 +759,14 @@
     "kkBio2": "He brings extensive expertise in Quality Assurance & Quality Control (QA/QC), inspection, welding, NDT, vendor surveillance, project quality governance, system completion, and commissioning readiness.",
     "kkCta": "Connect with our Technical Authority",
     "kkWaMessage": "Hello ARCO ANGOLA, I would like to connect with your Technical Authority, Krishnakumar Manmathan (KK).",
-    "prathapRole": "Director — Business Development & Administration",
+    "prathapRole": "Director — Business Development & Project Coordination",
     "prathapBio1": "Drives business development, strategic partnerships, and administration across Angola while supporting industrial training solutions and technical excellence.",
     "prathapCta": "Contact ARCO Angola",
-    "prathapWaMessage": "Hello ARCO ANGOLA, I would like to get in touch regarding business development and administration."
+    "prathapWaMessage": "Hello ARCO ANGOLA, I would like to get in touch regarding business development and administration.",
+    "naraRole": "Director — Administration & Technical Services",
+    "naraBio1": "Leads administration and technical services at ARCO ANGOLA, overseeing operational support, technical coordination and compliance across the company's training and certification programmes.",
+    "naraCta": "Contact ARCO Angola",
+    "naraWaMessage": "Hello ARCO ANGOLA, I would like to get in touch regarding administration and technical services."
   },
   "advancedNdt": {
     "badge": "Advanced NDT Competency",

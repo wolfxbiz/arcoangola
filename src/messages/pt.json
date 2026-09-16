@@ -807,10 +807,14 @@
     "kkBio2": "Possui vasta experiência em Garantia e Controlo de Qualidade (QA/QC), inspeção, soldadura, END, supervisão de fornecedores, governação da qualidade de projetos, conclusão de sistemas e prontidão para o arranque (commissioning).",
     "kkCta": "Fale com a nossa Autoridade Técnica",
     "kkWaMessage": "Olá ARCO ANGOLA, gostaria de falar com a vossa Autoridade Técnica, Krishnakumar Manmathan (KK).",
-    "prathapRole": "Diretor — Desenvolvimento de Negócios e Administração",
+    "prathapRole": "Diretor — Desenvolvimento de Negócios e Coordenação de Projetos",
     "prathapBio1": "Impulsiona o desenvolvimento de negócios, as parcerias estratégicas e a administração em todo o Angola, apoiando simultaneamente as soluções de formação industrial e a excelência técnica.",
     "prathapCta": "Contacte a ARCO Angola",
-    "prathapWaMessage": "Olá ARCO ANGOLA, gostaria de entrar em contacto sobre desenvolvimento de negócios e administração."
+    "prathapWaMessage": "Olá ARCO ANGOLA, gostaria de entrar em contacto sobre desenvolvimento de negócios e administração.",
+    "naraRole": "Diretora — Administração e Serviços Técnicos",
+    "naraBio1": "Lidera a administração e os serviços técnicos na ARCO ANGOLA, supervisionando o apoio operacional, a coordenação técnica e a conformidade nos programas de formação e certificação da empresa.",
+    "naraCta": "Contacte a ARCO Angola",
+    "naraWaMessage": "Olá ARCO ANGOLA, gostaria de entrar em contacto sobre administração e serviços técnicos."
   },
   "advancedNdt": {
     "badge": "Competência Avançada em END",

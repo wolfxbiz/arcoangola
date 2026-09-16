@@ -45,6 +45,23 @@ const MEMBERS = [
     location: "Luanda, Angola",
   },
   {
+    key: "nara",
+    name: "Nara Pinheiro dos Santos Daniel",
+    nickname: null,
+    photo: "/assets/leader-nara-daniel.jpeg",
+    photoPosition: "center 15%",
+    hasBio2: false,
+    yearsExperience: null,
+    education: null,
+    expertise: [] as string[],
+    credentials: [] as string[],
+    phone: "",
+    phoneHref: "",
+    whatsapp: null,
+    email: "",
+    location: "Luanda, Angola",
+  },
+  {
     key: "prathap",
     name: "Prathap Parthiban",
     nickname: null,
@@ -159,15 +176,17 @@ export default function LeadershipTeam() {
                 )}
 
                 <dl className="px-6 py-5 flex flex-col gap-3 flex-1">
-                  <div className="flex items-center gap-2.5">
-                    <dt className="sr-only">{t("phoneLabel")}</dt>
-                    <PhoneIcon />
-                    <dd>
-                      <a href={m.phoneHref} className="text-sm text-white/80 hover:text-[#D4AF37] transition-colors">
-                        {m.phone}
-                      </a>
-                    </dd>
-                  </div>
+                  {m.phone && (
+                    <div className="flex items-center gap-2.5">
+                      <dt className="sr-only">{t("phoneLabel")}</dt>
+                      <PhoneIcon />
+                      <dd>
+                        <a href={m.phoneHref} className="text-sm text-white/80 hover:text-[#D4AF37] transition-colors">
+                          {m.phone}
+                        </a>
+                      </dd>
+                    </div>
+                  )}
                   {m.whatsapp && (
                     <div className="flex items-center gap-2.5">
                       <dt className="sr-only">{t("whatsappLabel")}</dt>
@@ -175,15 +194,17 @@ export default function LeadershipTeam() {
                       <dd className="text-sm text-white/80">{m.whatsapp}</dd>
                     </div>
                   )}
-                  <div className="flex items-center gap-2.5">
-                    <dt className="sr-only">{t("emailLabel")}</dt>
-                    <MailIcon />
-                    <dd>
-                      <a href={`mailto:${m.email}`} className="text-sm text-white/80 hover:text-[#D4AF37] transition-colors break-all">
-                        {m.email}
-                      </a>
-                    </dd>
-                  </div>
+                  {m.email && (
+                    <div className="flex items-center gap-2.5">
+                      <dt className="sr-only">{t("emailLabel")}</dt>
+                      <MailIcon />
+                      <dd>
+                        <a href={`mailto:${m.email}`} className="text-sm text-white/80 hover:text-[#D4AF37] transition-colors break-all">
+                          {m.email}
+                        </a>
+                      </dd>
+                    </div>
+                  )}
                   <div className="flex items-center gap-2.5">
                     <dt className="sr-only">{t("locationLabel")}</dt>
                     <LocationIcon />
@@ -241,31 +262,37 @@ export default function LeadershipTeam() {
                   </div>
                 )}
 
-                <div className="pt-2 border-t border-gray-100">
-                  {m.education && (
-                    <div className="mb-4">
-                      <span className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2">
-                        {t("educationLabel")}
-                      </span>
-                      <span className="inline-block border border-gray-200 bg-gray-50 px-2.5 py-1 text-[11px] font-bold text-navy/70 tracking-wide">
-                        {m.education}
-                      </span>
-                    </div>
-                  )}
-                  <span className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2.5">
-                    {t("credentialsLabel")}
-                  </span>
-                  <ul className="flex flex-wrap gap-1.5">
-                    {m.credentials.map((c) => (
-                      <li
-                        key={c}
-                        className="border border-gray-200 bg-gray-50 px-2.5 py-1 text-[11px] font-bold text-navy/70 tracking-wide"
-                      >
-                        {c}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {(m.education || m.credentials.length > 0) && (
+                  <div className="pt-2 border-t border-gray-100">
+                    {m.education && (
+                      <div className="mb-4">
+                        <span className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2">
+                          {t("educationLabel")}
+                        </span>
+                        <span className="inline-block border border-gray-200 bg-gray-50 px-2.5 py-1 text-[11px] font-bold text-navy/70 tracking-wide">
+                          {m.education}
+                        </span>
+                      </div>
+                    )}
+                    {m.credentials.length > 0 && (
+                      <>
+                        <span className="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2.5">
+                          {t("credentialsLabel")}
+                        </span>
+                        <ul className="flex flex-wrap gap-1.5">
+                          {m.credentials.map((c) => (
+                            <li
+                              key={c}
+                              className="border border-gray-200 bg-gray-50 px-2.5 py-1 text-[11px] font-bold text-navy/70 tracking-wide"
+                            >
+                              {c}
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           ))}
