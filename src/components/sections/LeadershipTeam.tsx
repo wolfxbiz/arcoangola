@@ -46,7 +46,7 @@ const MEMBERS = [
   },
   {
     key: "nara",
-    name: "Nara Pinheiro dos Santos Daniel",
+    name: "Nara Costa Pinheiro dos Santos",
     nickname: null,
     photo: "/assets/leader-nara-daniel.jpeg",
     photoPosition: "center 15%",
