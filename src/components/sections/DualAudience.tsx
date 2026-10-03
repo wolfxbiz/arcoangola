@@ -64,7 +64,7 @@ export default function DualAudience() {
           <div className="flex flex-col overflow-hidden border-b lg:border-b-0 lg:border-r border-gray-200">
             <div className="relative h-64 sm:h-80 lg:h-72 xl:h-80 overflow-hidden shrink-0">
               <Image
-                src="/assets/img-individual-professional.png"
+                src="/assets/img-individual-professional-v2.png"
                 alt="Certified industrial professional"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top" }}

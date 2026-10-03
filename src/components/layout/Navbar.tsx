@@ -58,6 +58,11 @@ export default function Navbar() {
       subtitle: t("signatureProgrammeSubtitle"),
     },
     {
+      href: `/${locale}/signature-programmes/asnt-ndt`,
+      title: "ASNT NDT",
+      subtitle: "Employer-based NDT qualification pathways and workforce development",
+    },
+    {
       href: `/${locale}/signature-programmes/iso-management-systems`,
       title: "ISO Management Systems",
       subtitle: t("isoMsProgrammeSubtitle"),

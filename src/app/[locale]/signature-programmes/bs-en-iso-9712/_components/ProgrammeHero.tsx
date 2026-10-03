@@ -11,7 +11,7 @@ export default function ProgrammeHero({ locale }: { locale: string }) {
     <section className="relative flex items-center overflow-hidden pt-24 lg:pt-28 pb-14 lg:pb-20">
       <div className="absolute inset-0 bg-black" aria-hidden="true" />
       <Image
-        src="/assets/img-programme-hero.webp"
+        src="/assets/img-programme-hero-iso9712.png"
         alt=""
         fill
         priority

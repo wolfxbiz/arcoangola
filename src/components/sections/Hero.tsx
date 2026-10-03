@@ -21,7 +21,7 @@ export default function Hero() {
         {/* Background — full section */}
         <div className="absolute inset-0 bg-black" aria-hidden="true" />
         <Image
-          src="/assets/hero-bg.webp"
+          src="/assets/hero-training-session.jpeg"
           alt=""
           fill
           priority
