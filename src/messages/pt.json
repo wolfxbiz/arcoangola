@@ -860,6 +860,18 @@
     "supportItem3": "ASNT",
     "supportItem4": "API · HSE · Auditor Líder ISO"
   },
+  "trainingGallery": {
+    "badge": "Por Dentro da Nossa Formação",
+    "heading": "Pessoas reais. Competências práticas. Formação para a indústria.",
+    "intro": "Um vislumbre da formação da ARCO ANGOLA — da aprendizagem orientada por formadores a exercícios práticos de END e sessões em equipa. Momentos reais que mostram como o conhecimento técnico é aplicado.",
+    "cta": "Explorar os nossos programas",
+    "photo1": "Exercício de inspeção em equipa",
+    "photo2": "Prática de inspeção no terreno",
+    "photo3": "Avaliação de competências práticas",
+    "photo4": "Sessão orientada por formador",
+    "photo5": "Aprendizagem em sala de aula",
+    "photo6": "A nossa comunidade de formandos"
+  },
   "globalPresence": {
     "badge": "A Nossa Presença Global",
     "heading": "Padrões Globais. Força Local.",

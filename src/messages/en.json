@@ -812,6 +812,18 @@
     "supportItem3": "ASNT",
     "supportItem4": "API · HSE · ISO Lead Auditor"
   },
+  "trainingGallery": {
+    "badge": "Inside Our Training",
+    "heading": "Real people. Practical skills. Industry-ready training.",
+    "intro": "A glimpse of ARCO ANGOLA training—from instructor-led learning to hands-on NDT exercises and team sessions. These real moments show how technical knowledge is put into practice.",
+    "cta": "Explore our programmes",
+    "photo1": "Team inspection exercise",
+    "photo2": "Hands-on inspection practice",
+    "photo3": "Practical skills assessment",
+    "photo4": "Instructor-led session",
+    "photo5": "Classroom learning",
+    "photo6": "Our trainee community"
+  },
   "globalPresence": {
     "badge": "Our Global Presence",
     "heading": "Global Standards. Local Strength.",

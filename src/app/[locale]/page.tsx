@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import SignatureFlagshipBand from "@/components/sections/SignatureFlagshipBand";
+import TrainingGallery from "@/components/sections/TrainingGallery";
 import Certificates from "@/components/sections/Certificates";
 import CertificationHighlights from "@/components/sections/CertificationHighlights";
 import HseTraining from "@/components/sections/HseTraining";
@@ -79,6 +80,7 @@ export default async function LandingPage({ params }: Props) {
         <Hero />
         <SignatureFlagshipBand />
         <CertBodiesStrip />
+        <TrainingGallery />
 
         <MissionStatement />
 

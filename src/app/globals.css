@@ -26,3 +26,86 @@ body {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f1f5f9; }
 ::-webkit-scrollbar-thumb { background: #C8102E; }
+
+.training-marquee-viewport {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.training-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: training-marquee-scroll 56s linear infinite;
+}
+
+.training-marquee-track-reverse {
+  animation-direction: reverse;
+  animation-duration: 64s;
+}
+
+.training-marquee-group {
+  display: flex;
+  flex: none;
+  gap: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.training-marquee-card {
+  width: min(76vw, 22rem);
+  height: 11rem;
+  flex: none;
+}
+
+.training-marquee:hover .training-marquee-track,
+.training-marquee:focus-within .training-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes training-marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 640px) {
+  .training-marquee-group {
+    gap: 1rem;
+    padding-right: 1rem;
+  }
+
+  .training-marquee-card {
+    height: 14rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .training-marquee-viewport:nth-child(2) {
+    display: none;
+  }
+
+  .training-marquee-viewport {
+    overflow: visible;
+    mask-image: none;
+  }
+
+  .training-marquee-track {
+    display: block;
+    width: auto;
+    animation: none;
+    transform: none;
+  }
+
+  .training-marquee-group:not([aria-hidden="true"]) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: 0.75rem;
+  }
+
+  .training-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .training-marquee-card {
+    width: 100%;
+  }
+}

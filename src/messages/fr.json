@@ -860,6 +860,18 @@
     "supportItem3": "ASNT",
     "supportItem4": "API · HSE · Auditeur Principal ISO"
   },
+  "trainingGallery": {
+    "badge": "Au Cœur de Nos Formations",
+    "heading": "Des personnes réelles. Des compétences pratiques. Une formation tournée vers l’industrie.",
+    "intro": "Un aperçu des formations d’ARCO ANGOLA — des cours animés par un formateur aux exercices pratiques de CND et aux séances en équipe. Des moments authentiques qui montrent la mise en pratique des connaissances techniques.",
+    "cta": "Découvrir nos programmes",
+    "photo1": "Exercice d’inspection en équipe",
+    "photo2": "Pratique de l’inspection sur le terrain",
+    "photo3": "Évaluation des compétences pratiques",
+    "photo4": "Session animée par un formateur",
+    "photo5": "Apprentissage en salle",
+    "photo6": "Notre communauté d’apprenants"
+  },
   "globalPresence": {
     "badge": "Notre Présence Mondiale",
     "heading": "Normes Mondiales. Force Locale.",
